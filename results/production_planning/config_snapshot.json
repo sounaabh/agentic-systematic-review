@@ -1,0 +1,31 @@
+{
+  "llm": {
+    "provider": "groq",
+    "model": "openai/gpt-oss-20b",
+    "temperature": 0,
+    "num_ctx": 8192,
+    "screener_b_model": "openai/gpt-oss-120b",
+    "embedding_model": "",
+    "reasoning_effort": "low"
+  },
+  "search": {
+    "sources": [
+      "openalex",
+      "arxiv"
+    ],
+    "max_results_per_query": 25,
+    "max_records_to_screen": 40,
+    "year_from": 2020
+  },
+  "fulltext": {
+    "max_studies": 6,
+    "chunk_words": 220,
+    "chunk_overlap": 40,
+    "top_k_chunks": 8
+  },
+  "workflow": {
+    "human_in_the_loop": true,
+    "max_critic_revisions": 2,
+    "runs_dir": "runs"
+  }
+}

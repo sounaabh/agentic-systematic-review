@@ -1,0 +1,1090 @@
+[
+  {
+    "record_id": "doi:10.1109/tnnls.2021.3121870",
+    "title": "Deep Reinforcement Learning for Cyber Security",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The title and abstract describe DRL applied to cyber security, not to manufacturing production planning or scheduling.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "The abstract describes a survey of DRL methods for cyber security, not an empirical study applying DRL to production planning or scheduling.",
+      "confidence": 0.98
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2511.07707",
+    "title": "A Negotiation-Based Multi-Agent Reinforcement Learning Approach for Dynamic Scheduling of Reconfigurable Manufacturing Systems",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a multi‑agent reinforcement learning (deep Q‑network) approach applied to dynamic scheduling in reconfigurable manufacturing systems, reporting quantitative outcomes such as makespan, tardiness, and machine utilization in a simulated environment.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning (DQN) multi‑agent approach applied to dynamic scheduling in reconfigurable manufacturing systems, reports outcomes like makespan and utilization, and presents simulation experiments.",
+      "confidence": 0.97
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.eswa.2020.113701",
+    "title": "Deep reinforcement learning based preventive maintenance policy for serial production lines",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract is missing, so it is impossible to determine whether the study meets the inclusion criteria.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "rationale": "The title mentions deep reinforcement learning applied to preventive maintenance in serial production lines, indicating a DRL intervention in a manufacturing setting.",
+      "confidence": 0.85
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The title explicitly mentions a deep reinforcement learning (DRL) intervention applied to preventive maintenance in serial production lines, satisfying criteria I1 (DRL mention), I2 (manufacturing production system), I3 (DRL intervention), and I5 (likely experimental or simulation study). While the abstract is missing, the study is presumably available in full text and could provide the required outcomes and quantitative/qualitative data. Therefore, it should be retained for full‑text screening."
+  },
+  {
+    "record_id": "arxiv:2509.15767",
+    "title": "Learning to Optimize Capacity Planning in Semiconductor Manufacturing",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes a neural network model trained with deep reinforcement learning for capacity planning in semiconductor manufacturing, reporting quantitative improvements in throughput and cycle time, meeting all inclusion criteria and none of the exclusion criteria.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract reports a deep reinforcement learning (graph neural network) model applied to capacity planning in semiconductor manufacturing, with reported outcomes of increased throughput and reduced cycle time.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.cie.2025.110966",
+    "title": "Adaptive manufacturing control with Deep Reinforcement Learning for dynamic WIP management in industry 4.0",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a Deep Q‑Network (DRL) applied to WIP control in a flow‑shop production system, reporting quantitative performance outcomes (MAPE) from simulation experiments, satisfying all inclusion criteria and none of the exclusion criteria.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a Deep Reinforcement Learning (DQN) approach applied to adaptive WIP control in a flow‑shop manufacturing system, reporting performance metrics such as MAPE, thus meeting all inclusion criteria.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2606.10705",
+    "title": "Event-Driven Reinforcement Learning Enables Long-Horizon Control in Semiconductor Fabrication",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning framework applied to semiconductor manufacturing production planning and control, reporting quantitative outcomes (throughput and utilization) from simulation experiments.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning framework applied to semiconductor manufacturing production control, reporting throughput and utilization outcomes.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.jmsy.2020.02.004",
+    "title": "Petri-net-based dynamic scheduling of flexible manufacturing system via deep reinforcement learning with graph convolutional network",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract is missing, so it is impossible to determine whether the study meets the inclusion criteria.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I5"
+      ],
+      "rationale": "The title explicitly mentions deep reinforcement learning applied to dynamic scheduling in a flexible manufacturing system, indicating relevance to production planning and an experimental/simulation study.",
+      "confidence": 0.85
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The title explicitly states the use of deep reinforcement learning for dynamic scheduling in a flexible manufacturing system, satisfying inclusion criteria I1, I2, I3, and I5. Although the abstract is missing, the full text is presumed available and likely reports quantitative outcomes of the simulation/experimental study, meeting I4 and I6. The study is not a purely theoretical algorithm paper and addresses dynamic production planning, so it does not violate any exclusion criteria."
+  },
+  {
+    "record_id": "arxiv:2610.40421",
+    "title": "Uncertainty-aware Feedback Loop Diagnosis: integrating reinforcement learning and conformal prediction for reliable wafer defect classification",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4"
+      ],
+      "rationale": "The study applies reinforcement learning to wafer defect classification, not to production planning or scheduling, thus failing to meet the inclusion requirement of addressing dynamic production planning/scheduling.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on reinforcement learning for defect classification in semiconductor inspection, not on production planning or scheduling, and it does not address dynamic planning under disruptions.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1080/00207543.2023.2233641",
+    "title": "A deep reinforcement learning based hyper-heuristic for modular production control",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning hyper‑heuristic applied to a modular production control system, targeting manufacturing plants, reporting quantitative outcomes (throughput time, tardiness, order processing) and using simulation as the study design.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract mentions a deep reinforcement learning hyper‑heuristic applied to modular production control, targeting manufacturing systems, with reported outcomes like throughput time and tardiness, indicating a dynamic scheduling context.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2306.03158",
+    "title": "Task-Oriented Metaverse Design in the 6G Era",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning algorithm used for synchronizing a real‑world device with its digital twin in the Metaverse, but it does not involve production planning or scheduling in a manufacturing context.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "I2"
+      ],
+      "rationale": "The abstract focuses on metaverse design and device synchronization, not on manufacturing production planning or scheduling.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.knosys.2022.108765",
+    "title": "Average reward adjusted deep reinforcement learning for order release planning in manufacturing",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning (RL) approach applied to order release planning in a manufacturing flow‑shop, reporting quantitative performance results from a simulation study.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract mentions reinforcement learning applied to order release planning in a manufacturing flow‑shop, includes dynamic lead‑time setting, reports performance outcomes, and uses a simulation study.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2604.22818",
+    "title": "Representation Homogeneity and Systemic Instability in AI-Dominated Financial Markets: A Structural Approach",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The study focuses on AI trading agents in financial markets, not on manufacturing production systems or scheduling.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on AI agents in financial markets and systemic instability, with no mention of production planning, scheduling, or manufacturing contexts.",
+      "confidence": 0.98
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1109/comst.2020.2988367",
+    "title": "Deep Reinforcement Learning for Autonomous Internet of Things: Model, Applications and Challenges",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4"
+      ],
+      "rationale": "The paper is a survey/tutorial on DRL for autonomous IoT and does not apply DRL to manufacturing production planning or scheduling.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on DRL for autonomous IoT control, not on production planning or scheduling in manufacturing contexts.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2307.05812",
+    "title": "Safe Reinforcement Learning for Strategic Bidding of Virtual Power Plants in Day-Ahead Markets",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4"
+      ],
+      "rationale": "The abstract describes a reinforcement learning algorithm applied to virtual power plant bidding, not to manufacturing production planning or scheduling.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "I2"
+      ],
+      "rationale": "The abstract focuses on strategic bidding of virtual power plants in electricity markets, not on manufacturing production systems or plants.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1109/tnsm.2022.3190493",
+    "title": "Secure Task Offloading in Blockchain-Enabled Mobile Edge Computing With Deep Reinforcement Learning",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The study applies deep reinforcement learning to secure task offloading in mobile edge computing, but it does not involve manufacturing production systems or production planning/scheduling, violating the population criterion (I2).",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E3"
+      ],
+      "rationale": "The abstract focuses on task offloading in mobile edge computing, not on production planning or scheduling in manufacturing systems.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2610.15183",
+    "title": "Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The study focuses on cyber‑physical defense for virtual power plants, not on manufacturing production planning or scheduling, thus failing the population and intervention relevance criteria.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on cyber‑physical defense for virtual power plants using game‑theoretic planning and reinforcement learning, not on production planning or scheduling in manufacturing.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1038/s41524-024-01474-5",
+    "title": "Deep reinforcement learning for inverse inorganic materials design",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The study applies reinforcement learning to inverse inorganic materials design, which is not a manufacturing production system or scheduling problem, and it focuses on static materials discovery rather than dynamic production planning or scheduling under disruptions.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on reinforcement learning for inorganic materials design, not on production planning or scheduling in manufacturing, and does not address dynamic planning under disruptions.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1109/pimrc59610.2024.10817284",
+    "title": "Resource Optimization for Tail-Based Control in Wireless Networked Control Systems",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The study focuses on wireless networked control systems and sensor scheduling, not on manufacturing production planning or scheduling.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5",
+        "E4"
+      ],
+      "rationale": "The abstract focuses on control and sensor scheduling for wireless networked control systems, not on production planning or scheduling in manufacturing, and applies RL to control rather than to dynamic production planning under disruptions.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.64972/jaat.2026v4.187p25e:331-345",
+    "title": "Real-Time Assembly Line Balancing Optimization Based on Deep Reinforcement Learning",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning approach applied to real‑time assembly line balancing in a manufacturing setting, reporting quantitative outcomes such as throughput and load imbalance, and the study uses a simulation platform with experimental results.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract mentions deep reinforcement learning applied to real-time assembly line balancing (dynamic scheduling) in a manufacturing setting, reports outcomes like throughput and latency, and describes a simulation/benchmarking study.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2506.22474",
+    "title": "RL-based Adaptive Task Offloading in Mobile-Edge Computing for Future IoT Networks",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The study focuses on reinforcement learning for task offloading in mobile‑edge computing for IoT networks, not on production planning or scheduling in manufacturing systems.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on RL for task offloading in mobile-edge computing for IoT networks, not on production planning or scheduling in manufacturing contexts.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1287/stsy.2021.0081",
+    "title": "Queueing Network Controls via Deep Reinforcement Learning",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The abstract describes DRL applied to queueing network control, but does not refer to manufacturing production systems or plants, thus failing the population criterion (I2) and not addressing dynamic production planning/scheduling under disruptions.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on queueing network control using deep reinforcement learning without mentioning production planning or scheduling in manufacturing contexts.",
+      "confidence": 0.85
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.ress.2025.111767",
+    "title": "Deep reinforcement learning for optimal planning of production line maintenance with deterioration",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning (DRL) approach applied to maintenance planning in a serial production line, a manufacturing setting, with reported performance outcomes and a simulation-based experimental design.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an average‑reward deep reinforcement learning approach applied to maintenance planning in a serial production line, targeting dynamic decision‑making under degradation, with quantitative simulation results.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1109/tii.2024.3431095",
+    "title": "Deep Reinforcement Learning-Based Dynamic Reconfiguration Planning for Digital Twin-Driven Smart Manufacturing Systems With Reconfigurable Machine Tools",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning (DeepQ‑network) method applied to dynamic reconfiguration planning in a smart manufacturing system, meeting all inclusion criteria and none of the exclusion criteria.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning (Deep Q‑network) method applied to dynamic reconfiguration planning in a smart manufacturing system, targeting production flexibility and reporting effectiveness/efficiency results.",
+      "confidence": 0.93
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.cie.2021.107221",
+    "title": "Solving the online batching problem using deep reinforcement learning",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The study focuses on warehouse batching decisions rather than manufacturing production systems, so it does not meet the population criterion (I2).",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I3",
+        "I5"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning approach applied to dynamic batching and picking decisions in a warehouse, which is a production/scheduling context.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The study focuses on warehouse batching and picking decisions, which pertains to logistics and warehousing operations rather than manufacturing production systems or plants. Therefore, it does not satisfy inclusion criterion I2 (population). Consequently, the article should be excluded."
+  },
+  {
+    "record_id": "doi:10.1109/access.2020.2991773",
+    "title": "Distributed Edge Computing Offloading Algorithm Based on Deep Reinforcement Learning",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4"
+      ],
+      "rationale": "The abstract describes a DRL algorithm for edge computing offloading, not for manufacturing production planning or scheduling.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on deep reinforcement learning for edge computing task offloading, not on production planning or scheduling in manufacturing.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.58346/jowua.2026.i2.007",
+    "title": "Energy Efficiency and Throughput Optimization in Massive MIMO Systems Using Deep Reinforcement Learning",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4"
+      ],
+      "rationale": "The study applies DRL to wireless communication resource allocation, not to manufacturing production planning or scheduling.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on DRL for resource allocation in massive MIMO wireless networks, not on production planning or scheduling in manufacturing.",
+      "confidence": 0.98
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1109/tii.2023.3292538",
+    "title": "Deep Reinforcement Learning-Driven Scheduling in Multijob Serial Lines: A Case Study in Automotive Parts Assembly",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning–driven scheduling framework applied to a multijob serial line in an automotive parts assembly plant, reporting a 24.2% throughput improvement, thus meeting all inclusion criteria and none of the exclusion criteria.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning-driven scheduling framework applied to multijob serial lines in automotive parts assembly, reports a 24.2% throughput improvement, and presents a case study with real factory data.",
+      "confidence": 0.98
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1080/03155986.2023.2287996",
+    "title": "Real-time production scheduling using a deep reinforcement learning-based multi-agent approach",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning-based multi‑agent approach applied to real‑time scheduling in a smart manufacturing system, reporting quantitative outcomes such as weighted tardiness, throughput, and cycle time, and the study is a simulation case study with full manuscript available.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning-based multi‑agent approach applied to real‑time production scheduling in a smart manufacturing system, reporting outcomes such as weighted tardiness, throughput, and cycle time.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.procir.2023.09.229",
+    "title": "Enhancing economic efficiency in modular production systems through deep reinforcement learning",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning (DRL) approach applied to modular production control in manufacturing plants, reporting quantitative outcomes such as increased revenue and reduced penalties, and indicate an experimental/simulation study design with full-text availability.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning approach applied to production control in modular manufacturing systems, reporting outcomes such as revenue increase and reduced penalties, indicating an experimental/simulation study.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1007/s10462-024-10756-9",
+    "title": "Deep reinforcement learning-based methods for resource scheduling in cloud computing: a review and future directions",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The study focuses on DRL for resource scheduling in cloud computing, not on manufacturing production systems or dynamic production planning/scheduling under disruptions.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The article is a review of DRL methods for cloud resource scheduling and does not present original empirical data.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.rineng.2026.110652",
+    "title": "FORCE: A federated deep reinforcement learning framework for scalable and privacy-preserving process control in smart manufacturing",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a federated deep reinforcement learning framework applied to process control in smart manufacturing, reporting throughput and other performance metrics in an experimental evaluation.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5"
+      ],
+      "rationale": "The abstract focuses on federated deep reinforcement learning for process control rather than dynamic production planning or scheduling, and does not address a disruption context.",
+      "confidence": 0.85
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The study focuses on federated deep reinforcement learning for process control and execution in smart manufacturing, rather than on dynamic production planning or scheduling. The abstract and title do not mention planning or scheduling tasks, nor a disruption context, which violates inclusion criterion I1. Consequently, the paper does not meet the scope of the review."
+  },
+  {
+    "record_id": "doi:10.1109/access.2026.3659187",
+    "title": "A Deep Reinforcement Learning-Based Energy-Aware Open Shop Scheduling Method",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a Deep Reinforcement Learning (DRL) framework applied to open‑shop scheduling in manufacturing settings, report quantitative performance outcomes (near‑optimal gap, statistical significance), and present simulation results, satisfying all inclusion criteria and none of the exclusion criteria.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning framework applied to energy‑aware open shop scheduling in smart manufacturing, reporting quantitative performance results.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1155/acis/3899532",
+    "title": "Deep Reinforcement Learning With Graph Attention Networks for Workflow Scheduling in Smart Manufacturing",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The title and abstract describe a deep reinforcement learning (DRL) algorithm applied to workflow scheduling in a smart manufacturing setting, reporting an outcome of reduced completion time (makespan). The study appears to involve a manufacturing plant context and likely uses simulation or benchmarking, satisfying the design criterion.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract describes a deep reinforcement learning (with graph attention networks) approach applied to workflow scheduling in smart manufacturing, targeting completion time optimization, thus meeting the inclusion criteria for DRL in production scheduling with reported outcomes.",
+      "confidence": 0.93
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.3390/app13053083",
+    "title": "Applicability of Deep Reinforcement Learning for Efficient Federated Learning in Massive IoT Communications",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract discusses DRL applied to federated learning in IoT communications, not to manufacturing production planning or scheduling, and does not involve a dynamic production or disruption context.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on DRL for federated learning and IoT communications, not on production planning or scheduling in manufacturing contexts.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.cie.2025.110856",
+    "title": "Deep reinforcement learning for machine scheduling: Methodology, the state-of-the-art, and future directions",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract is missing, so it is impossible to determine whether the study meets the inclusion criteria.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The title indicates deep reinforcement learning applied to machine scheduling in manufacturing, but the abstract is missing, so it is unclear whether any required outcomes are reported.",
+      "confidence": 0.6
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The title explicitly mentions deep reinforcement learning applied to machine scheduling, satisfying I1 and I3. The focus on manufacturing production systems aligns with I2. Although the abstract is missing, the title suggests the study likely reports on outcomes relevant to scheduling performance, meeting I4. The study type is presumably experimental or simulation, satisfying I5, and it is expected to be available in full text with quantitative data, satisfying I6. Therefore, the study plausibly meets the inclusion criteria and should be retained for full‑text screening."
+  },
+  {
+    "record_id": "openalex:W7215656527",
+    "title": "AI in Manufacturing and Processing: Shaping the Factories of the Future",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract describes a general AI review without mention of deep reinforcement learning or adaptive AI applied to production planning/scheduling, and it lacks empirical data or a dynamic disruption context.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes a review of AI in manufacturing, not an empirical study with primary data.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.30574/wjaets.2025.15.2.0794",
+    "title": "Automation and AI-Driven ITSM in Smart Factories",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "The abstract discusses AI‑driven ITSM, predictive maintenance, and RPA, but does not mention deep reinforcement learning or adaptive AI applied to production planning or scheduling in manufacturing plants.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E3"
+      ],
+      "rationale": "The abstract focuses on AIOps, RPA, and IT service management without mentioning deep reinforcement learning or adaptive AI techniques for production planning/scheduling.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.30696/jac.xviii.1.2024.239-245",
+    "title": "AUTONOMOUS DATA FACTORIES: LEVERAGING GENERATIVE AI FOR OPTIMIZATION",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract discusses generative AI (GANs, VAEs) for autonomous data factories, not deep reinforcement learning or adaptive AI applied to manufacturing production planning or scheduling, and does not involve a dynamic production or disruption context.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on generative AI (GANs, VAEs) for data management in autonomous data factories, not on deep reinforcement learning or adaptive AI applied to manufacturing production planning or scheduling, nor on dynamic/disruption contexts.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.3389/fbioe.2024.1439638",
+    "title": "Continuous Process Verification 4.0 application in upstream: adaptiveness implementation managed by AI in the hypoxic bioprocess of the Pichia pastoris cell factory",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E3",
+        "E4",
+        "E5"
+      ],
+      "rationale": "The study applies general AI models for adaptive control in a bioprocess, not deep reinforcement learning or adaptive AI for production planning/scheduling in manufacturing plants, and focuses on a static bioprocess context rather than dynamic production planning under disruptions.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E3",
+        "E4"
+      ],
+      "rationale": "The abstract describes AI‑based adaptive control for a bioprocess but does not mention deep reinforcement learning or adaptive AI techniques applied to production planning/scheduling; it focuses on biopharmaceutical process control rather than manufacturing scheduling.",
+      "confidence": 0.9
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.61577/jaiar.2024.100006",
+    "title": "Education 4.0 and 5.0: integrating Artificial Intelligence (AI) for personalized and adaptive learning",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E5",
+        "E4"
+      ],
+      "rationale": "The study focuses on AI in education, not on manufacturing production systems or dynamic scheduling, thus failing inclusion criteria I2 and I1.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E4",
+        "E5"
+      ],
+      "rationale": "The abstract focuses on AI for personalized education, not on production planning or scheduling in manufacturing, and does not involve dynamic production contexts.",
+      "confidence": 0.98
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  }
+]

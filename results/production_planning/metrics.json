@@ -1,0 +1,31 @@
+{
+  "metrics": {
+    "screening_kappa": 0.814,
+    "screening_raw_agreement": 0.9,
+    "screening_conflicts": 5,
+    "screener_a_model": "groq:openai/gpt-oss-20b",
+    "screener_b_model": "groq:openai/gpt-oss-120b",
+    "traceability_rate": 1.0,
+    "retrieval_mode": "BM25 keyword retrieval (dense embeddings not available with this LLM provider)",
+    "runtime_minutes": 14.8
+  },
+  "prisma": {
+    "identified": {
+      "openalex": 100,
+      "arxiv": 10
+    },
+    "identified_total": 110,
+    "duplicates_removed": 4,
+    "after_dedup": 106,
+    "not_screened_cap": 66,
+    "screened": 40,
+    "excluded_screening": 23,
+    "included_screening": 17,
+    "reports_sought": 6,
+    "not_extracted_cap": 11,
+    "full_text_retrieved": 3,
+    "abstract_only": 3,
+    "excluded_fulltext": 1,
+    "included_final": 5
+  }
+}

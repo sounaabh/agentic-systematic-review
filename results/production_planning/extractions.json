@@ -1,0 +1,165 @@
+[
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "simulation study with reinforcement learning agents",
+    "setting": "Enhanced Reconfigurable Manufacturing System (EnhancedRMS) environment, a flexible job shop with 5 machines, 50 jobs, dynamic setup operations and stochastic machine breakdowns",
+    "sample_or_dataset": "50 jobs per episode, 1000 episodes per configuration; 5 independent runs per workload; 5 scheduling strategies compared",
+    "ai_method": "Dueling-Attention Deep Q-Network (EnhancedDQN) with negotiation-driven coordination (deep reinforcement learning with multi‑agent negotiation)",
+    "comparison": "PPO, SAC, EDF heuristic, Random baseline, and configurations with/without reconfiguration and negotiation (WNR, WTR, WNF, WTF)",
+    "outcomes": [
+      "Makespan",
+      "Machine Utilization",
+      "Total Tardiness",
+      "Setup Time",
+      "Total Reconfiguration Time",
+      "Objective (combined metric)",
+      "Success Rate under breakdown scenario"
+    ],
+    "key_findings": "The negotiation‑driven EnhancedDQN achieved the lowest makespan (average 177.3 time units across configurations) and lowest total tardiness (average 312.7 time units) compared to other strategies. It also maintained high machine utilization (average 21.1%) while incurring moderate reconfiguration overhead (average 108.2 time units). In breakdown scenarios, the combined approach reduced makespan by 15.5% relative to reconfiguration‑only and improved utilization by 9.3 percentage points, achieving 100% job completion.",
+    "effect_direction": "positive",
+    "limitations": "Results are based on a custom simulation environment; real‑world validation is lacking. The study reports variability due to stochastic disruptions but does not explore scalability to larger systems or multiple resource types. Computational efficiency and integration with existing manufacturing execution systems were not evaluated.",
+    "evidence": [
+      "S1-c6",
+      "S1-c27",
+      "S1-c31",
+      "S1-c32",
+      "S1-c39",
+      "S1-c40",
+      "S1-c41",
+      "S1-c45"
+    ],
+    "key": "S1",
+    "record_id": "arxiv:2511.07707",
+    "title": "A Negotiation-Based Multi-Agent Reinforcement Learning Approach for Dynamic Scheduling of Reconfigurable Manufacturing Systems",
+    "full_text": true
+  },
+  {
+    "eligible_confirmed": false,
+    "exclusion_reason": "No data on dynamic production planning and scheduling under disruptions is reported in the provided passage.",
+    "study_type": "not reported",
+    "setting": "not reported",
+    "sample_or_dataset": "not reported",
+    "ai_method": "not reported",
+    "comparison": "not reported",
+    "outcomes": [],
+    "key_findings": "not reported",
+    "effect_direction": "unclear",
+    "limitations": "not reported",
+    "evidence": [
+      "S2-c0"
+    ],
+    "key": "S2",
+    "record_id": "doi:10.1016/j.eswa.2020.113701",
+    "title": "Deep reinforcement learning based preventive maintenance policy for serial production lines",
+    "full_text": false
+  },
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "simulation-based reinforcement learning experiment",
+    "setting": "semiconductor manufacturing capacity planning using discrete-event simulation",
+    "sample_or_dataset": "Intel’s small-scale Minifab (5 machines, 3 products) and SMT2020 testbed (1,314 machines, 583 processing steps, LV/HM dataset)",
+    "ai_method": "deep reinforcement learning with a heterogeneous graph neural network (HGNN) trained via PPO",
+    "comparison": "heuristic baseline, random actions, and no-action baseline",
+    "outcomes": [
+      "completed lots",
+      "average cycle time",
+      "daily going rate"
+    ],
+    "key_findings": "In the Minifab environment, the HGNN policy increased completed lots by 1.59% and reduced cycle time by 2.70% versus the heuristic, and by 13.85%/14.96% versus no action. In the larger SMT2020 testbed, the policy improved completed lots by 1.87% (≈110 lots) and reduced cycle time by 1.80% (≈1.08 days) versus the heuristic, and by 2.50%/2.33% versus no action, yielding an overall throughput increase of about 1.8%.",
+    "effect_direction": "positive",
+    "limitations": "Results are based on simulation testbeds; real‑world deployment and cost considerations were not evaluated; training stability over long horizons remains to be addressed.",
+    "evidence": [
+      "S3-c1",
+      "S3-c2",
+      "S3-c9",
+      "S3-c16",
+      "S3-c17",
+      "S3-c18",
+      "S3-c21",
+      "S3-c22"
+    ],
+    "key": "S3",
+    "record_id": "arxiv:2509.15767",
+    "title": "Learning to Optimize Capacity Planning in Semiconductor Manufacturing",
+    "full_text": true
+  },
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "simulation study using high‑fidelity digital twin",
+    "setting": "semiconductor fabrication plant (front‑end wafer fab)",
+    "sample_or_dataset": "high‑fidelity simulator based on real industrial data; 30 scenario–seed evaluation instances from 10 test scenarios and 3 seeds each",
+    "ai_method": "deep reinforcement learning with event‑driven temporal‑difference formulation; algorithms evaluated include DQL, SAC, PPO, CQL, IQL",
+    "comparison": "random policy, shortest processing time (SPT) heuristic, first‑in‑first‑out (FIFO) baseline",
+    "outcomes": [
+      "throughput",
+      "utilization",
+      "system‑wide KPIs (multi‑objective performance)"
+    ],
+    "key_findings": "Agents trained offline and online achieved significant and consistent gains in throughput and utilization compared to random, SPT, and FIFO baselines. Offline training with conservative algorithms (CQL, IQL) produced performance close to DQL, while online off‑policy methods (DQL, SAC) were more sample‑efficient and on‑policy PPO was more sensitive to data. Overall, the event‑driven RL framework enabled scalable, generalizable control in a large‑scale, stochastic semiconductor fab.",
+    "effect_direction": "positive",
+    "limitations": "State and action representations were feature‑based; learned encoders, graph‑based or foundation‑model representations were not explored. Hyperparameter tuning and benchmarking across algorithms were limited; model‑based agents and self‑supervised dynamics learning were suggested for future work.",
+    "evidence": [
+      "S4-c0",
+      "S4-c1",
+      "S4-c5",
+      "S4-c33",
+      "S4-c47",
+      "S4-c48",
+      "S4-c49",
+      "S4-c50"
+    ],
+    "key": "S4",
+    "record_id": "arxiv:2606.10705",
+    "title": "Event-Driven Reinforcement Learning Enables Long-Horizon Control in Semiconductor Fabrication",
+    "full_text": true
+  },
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "simulation study with transfer to hybrid production environment",
+    "setting": "semi-heterarchical modular production system with multiple manufacturing and distribution agents",
+    "sample_or_dataset": "simulation and hybrid production environment (no explicit participant count reported)",
+    "ai_method": "deep reinforcement learning based hyper-heuristic",
+    "comparison": "conventional approaches (not specified in detail)",
+    "outcomes": [
+      "mean throughput time",
+      "tardiness",
+      "processing of prioritised orders"
+    ],
+    "key_findings": "The deep reinforcement learning hyper-heuristic demonstrated multi-objective optimisation capabilities, improving mean throughput time, reducing tardiness, and enhancing processing of prioritised orders compared to conventional approaches in a multi-layered production system.",
+    "effect_direction": "positive",
+    "limitations": "No explicit quantitative results or statistical significance reported; comparison methods not detailed; sample size and real-world validation limited to a hybrid production environment.",
+    "evidence": [
+      "S5-c0"
+    ],
+    "key": "S5",
+    "record_id": "doi:10.1080/00207543.2023.2233641",
+    "title": "A deep reinforcement learning based hyper-heuristic for modular production control",
+    "full_text": false
+  },
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "simulation study",
+    "setting": "multi-stage, multi-product flow-shop simulation model",
+    "sample_or_dataset": "not reported",
+    "ai_method": "average reward adjusted deep reinforcement learning (RL) for dynamic lead time setting",
+    "comparison": "static order release models and state-of-the-art deep Q‑Learning agents",
+    "outcomes": [
+      "performance in terms of order release planning (balance of WIP, utilisation, and timely completion of orders)"
+    ],
+    "key_findings": "The proposed RL algorithm outperforms static models and deep Q‑Learning agents, particularly in scenarios with high utilisation.",
+    "effect_direction": "positive",
+    "limitations": "not reported",
+    "evidence": [
+      "S6-c0"
+    ],
+    "key": "S6",
+    "record_id": "doi:10.1016/j.knosys.2022.108765",
+    "title": "Average reward adjusted deep reinforcement learning for order release planning in manufacturing",
+    "full_text": false
+  }
+]

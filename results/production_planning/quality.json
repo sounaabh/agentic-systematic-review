@@ -1,0 +1,68 @@
+[
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "yes",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to evaluate a negotiation‑based MARL approach for dynamic scheduling in reconfigurable manufacturing systems. The experimental design is appropriate: a custom simulation environment (EnhancedRMS) with realistic job and machine parameters, multiple scenarios (normal vs. breakdown), and comparison against several baseline algorithms. Sample size is adequate—1000 episodes per configuration and five independent runs—providing statistical consistency. Outcome measures (makespan, utilization, tardiness, setup time, reconfigurations) are valid, well‑defined, and reported with means and standard deviations. Limitations are acknowledged (e.g., variability due to stochastic disruptions, need for more realistic industrial data, lack of real‑world deployment). However, the study remains a simulation‑based evaluation; external validity to actual manufacturing plants is not established, which tempers the overall confidence. Hence a moderate rating is appropriate.",
+    "key": "S1",
+    "record_id": "arxiv:2511.07707"
+  },
+  {
+    "clear_aims": "unclear",
+    "appropriate_design": "unclear",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "unclear",
+    "overall": "low",
+    "justification": "The provided passage contains only the study title, offering no information on aims, design, sample, outcomes, or limitations. Therefore, each appraisal item cannot be determined and is marked as unclear, leading to an overall low quality rating.",
+    "key": "S2",
+    "record_id": "doi:10.1016/j.eswa.2020.113701"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "unclear",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to evaluate a DRL‑based capacity planning policy, uses a suitable simulation‑based experimental design with two testbeds (Minifab and SMT2020), and reports quantitative performance metrics (completed lots, cycle time, daily going rate). However, the paper does not explicitly discuss how limitations (e.g., simulation fidelity, generalizability to real factories, or potential biases) are addressed, leaving that criterion unclear. Overall, the evidence supports a moderate quality rating.",
+    "key": "S3",
+    "record_id": "arxiv:2509.15767"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "yes",
+    "overall": "moderate",
+    "justification": "The study clearly states its objective to optimize production control in semiconductor fabrication using deep reinforcement learning and evaluates performance through throughput and utilization metrics across 30 scenario–seed simulation instances. The design is appropriate, employing a centralized event‑driven framework with multiple RL algorithms and a rigorous evaluation protocol. Data adequacy is supported by high‑fidelity simulations derived from real industrial data. Outcome measures are valid and directly linked to production KPIs. The authors acknowledge limitations (feature‑based representations, lack of real‑world deployment) and outline future work. However, the evidence is limited to simulation, so while the methodology is sound, external validity remains uncertain, warranting a moderate overall rating.",
+    "key": "S4",
+    "record_id": "arxiv:2606.10705"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "unclear",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to develop an adaptive hyper‑heuristic control model for modular production and demonstrates its effectiveness through simulation and a hybrid production environment, indicating a suitable design and valid outcome measures (throughput time, tardiness, order processing). However, the passage does not provide details on the sample size, data collection, or how limitations were addressed, leaving those aspects unclear. Hence, the overall appraisal is moderate.",
+    "key": "S5",
+    "record_id": "doi:10.1080/00207543.2023.2233641"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "unclear",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to dynamically set lead times using reinforcement learning and compares its performance against static and deep Q‑learning baselines in a simulated multi‑stage, multi‑product flow‑shop environment. This indicates a clear aim and an appropriate comparative design. However, the passage does not provide details on the size or nature of the data/simulation runs, nor does it specify the outcome metrics used to assess effectiveness, nor discuss limitations. Consequently, while the conceptual framework is sound, the evidence regarding sample adequacy, measurement validity, and limitation handling is insufficient, leading to a moderate overall appraisal.",
+    "key": "S6",
+    "record_id": "doi:10.1016/j.knosys.2022.108765"
+  }
+]

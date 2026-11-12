@@ -1,0 +1,274 @@
+[
+  {
+    "key": "S1",
+    "record": {
+      "id": "arxiv:2511.07707",
+      "title": "A Negotiation-Based Multi-Agent Reinforcement Learning Approach for Dynamic Scheduling of Reconfigurable Manufacturing Systems",
+      "abstract": "Reconfigurable manufacturing systems (RMS) are critical for future market adjustment given their rapid adaptation to fluctuations in consumer demands, the introduction of new technological advances, and disruptions in linked supply chain sections. The adjustable hard settings of such systems require a flexible soft planning mechanism that enables realtime production planning and scheduling amid the existing complexity and variability in their configuration settings. This study explores the application of multi agent reinforcement learning (MARL) for dynamic scheduling in soft planning of the RMS settings. In the proposed framework, deep Qnetwork (DQN) agents trained in centralized training learn optimal job machine assignments in real time while adapting to stochastic events such as machine breakdowns and reconfiguration delays. The model also incorporates a negotiation with an attention mechanism to enhance state representation and improve decision focus on critical system features. Key DQN enhancements including prioritized experience replay, nstep returns, double DQN and soft target update are used to stabilize and accelerate learning. Experiments conducted in a simulated RMS environment demonstrate that the proposed approach outperforms baseline heuristics in reducing makespan and tardiness while improving machine utilization. The reconfigurable manufacturing environment was extended to simulate realistic challenges, including machine failures and reconfiguration times. Experimental results show that while the enhanced DQN agent is effective in adapting to dynamic conditions, machine breakdowns increase variability in key performance metrics such as makespan, throughput, and total tardiness. The results confirm the advantages of applying the MARL mechanism for intelligent and adaptive scheduling in dynamic reconfigurable manufacturing environments.",
+      "authors": [
+        "Manonmani Sekar",
+        "Nasim Nezamoddini"
+      ],
+      "year": 2025,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2511.07707",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2511.07707",
+      "oa_pdf_url": "https://arxiv.org/pdf/2511.07707",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S1-c6",
+        "text": "capable enough to handle un- certainties of stochastic job arrivals and machine breakdowns [42]. Graph neural networks (GNN) were also integrated with these frameworks to model complex relationships, which is common in most manufacturing systems [44]. The previous results also showed efficiency of such integration for handling disruptions in manufacturing settings [45]. For reconfigurable systems specifically, [46] developed heterogeneous MARL approaches for reconfigurable assembly systems, handling di- verse agent capabilities and objectives. In distributed manufac- turing contexts, federated MARL enabled collaborative learn- ing across multiple manufacturing facilities while preserving data privacy [47]. In most of the proposed MARL applications, effective exploration remains a significant challenge due to the exponential growth of the joint action space. Previous research also showed that self-supervised multi-agent auto-curriculum in these platforms can lead to emergent tool use and com- plex coordinated behaviors through self-play [48]. Effective coordination in distributed environments requires negotiation to resolve conflicts over shared resources. Negotiation has long been studied in multi-agent systems [49]–[51], providing strategies for conflict resolution and cooperative agreements. Integrating negotiation with MARL enables agents to align individual incentives with system-level goals, dynamically adapt to environmental changes, and resolve resource conflicts [52]. Despite its promise, most MARL-based scheduling methods neglect negotiation, while negotiation-based approaches often remain rule-based and lack adaptability. Existing scheduling methods for RMSs still face major limitations"
+      },
+      {
+        "id": "S1-c27",
+        "text": "case study with the settings explained in this section. All experiments are conducted in the custom- developed Enhanced Reconfigurable Manufacturing System (EnhancedRMS) environment implemented in Python 3.8. The system was designed to emulate job–machine interactions, 8 dynamic setup operations, and reconfiguration behaviors un- der stochastic conditions. Each simulation episode involved randomly generated job sequences with processing times, due dates, and setup requirements derived from uniform and nor- mal distributions based on realistic Festo Didactic workstation data. A. System Configuration The experimental testbed consists of a flexible job shop manufacturing system with the following characteristics: • Machines: 5 machines with varying capabilities • Jobs: 50 jobs with sequential process requirements • Process Types: 6 different process categories • Breakdown Scenario: Machine 3 failure at simulation start B. Machine Characteristics Each machine possesses two distinct capability sets: 1) Native Processes: 2-3 processes executable without re- configuration 2) Reconfigurable Processes: 2-3 additional processes ac- cessible after reconfiguration (setup time: 3-7 time units) Table II presents a sample machine configuration. TABLE II SAMPLE MACHINE CONFIGURATION Machine Native Reconfigurable Setup Negotiation ID Processes Processes Time Flexibility M0 {0, 2} {1, 3} 5.2 0.85 M1 {1, 3, 4} {0, 2} 4.8 0.92 M2 {2, 5} {0, 1, 4} 6.1 0.78 M3 {0, 3, 5} {2, 4} 3.9 0.88 M4 {1, 4} {0, 3, 5} 5.7 0.81"
+      },
+      {
+        "id": "S1-c31",
+        "text": "(b) Training loss rapidly decreases and converges, indicating stable Q-value estimation. (c) Exploration rate decays exponentially from 1.0 to 0.05, transitioning from exploration to exploitation. E. Training Performance Analysis Figure 3 presents the learning behavior of the Enhanced- DQN agent in terms of episode reward, training loss, and exploration rate (ϵ) over 1000 episodes. As shown in Figure 3(a), total reward rises sharply dur- ing early episodes and stabilizes around a high average value, demonstrating successful convergence toward an opti- mal scheduling policy. The decreasing loss trend in Figure 3(b) confirms the stability of the dueling attention architecture, while the smooth decay of ϵ in Figure 3(c) ensures an effective exploration–exploitation balance. Overall, the pro- posed method exhibits robust convergence and high scheduling efficiency within the dynamic RMS environment. Comparing the initial training of the Enhanced DQN (Dueling-Attention DQN) with two other algorithms of SAC and Doable DQN, shows that the proposed mechanism demonstrated faster con- vergence and higher reward stability (Fig. 4). Fig. 4. Learning curves of different reinforcement learning agents. The proposed Dueling-Attention DQN achieved the highest convergence stability. V. NUMERICAL EXPERIMENTS The proposed RMS scheduling mechanism is used to study its efficiency in various settings based on the following met- rics: 1) Makespan: Total completion time of all jobs. 2) Machine Utilization: Fraction of productive machine time."
+      },
+      {
+        "id": "S1-c32",
+        "text": "stability. V. NUMERICAL EXPERIMENTS The proposed RMS scheduling mechanism is used to study its efficiency in various settings based on the following met- rics: 1) Makespan: Total completion time of all jobs. 2) Machine Utilization: Fraction of productive machine time. 3) Total Tardiness: Cumulative delay beyond due dates. 4) Setup Time: Sum of all reconfiguration and setup dura- tions. Each metric was averaged across 1000 episodes per config- uration, and standard deviations were reported for statistical consistency. A. Algorithm Comparison Evaluation Initially, the performance of the proposed technique is compared in a discrete-event simulation of a reconfigurable manufacturing system (RMS) consisting of multiple worksta- tions with dynamic job arrivals and setup requirements. Five scheduling strategies were compared: • EnhancedDQN (Proposed): A dueling attention-based Deep Q-Network with negotiation-driven coordination. • PPO: Proximal Policy Optimization agent using clipped surrogate objectives. • SAC: Soft Actor-Critic, a policy-gradient method with entropy regularization. • EDF: Earliest Due-Date First heuristic scheduler. • Random: Non-learning baseline that randomly allocates jobs to machines. Each agent was trained and tested on identical workloads consisting of five independent runs, each with randomly gen- erated job sequences varying in processing time, setup re- quirements, and due dates. The environment captured realistic system dynamics such as machine utilization, setup delay, and job tardiness. Figure 5 presents the distribution of all performance indi-"
+      },
+      {
+        "id": "S1-c39",
+        "text": "and without configuration and negotiation TABLE VI AVERAGE PERFORMANCE METRICS ACROSS CONFIGURATIONS Metric WNR WTR WNF WTF Makespan (Time Units) 170.5 190.9 186.7 177.3 Total Tardiness (Time Units) 324.9 312.7 372.9 362.6 Average Utilization (%) 22.3 21.1 19.7 20.4 Total Reconfig. Time 176.3 108.2 0 0 3) Reconfiguration Overhead: The WNR configuration in- curred a significantly higher Total Reconfiguration Time (176.3) compared to the WTR (108.2). This difference is attributed to the negotiation protocol aggressively utiliz- ing reconfigurability to meet scheduling goals, resulting in an average of 46.6 Reconfig. Time per Machine for WNR versus 27.1 for WTR The comprehensive distribution of trade-offs and perfor- mance analyses are presented in Figure 9. The experimental results strongly support the hypothesis that the combination of machine reconfigurability and a smart negotiation protocol provides the highest overall performance in a flexible job shop environment. While negotiation increases the utilization of reconfiguration capabilities, leading to higher total reconfiguration time, this overhead is outweighed by the significant reductions in makespan and tardiness. The WNR system is the most effective strategy for managing scheduling complexity and achieving robust system performance. The Results are organized by performance metric, with detailed analysis of both normal and breakdown scenarios. VI. ROBUSTNESS ANALYSIS The robustness of the proposed technique under uncertain situations is tested by comparing the following two scenarios:"
+      },
+      {
+        "id": "S1-c40",
+        "text": "achieving robust system performance. The Results are organized by performance metric, with detailed analysis of both normal and breakdown scenarios. VI. ROBUSTNESS ANALYSIS The robustness of the proposed technique under uncertain situations is tested by comparing the following two scenarios: • Normal Operation: All machines functional • Breakdown Scenario: Machine 3 failure A. Makespan Analysis Makespan or the time to complete the last job is one of the important metrics to investigate the effects of failures in scheduling mechanism. 1) Normal Operation Results: Table VII presents makespan results under normal operating conditions. The baseline con- figuration achieves a makespan of 2045.61 time units, rep- resenting the theoretical optimum when all machines are functional and no reconfiguration overhead exists. Introducing reconfiguration alone increases makespan to 2595.15 time units, representing a 26.9% degradation. The negotiation-only configuration maintains baseline performance (2045.61 time units) since all machines remain functional and capable of handling assigned processes through standard allocation. Most significantly, the combined approach achieves 2176.41 time units—only a 6.4% increase over baseline. This represents a 77.6% reduction in overhead compared to reconfiguration alone, demonstrating that intelligent negotiation dramatically reduces unnecessary reconfigurations. 2) Breakdown Scenario Results: The breakdown scenario (Machine 3 failure) reveals critical differences in system resilience: • Baseline: Complete Failure - System cannot complete jobs requiring Machine 3’s unique processes • Reconfig Only:"
+      },
+      {
+        "id": "S1-c41",
+        "text": "that intelligent negotiation dramatically reduces unnecessary reconfigurations. 2) Breakdown Scenario Results: The breakdown scenario (Machine 3 failure) reveals critical differences in system resilience: • Baseline: Complete Failure - System cannot complete jobs requiring Machine 3’s unique processes • Reconfig Only: 2579.34 time units - Successfully com- pletes all jobs through reconfiguration • Negotiation Only: Complete Failure - No process flexi- bility leads to deadlock • Combined: 2180.29 time units - Best performance among successful configurations The combined approach achieves a 15.5% improvement over reconfiguration-only in the breakdown scenario, despite both maintaining 100% job completion. This improvement comes from reduced setup time. 13 TABLE VII COMPREHENSIVE PERFORMANCE SUMMARY Metric Baseline Reconfig Only Negotiation Only Combined Normal Operation Makespan 2045.61 2595.15 (+26.9%) 2045.61 (0%) 2176.41 (+6.4%) Utilization 63.8% 50.3% 63.8% 60.0% Tardiness 46,313 60,295 (+30.2%) 46,313 (0%) 49,926 (+7.8%) Setup Time 0 549.54 0 130.80 Reconfigs 0 96 0 21 Objective 14,712 19,237 (+30.7%) 14,712 (0%) 15,874 (+7.9%) Breakdown Scenario Success Rate FAIL (0%) 100% FAIL (0%) 100% Makespan — 2579.34 — 2180.29 (-15.5%) Utilization — 50.6% — 59.9% (+9.3 pp) Tardiness — 60,678 — 50,108 (-17.4%) Setup Time — 533.73 — 134.67 (-74.8%) Reconfigs — 96 — 22 (-77.1%) Objective — 19,342 — 15,931 (-17.6%) Overall Best Combined: Best reliability, utilization, and breakdown performance B. Machine Utilization Analysis Machine utilization measures"
+      },
+      {
+        "id": "S1-c45",
+        "text": "provided scalability for multi- agent coordination. Evaluation results revealed that while the agent showed promising adaptation to environmental dynam- ics, stochastic disruptions such as machine breakdowns in- troduced significant variability in scheduling outcomes, high- lighting the inherent complexity of real-world manufacturing scheduling. The combined approach achieves 59.9% utilization in breakdown—only 0.1% decrease from normal operation despite losing 12.5% of machine capacity. This represents optimal breakdown resilience. The training visualizations and performance metrics confirmed that the agent successfully learned meaningful policies, establishing deep reinforcement learning as a viable approach for addressing dynamic schedul- ing challenges in reconfigurable manufacturing systems. Future research directions should emphasize the devel- opment of more realistic and comprehensive manufacturing environment simulations that capture the full complexity of industrial operations, including multiple resource types, en- ergy consumption dynamics, maintenance windows, opera- tor availability, and complex precedence constraints among operations. Integration with predictive maintenance systems and real-time monitoring technologies would enable proactive scheduling decisions that anticipate equipment failures and optimize maintenance scheduling. Rigorous validation through industrial case studies and deployment in actual manufacturing facilities is essential to assess the practical applicability, com- putational efficiency, and integration challenges with existing Manufacturing Execution Systems. Additionally, research into transfer learning and meta-learning techniques could enable trained agents to rapidly adapt to new production scenarios, product mixes, and facility configurations without extensive retraining,"
+      }
+    ]
+  },
+  {
+    "key": "S2",
+    "record": {
+      "id": "doi:10.1016/j.eswa.2020.113701",
+      "title": "Deep reinforcement learning based preventive maintenance policy for serial production lines",
+      "abstract": "",
+      "authors": [
+        "Jing Huang",
+        "Qing Chang",
+        "Jorge F. Arinez"
+      ],
+      "year": 2020,
+      "doi": "10.1016/j.eswa.2020.113701",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "Expert Systems with Applications",
+      "url": "https://openalex.org/W3037319445",
+      "oa_pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S095741742030525X?via%3Dihub",
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S2-c0",
+        "text": "Deep reinforcement learning based preventive maintenance policy for serial production lines."
+      }
+    ]
+  },
+  {
+    "key": "S3",
+    "record": {
+      "id": "arxiv:2509.15767",
+      "title": "Learning to Optimize Capacity Planning in Semiconductor Manufacturing",
+      "abstract": "In manufacturing, capacity planning is the process of allocating production resources in accordance with variable demand. The current industry practice in semiconductor manufacturing typically applies heuristic rules to prioritize actions, such as future change lists that account for incoming machine and recipe dedications. However, while offering interpretability, heuristics cannot easily account for the complex interactions along the process flow that can gradually lead to the formation of bottlenecks. Here, we present a neural network-based model for capacity planning on the level of individual machines, trained using deep reinforcement learning. By representing the policy using a heterogeneous graph neural network, the model directly captures the diverse relationships among machines and processing steps, allowing for proactive decision-making. We describe several measures taken to achieve sufficient scalability to tackle the vast space of possible machine-level actions. Our evaluation results cover Intel's small-scale Minifab model and preliminary experiments using the popular SMT2020 testbed. In the largest tested scenario, our trained policy increases throughput and decreases cycle time by about 1.8% each.",
+      "authors": [
+        "Philipp Andelfinger",
+        "Jieyi Bi",
+        "Qiuyu Zhu",
+        "Jianan Zhou",
+        "Bo Zhang",
+        "Fei Fei Zhang",
+        "Chew Wye Chan",
+        "Boon Ping Gan",
+        "Wentong Cai",
+        "Jie Zhang"
+      ],
+      "year": 2025,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2509.15767",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2509.15767",
+      "oa_pdf_url": "https://arxiv.org/pdf/2509.15767",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S3-c1",
+        "text": "tackle the vast space of possible machine-level actions. Our evaluation results cover Intel’s small-scale Minifab model and prelim- inary experiments using the popular SMT2020 testbed. In the largest tested scenario, our trained policy increases throughput and decreases cycle time by about 1.8% each. Keywords: Deep Reinforcement Learning · Semiconductor Manufac- turing · Optimization · Graph Neural Network. 1 Introduction Semiconductor manufacturing is highly complex, involving hundreds of machines and re-entrant operations [17]. As a result, capacity planning plays a critical role in allocating resources to meet product demand and maintain target performance metrics [8]. Typical decisions in capacity planning include changes to machines and their recipe dedication, improving machine uptimes, and improving machine throughputs [24], which are captured in so-called future change lists. In current industry practice, static and dynamic capacity planning tools rely heavily on expert knowledge to identify potential capacity problems and create appropriate † Equally contributed. * Correspondence to Jieyi Bi <jieyi001@e.ntu.edu.sg>. arXiv:2509.15767v1 [cs.LG] 19 Sep 2025 Philipp Andelfinger et al. future change lists [24]. These decisions are driven by combinations of expert knowledge and heuristics. While heuristics rules may consider certain observable statistics of the fab operations, they cannot fully capture the dynamic relations among machines and operations. Moreover, small variations in machine uptime and product mix can cause negligible or enormous impacts on factory perfor-"
+      },
+      {
+        "id": "S3-c2",
+        "text": "heuristics rules may consider certain observable statistics of the fab operations, they cannot fully capture the dynamic relations among machines and operations. Moreover, small variations in machine uptime and product mix can cause negligible or enormous impacts on factory perfor- mance at different periods and are difficult to consider as part of a heuristic [24]. Hence, heuristic-driven capacity planning is likely to leave significant opportu- nities for process improvements untapped. In the present work, we explore the use of deep reinforcement learning (DRL) to train a capacity planning policy that considers the dynamically evolving fab situation and proposes suitable actions in order to improve key performance in- dicators such as throughput and cycle time. In contrast to classical optimization approaches (e.g., [8]), the evolving fab state is represented by discrete-event sim- ulations, which allows for detailed consideration of the time-varying machine and operation features, but also introduces higher complexity and significant com- putational demands. A heterogeneous graph neural network (HGNN) captures the interactions of nodes and the associated operations, extending the scope of the decision-making beyond the local machine level. We present our formulation of the Markov decision process underlying the reinforcement learning task and describe in detail our overall training framework. An industry-grade simulation software suite forms the environment and is exercised in a parallelized setting to quickly gather"
+      },
+      {
+        "id": "S3-c9",
+        "text": "five machines (two for diffu- sion, two for ion implantation, one for lithography) and three products with six operations each, incorporating typical wafer fab attributes such as batch processing, reentrant operations, and operation-dependent setups [9,20,7]; while detailed enough for controlled studies, it is far smaller than real-world fabs. In contrast, the SMT2020 testbed [10] represents 1,314 machines and up to 583 pro- cessing steps per product, with two datasets, “high-volume, low-mix” (HV/LM) and “low-volume, high-mix” (LV/HM), commonly used to evaluate dispatching and scheduling approaches [18,11,29]. We use the more diverse LV/HM dataset, increasing wafer arrivals by 25% to accentuate bottlenecks and test scalabil- ity. Both models are simulated in D-SIMCON [4], a discrete-event engine with Python interface for optimization and machine learning [22,3,27], which cap- tures process flows, dedication, wafer starts, downtimes [23]. D-SIMCON sup- ports state copying during policy rollouts [2], which allows us to periodically realign a no-action baseline trajectory for variance reduction. 4 Philipp Andelfinger et al. 4 Methodology To address the capacity planning MDP formulated in Section 3.1, we train a policy πθ parameterized by an encoder-decoder network. A heterogeneous graph encodes machine-operation and operation-operation interactions; the encoder generates node embeddings, which the attention-based decoder uses to compute action probabilities. The policy is trained via n-step PPO. 4.1 Heterogeneous Graph Construction To model the complex interactions"
+      },
+      {
+        "id": "S3-c16",
+        "text": "training, the parameters of the policy network θ and critic network ϕ are updated accordingly. 7 Philipp Andelfinger et al. Table 2: Impact of HGNN hyper-parameters on performance in Minifab. Hyperparameter Completed Lots ↑ Cycle Time ↓ Daily Going Rate ↑ d = 32 55.06 1.10 265.73 d = 64 55.50 1.08 266.56 d = 128 54.69 1.09 265.26 d = 256 54.69 1.10 266.26 L = 1 55.50 1.08 266.56 L = 2 55.06 1.11 266.09 Table 3: Comparison of fab performance metrics across strategies. Strategy Completed Lots ↑ Cycle Time ↓ Daily Going Rate ↑ GNN 55.50 1.08 266.56 Heuristic 54.63 1.11 265.42 Random 54.63 1.11 265.00 No Action 48.75 1.27 251.09 5 Experiments We evaluate our method on two common simulation-based testbeds (cf. Sec- tion 3.2): Intel’s small-scale Minifab and SMT2020. We train using Adam with learning rates ηθ = 3 × 10−4 (policy) and ηϕ = 10−4 (critic). PPO is configured with n = 5, K = 20, clipping parameter ϵ = 0.2, and discount factor γ = 0.99. We use a batch size of B = 16. In Minifab, actions are taken daily over Ttrain = 5 simulation days; in SMT2020, actions are taken weekly over Ttrain = 25 weeks. We set the HGNN’s layer count to L = 1 for Minifab, to L ="
+      },
+      {
+        "id": "S3-c17",
+        "text": "= 16. In Minifab, actions are taken daily over Ttrain = 5 simulation days; in SMT2020, actions are taken weekly over Ttrain = 25 weeks. We set the HGNN’s layer count to L = 1 for Minifab, to L = 2 for SMT2020, and the hidden dimension to d = 64. As baselines, our results include three strategies: taking no actions, taking random actions, and a heuristic that samples target machines and dedications based on their work-in-progress levels. 5.1 Results on Minifab We first assess the HGNN’s sensitivity to its hyperparameters by varying the hidden dimension d ∈32, 64, 128, 256 and the layer count L ∈1, 2. Each strategy is tested across 16 simulation instances using the same sequence of random seeds to ensure fairness. We evaluate three fab performance indicators: completed lots, average cycle time and daily going rate. As shown in Table 2, the best results are obtained with d = 64 and L = 1, showing that larger dimensions or deeper networks may lead to overfitting or increased optimization difficulty. We evaluate the effectiveness of our HGNN in the Minifab environment by comparing it against our baselines. As shown in Table 4, our method consistently outperforms all baselines: it achieves a 1.59% increase in completed lots and a 2.70% reduction in cycle time compared to the"
+      },
+      {
+        "id": "S3-c18",
+        "text": "HGNN in the Minifab environment by comparing it against our baselines. As shown in Table 4, our method consistently outperforms all baselines: it achieves a 1.59% increase in completed lots and a 2.70% reduction in cycle time compared to the heuristic and random decisions. Against the no-action baseline, the improvements are more pronounced, with 13.85% higher throughput and 14.96% lower cycle time. 8 Philipp Andelfinger et al. Table 4: Improvement of GNN over the baseline strategies in Minifab. GNN vs. Completed Lots Cycle Time Daily Going Rate Heuristic 1.59% (+0.87) 2.70% (-0.03 days) 0.43% (+1.14) Random 1.59% (+0.87) 2.70% (-0.03 days) 0.59% (+1.56) No Action 13.85% (+6.75) 14.96% (-0.19 days) 6.16% (+15.47) Table 5: Performance comparison across different methods in SMT2020. Strategy Completed Lots ↑ Cycle Time ↓ Daily Going Rate ↑ GNN 6019.75 59.100 749.79 Heuristic 5909.44 60.181 736.99 Random 5904.13 60.211 736.65 No Action 5872.94 60.507 732.58 Table 6: Improvement of GNN over the baseline strategies in SMT2020. GNN vs. Completed Lots Cycle Time Daily Going Rate Heuristic 1.87% (+110.3) 1.80% (-1.08 days) 1.74% (+12.80) Random 1.96% (+115.6) 1.85% (-1.11 days) 1.78% (+13.14) No Action 2.50% (+146.8) 2.33% (-1.41 days) 2.35% (+17.21) 0 20 40 Epoch 748 749 750 751 Daily Going Rate 0 20 40 Epoch 6000 6020 Completed Lots 0 20 40 Epoch 59.0 59.2 59.4"
+      },
+      {
+        "id": "S3-c21",
+        "text": "for all simulator instances, we expect significantly lower variance in the rewards. Furthermore, to constrain the action space, we omit dedication actions, allowing only for changes to the machines’ efficiencies and uptimes. In addition to our reward formulation using the difference in KPIs with and without actions, we include a variant using the difference between the current KPI and an exponential moving average (EMA) of the weekly KPIs from previous epochs. The results shown in Figure 5 sug- gest that the observed decline is not dependent on these factors. As in the 25- week training, the learned actions trend towards their initial frequencies as the KPIs begin to decrease. We are currently investigating appropriate regulariza- tion measures [6] in order to achieve reliable convergence to high-quality policies in long-term training runs. 6 Conclusion and Future Work We presented a GNN-based deep reinforcement learning framework for optimiz- ing capacity planning decisions in semiconductor manufacturing. Experiments using the small-scale Minifab testbed allowed us to select suitable hyperpa- rameters and showed the general ability to learn effective capacity planning decisions. We subsequently applied our approach to the larger-scale SMT2020 testbed, which includes many of the characteristics of real-world wafer fabs and approaches their scale, increasing throughput by about 1.8%, which is a signifi- cant improvement in the semiconductor manufacturing context. Our future work"
+      },
+      {
+        "id": "S3-c22",
+        "text": "our approach to the larger-scale SMT2020 testbed, which includes many of the characteristics of real-world wafer fabs and approaches their scale, increasing throughput by about 1.8%, which is a signifi- cant improvement in the semiconductor manufacturing context. Our future work will explore three main avenues. Firstly, we will explore im- provements to the training stability to support gradual improvement of the policy during long-term training. Secondly, to support real-world decision-making, the costs incurred by different actions must be taken into account and unprofitable actions avoided. Finally, experiments on industry-scale simulation models will evaluate the scalability of our framework beyond common testbeds. To support targeted proactive decisions in more dynamic settings, information about future wafer starts will be incorporated in the fab state representation. Acknowledgments. This research is supported in part by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award No: AISG3- RP-2022-031) and in part by the National Research Foundation, Singapore under its AI Singapore Programme (AISG Award No: AISG2-100E-2024-130). 10 Philipp Andelfinger et al."
+      }
+    ]
+  },
+  {
+    "key": "S4",
+    "record": {
+      "id": "arxiv:2606.10705",
+      "title": "Event-Driven Reinforcement Learning Enables Long-Horizon Control in Semiconductor Fabrication",
+      "abstract": "Reinforcement learning promises to optimize sequential decisions in large-scale systems. Semiconductor manufacturing systems are stochastic and highly constrained environments where heterogeneous wafers traverse hundreds of processing steps across extensive equipment networks. These characteristics yield complex, high-dimensional decision problems with delayed feedback and long-horizon requirements, complicating production planning and control. We propose a deep reinforcement learning framework for multi-objective policy optimization at this scale. Specifically, we formulate control as a centralized-agent problem, where a core policy coordinates system-wide decisions, while system evolution is represented as an interconnected temporal process driven by discrete events. Accordingly, we develop a tailored event-driven temporal-difference formulation that remains general and can be integrated with various policy optimization methods under relevant training settings. We investigate several core model-free algorithms incorporated into this framework and evaluate their effectiveness using high-fidelity simulations of diverse, industry-real operating scenarios. Across extensive validation experiments, agents trained in both offline and online settings show significant and consistent gains in throughput and utilization. We further evaluate performance and generalization across training phases, clarifying the relative strengths of alternative reinforcement learning formulations and algorithms. Overall, the results support the scalability, generality, and transferability of the proposed framework for controlling event-driven complex adaptive systems.",
+      "authors": [
+        "Yavar Yeganeh",
+        "Mahsa Shekari",
+        "Nicla Frigerio",
+        "Daniele Pagano",
+        "Andrea Matta"
+      ],
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2606.10705",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2606.10705",
+      "oa_pdf_url": "https://arxiv.org/pdf/2606.10705",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S4-c0",
+        "text": "Event-Driven Reinforcement Learning Enables Long-Horizon Control in Semiconductor Fabrication Preprint Yavar Yeganeh 1∗ Mahsa Shekari 1 Nicla Frigerio 1 Daniele Pagano 2 Andrea Matta 1 1 Politecnico di Milano 2 STMicroelectronics Abstract Reinforcement learning promises to optimize sequential decisions in large-scale systems. Semiconductor manufacturing systems are stochastic and highly constrained environments where heterogeneous wafers traverse hundreds of processing steps across extensive equipment networks. These characteristics yield complex, high-dimensional decision problems with delayed feedback and long-horizon requirements, complicating production planning and control. We propose a deep reinforcement learning framework for multi-objective policy optimization at this scale. Specifically, we formulate control as a centralized-agent problem, where a core policy coordinates system-wide decisions, while system evolution is represented as an interconnected temporal process driven by discrete events. Accordingly, we develop a tailored event-driven temporal-difference formulation that remains general and can be integrated with various policy optimization methods under relevant training settings. We investigate several core model-free algorithms incorporated into this framework and evaluate their effectiveness using high-fidelity simulations of diverse, industry-real operating scenarios. Across extensive validation experiments, agents trained in both offline and online settings show significant and consistent gains in throughput and utilization. We further evaluate performance and generalization across training phases, clarifying the relative strengths of alternative reinforcement learning formulations and algorithms. Overall, the results support the scalability, generality, and transferability"
+      },
+      {
+        "id": "S4-c1",
+        "text": "online settings show significant and consistent gains in throughput and utilization. We further evaluate performance and generalization across training phases, clarifying the relative strengths of alternative reinforcement learning formulations and algorithms. Overall, the results support the scalability, generality, and transferability of the proposed framework for controlling event-driven complex adaptive systems. 1 Introduction Semiconductor manufacturing is critical for advancements across diverse sectors, including computing, electron- ics, telecommunications, transportation, and healthcare. However, front-end wafer fabrication (fab) remains among the most demanding production environments [1]. In fabs, wafers traverse long, re-entrant process flows across heterogeneous equipment, subject to stochastic processing times, transport delays, and equipment failures. Numerous wafers are processed simultaneously across equipment with batching requirements and diverse product mixes, all while adhering to technological and quality constraints. This dynamic environment results in continuously evolving state and bottleneck conditions. These characteristics make semiconductor fabs a representative example of complex adaptive systems: large-scale systems composed of many interacting components whose collective behavior evolves through local decisions, stochastic disturbances, resource constraints, and feedback effects. Similar event-driven, interconnected, multi-stage structures also arise in healthcare operations, logistics and supply chains, advanced manufacturing, and telecommunication networks. Effective decision-making and planning in such fabs is essential and occurs across multiple hierarchical levels ∗Correspondence to yavar.taheri@polimi.it arXiv:2606.10705v1 [cs.LG] 9 Jun 2026 Event-Driven RL for Long-Horizon Control Preprint to optimize competing"
+      },
+      {
+        "id": "S4-c5",
+        "text": "RL framework. We introduce a framework for efficient policy interaction and optimization in complex adaptive systems, with semiconductor fabrication serving as a challenging, real-world, large-scale representative. • Centralized formulation. We formulate fab control as a centralized policy-optimization problem over event-driven system dynamics, enabling system-wide decision-making under diverse operating conditions. • Multi-phase policy optimization. We develop tailored RL formulations and training strategies that support learning across offline and online phases while remaining compatible with different policy- optimization methods. • Generalization-focused evaluation. We provide a comprehensive evaluation of performance, general- ization, and transferability across diverse operating scenarios, demonstrating consistent performance gains and clarifying the relative behavior of alternative RL formulations and algorithms. The remainder of this paper is organized as follows. Section 2 reviews related work. Section 3 introduces the methodological framework that investigates policy optimization. Section 4 presents experimental results and ablation studies. Section 5 discusses the implications of the findings and outlines directions for future research, followed by the conclusion in Section 6. 2 Event-Driven RL for Long-Horizon Control Preprint 2 Related Work Existing fab studies differ in action abstraction. Some methods select among predefined dispatching rules, keeping the action space compact and compatible with industrial control logic [19, 24]. Finer-grained formulations instead directly select candidate lots or learn priority scores, providing greater control resolution but creating variable, state-dependent action"
+      },
+      {
+        "id": "S4-c33",
+        "text": "offline training, the aggregation horizon was adaptive and defined by sampling individual events with only event-level (shaped [54]) reward. During online training, it was fixed to 360-minute segments, which were sampled from replay for off-policy methods such as DQL and SAC, and aligned with the most recent interaction data for the on-policy method PPO. To further reflect realistic computational constraints, we also imposed a maximum GPU-time budget for all training of 2 days offline and 5 days online. 11 Event-Driven RL for Long-Horizon Control Preprint 4.3 Numerical Evaluation We followed a rigorous evaluation protocol consisting of 30 scenario–seed evaluation instances, obtained from 10 independent test scenarios and three initialization seeds per scenario. This helps obtain an aggregated estimate of each agent’s performance over diverse operating conditions. All experiments were conducted using a high-fidelity simulator based on real industrial data. For referencing performance, the random policy is included as a no-control, shortest processing time (SPT) is included as a dispatching heuristic aligned with the processing-time component of the reward, and first-in-first-out (FIFO) is used as the deterministic baseline for computing relative KPI gains and aggregating performance across test scenarios. See Appendix F.2 for details of the evaluation procedure, performance-metric computation, and statistical reporting. 4.3.1 Offline We consider a challenging offline control setting in which the dataset is collected under the random"
+      },
+      {
+        "id": "S4-c47",
+        "text": "were not used. Instead, training relied on scalar rewards assigned to 360-minute segments that covered many actions (often thousands). Through the aggregation mechanism, these coarse rewards were propagated to individual action-event pairs, enabling effective policy improvements, as evidenced by the results. This is also clearly shown in Table 7: even without a pretrained agent and using only global reward training, the method achieved strong performance after just 7,500 gradient steps. Including the event reward also performed worse there, although it can accelerate online training in some cases. Algorithmic Perspective The results obtained with different algorithms tailored to the proposed formu- lation provide several insights. Rather than focusing on exhaustive tuning of algorithm-specific settings, this study investigates the proposed framework and how RL conceptualization can support effective and scalable policy optimization. A strict comparison of algorithmic superiority would require careful and method-specific hyperparameter tuning, which is beyond the scope of this work. To maintain fairness, we kept the main hyperparameters and training settings, including learning rates and gradient steps, as consistent as possible across methods. For offline policy optimization, conservatism is important. CQL and IQL achieved relatively close performance compared to DQL, which is more prone to overestimation. It is worth noting that both CQL and IQL are more complex to train, and IQL involves more network components than DQL, so"
+      },
+      {
+        "id": "S4-c48",
+        "text": "important. CQL and IQL achieved relatively close performance compared to DQL, which is more prone to overestimation. It is worth noting that both CQL and IQL are more complex to train, and IQL involves more network components than DQL, so improved training strategies may further enhance their performance. These findings also reinforce the importance of model selection during offline training. Among the offline methods, the Q-learning version of CQL performed well, while its entropy-regularized version may be a promising candidate for a pretrained high-entropy policy for online fine-tuning with respect to exploration. IQL, which learns a value function via expectile regression [23] and performs policy extraction, is more sensitive to hyperparameters than DQL and CQL, but provides stronger theoretical grounding and enables more conservative policy extraction. In the online setting, off-policy methods, namely DQL and SAC, have higher sample efficiency, whereas the on-policy methods (PPO) are more sensitive to data for optimization. DQL remained the simplest yet effective value-based approach. PPO, on the other hand, provides a stable policy-gradient framework, although its performance depends strongly on architectural choices and advantage estimation. The results suggest that combining Q- and V-based architectures can improve PPO performance. SAC, which combines sample efficiency with entropy regularization, offers a natural formulation for stochastic policy learning and exploration control. This is reflected in its strong performance,"
+      },
+      {
+        "id": "S4-c49",
+        "text": "estimation. The results suggest that combining Q- and V-based architectures can improve PPO performance. SAC, which combines sample efficiency with entropy regularization, offers a natural formulation for stochastic policy learning and exploration control. This is reflected in its strong performance, particularly when the target entropy was adapted. Keeping the entropy objective higher to encourage exploration resulted in a notable performance gain. Overall, both PPO 17 Event-Driven RL for Long-Horizon Control Preprint and SAC show strong theoretical promise, and the results support their applicability within the proposed framework. 6 Conclusion We addressed the core challenge of applying RL to semiconductor manufacturing control in a real large-scale setting. The proposed framework was designed to cope with computational bottlenecks, delayed feedback, long-horizon credit assignment, and the need for adaptive decision-making in a dynamic system. By combining an event-driven formulation, a centralized learning architecture, and a tailored optimization strategy, the framework enables agents to optimize multiple system-relevant KPIs in a high-fidelity digital twin across different algorithms. The numerical results show that the learned policies achieve consistent gains over conventional baselines, confirming that both careful problem formulation and algorithm design are critical for efficient agents. The study also answers the research questions of how reinforcement learning can be formulated in a scalable and effective way for semiconductor production control and applied to similar complex adaptive"
+      },
+      {
+        "id": "S4-c50",
+        "text": "problem formulation and algorithm design are critical for efficient agents. The study also answers the research questions of how reinforcement learning can be formulated in a scalable and effective way for semiconductor production control and applied to similar complex adaptive systems. Overall, the proposed policy-optimization strategy combines standard deep RL backbones with tailored temporal-difference constructions for event-driven, delayed, and tightly coupled system dynamics. Offline training provides conservative and data-efficient pretraining, while online training supports further improvement through constrained exploration and stable learning, resulting in a general and flexible framework that can support diverse optimization objectives under different constraints. Future Work Several methodological directions follow from this work. A limitation of the present study is that state and action representations are feature-based; learned encoders, graph-based representations, and foundation-model-assisted representations may further improve transferability and are left for future work. The framework, therefore can be extended along multiple axes, including representation learning (e.g., graph-based models to better capture system structure), average-reward formulations, stability-enhancing optimization methods, alternative aggregation mechanisms, and improved training procedures and regular- ization. Systematic hyperparameter tuning and benchmarking are also needed, with additional algorithms adjusted to the formulation. A promising direction is the use of model-based agents, as well as incorporating self-supervised and generative models to better learn system dynamics [44, 69]. While the proposed event- group temporal-difference objective improves"
+      }
+    ]
+  },
+  {
+    "key": "S5",
+    "record": {
+      "id": "doi:10.1080/00207543.2023.2233641",
+      "title": "A deep reinforcement learning based hyper-heuristic for modular production control",
+      "abstract": "In nowadays production, fluctuations in demand, shortening product life-cycles, and highly configurable products require an adaptive and robust control approach to maintain competitiveness.This approach must not only optimise desired production objectives but also cope with unforeseen machine failures, rush orders, and changes in short-term demand.Previous control approaches were often implemented using a single operations layer and a standalone deep learning approach, which may not adequately address the complex organisational demands of modern manufacturing systems.To address this challenge, we propose a hyper-heuristics control model within a semi-heterarchical production system, in which multiple manufacturing and distribution agents are spread across pre-defined modules.The agents employ a deep reinforcement learning algorithm to learn a policy for selecting low-level heuristics in a situation-specific manner, thereby leveraging system performance and adaptability.We tested our approach in simulation and transferred it to a hybrid production environment.By that, we were able to demonstrate its multi-objective optimisation capabilities compared to conventional approaches in terms of mean throughput time, tardiness, and processing of prioritised orders in a multi-layered production system.The modular design is promising in reducing the overall system complexity and facilitates a quick and seamless integration into other scenarios.",
+      "authors": [
+        "Marcel Panzer",
+        "Benedict Bender",
+        "Norbert Gronau"
+      ],
+      "year": 2023,
+      "doi": "10.1080/00207543.2023.2233641",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "International Journal of Production Research",
+      "url": "https://openalex.org/W4383906732",
+      "oa_pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2023.2233641?download=true",
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S5-c0",
+        "text": "A deep reinforcement learning based hyper-heuristic for modular production control. In nowadays production, fluctuations in demand, shortening product life-cycles, and highly configurable products require an adaptive and robust control approach to maintain competitiveness.This approach must not only optimise desired production objectives but also cope with unforeseen machine failures, rush orders, and changes in short-term demand.Previous control approaches were often implemented using a single operations layer and a standalone deep learning approach, which may not adequately address the complex organisational demands of modern manufacturing systems.To address this challenge, we propose a hyper-heuristics control model within a semi-heterarchical production system, in which multiple manufacturing and distribution agents are spread across pre-defined modules.The agents employ a deep reinforcement learning algorithm to learn a policy for selecting low-level heuristics in a situation-specific manner, thereby leveraging system performance and adaptability.We tested our approach in simulation and transferred it to a hybrid production environment.By that, we were able to demonstrate its multi-objective optimisation capabilities compared to conventional approaches in terms of mean throughput time, tardiness, and processing of prioritised orders in a multi-layered production system.The modular design is promising in reducing the overall system complexity and facilitates a quick and seamless integration into other scenarios."
+      }
+    ]
+  },
+  {
+    "key": "S6",
+    "record": {
+      "id": "doi:10.1016/j.knosys.2022.108765",
+      "title": "Average reward adjusted deep reinforcement learning for order release planning in manufacturing",
+      "abstract": "One of the key challenges in production planning, especially in discrete manufacturing, is to determine when to release which orders to the shop floor. The major aim of this planning task is to balance Work-In-Process (WIP) and utilisation levels together with timely completion of orders. The two most crucial attributes of production planning are (i) the highly nonlinear relationship between WIP, flow times and output, and (ii) the dynamically changing environment. Nonetheless, most state-of-the-art models use static lead times to address this problem. Only recently, some papers set lead times dynamically based on the flow time forecasts to react to the dynamic operational characteristics reporting promising results. This paper contributes to this line of research by presenting an order release model that uses reinforcement learning (RL) to set lead times dynamically over time. The applied RL agent is especially designed for processes with periodic feedback and highly variable context. We compare the performance of our new RL algorithm to static order release models and state-of-the-art deep Q-Learning agents by using a multi-stage, multi-product flow-shop simulation model. The results show that, especially for scenarios with high utilisation, our proposed method outperforms the other approaches.",
+      "authors": [
+        "Manuel Schneckenreither",
+        "Stefan Haeussler",
+        "Juanjo Peiró"
+      ],
+      "year": 2022,
+      "doi": "10.1016/j.knosys.2022.108765",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "Knowledge-Based Systems",
+      "url": "https://openalex.org/W4223559272",
+      "oa_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0950705122003598/pdf",
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S6-c0",
+        "text": "Average reward adjusted deep reinforcement learning for order release planning in manufacturing. One of the key challenges in production planning, especially in discrete manufacturing, is to determine when to release which orders to the shop floor. The major aim of this planning task is to balance Work-In-Process (WIP) and utilisation levels together with timely completion of orders. The two most crucial attributes of production planning are (i) the highly nonlinear relationship between WIP, flow times and output, and (ii) the dynamically changing environment. Nonetheless, most state-of-the-art models use static lead times to address this problem. Only recently, some papers set lead times dynamically based on the flow time forecasts to react to the dynamic operational characteristics reporting promising results. This paper contributes to this line of research by presenting an order release model that uses reinforcement learning (RL) to set lead times dynamically over time. The applied RL agent is especially designed for processes with periodic feedback and highly variable context. We compare the performance of our new RL algorithm to static order release models and state-of-the-art deep Q-Learning agents by using a multi-stage, multi-product flow-shop simulation model. The results show that, especially for scenarios with high utilisation, our proposed method outperforms the other approaches."
+      }
+    ]
+  }
+]

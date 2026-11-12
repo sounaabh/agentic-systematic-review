@@ -1,0 +1,43 @@
+{
+  "research_question": "What is the effectiveness of deep reinforcement learning and adaptive AI approaches for dynamic production planning and scheduling under disruptions?",
+  "population": "Manufacturing production systems, including production lines, factories, and manufacturing plants.",
+  "intervention": "Deep reinforcement learning (DRL) and adaptive AI techniques applied to dynamic production planning and scheduling.",
+  "comparator": "none / not required",
+  "outcomes": [
+    "Improvement in production throughput",
+    "Reduction in lead time",
+    "Decrease in inventory levels",
+    "Increase in resource utilization",
+    "Resilience to disruptions (e.g., downtime, supply chain interruptions)",
+    "Computational efficiency (runtime, scalability)",
+    "Cost savings"
+  ],
+  "context": "Industrial manufacturing environments experiencing disruptions such as equipment failures, supply chain interruptions, or demand variability.",
+  "study_designs": [
+    "Experimental studies (simulation or real‑world trials)",
+    "Quasi‑experimental studies (pre‑post, interrupted time series)",
+    "Observational studies (case studies, field studies)",
+    "Simulation studies",
+    "Benchmarking studies"
+  ],
+  "inclusion_criteria": [
+    "Title and abstract mention deep reinforcement learning or adaptive AI applied to production planning or scheduling.",
+    "Population refers to manufacturing production systems or manufacturing plants.",
+    "Intervention explicitly involves DRL or adaptive AI techniques.",
+    "At least one of the specified outcomes is reported.",
+    "Study design is experimental, quasi‑experimental, observational, simulation, or benchmarking.",
+    "Paper is available in full text and includes quantitative or qualitative data."
+  ],
+  "exclusion_criteria": [
+    "Non‑English language.",
+    "Editorials, opinion pieces, or commentaries without empirical data.",
+    "Studies that do not involve DRL or adaptive AI as the primary intervention.",
+    "Papers focusing solely on theoretical algorithm development without application to production planning/scheduling.",
+    "Studies that only report on static planning/scheduling without dynamic or disruption context.",
+    "Conference abstracts or posters without full manuscript."
+  ],
+  "year_from": 2020,
+  "languages": [
+    "English"
+  ]
+}

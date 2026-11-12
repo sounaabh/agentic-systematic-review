@@ -1,0 +1,842 @@
+[
+  {
+    "id": "doi:10.1109/tnnls.2021.3121870",
+    "title": "Deep Reinforcement Learning for Cyber Security",
+    "abstract": "The scale of Internet-connected systems has increased considerably, and these systems are being exposed to cyberattacks more than ever. The complexity and dynamics of cyberattacks require protecting mechanisms to be responsive, adaptive, and scalable. Machine learning, or more specifically deep reinforcement learning (DRL), methods have been proposed widely to address these issues. By incorporating deep learning into traditional RL, DRL is highly capable of solving complex, dynamic, and especially high-dimensional cyber defense problems. This article presents a survey of DRL approaches developed for cyber security. We touch on different vital aspects, including DRL-based security methods for cyber-physical systems, autonomous intrusion detection techniques, and multiagent DRL-based game theory simulations for defense strategies against cyberattacks. Extensive discussions and future research directions on DRL-based cyber security are also given. We expect that this comprehensive review provides the foundations for and facilitates future studies on exploring the potential of emerging DRL to cope with increasingly complex cyber security problems.",
+    "authors": [
+      "Thanh Thi Nguyen",
+      "Vijay Janapa Reddi"
+    ],
+    "year": 2021,
+    "doi": "10.1109/tnnls.2021.3121870",
+    "pmid": "34723814",
+    "arxiv_id": null,
+    "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+    "url": "https://openalex.org/W2952298682",
+    "oa_pdf_url": "https://arxiv.org/pdf/1906.05799",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2511.07707",
+    "title": "A Negotiation-Based Multi-Agent Reinforcement Learning Approach for Dynamic Scheduling of Reconfigurable Manufacturing Systems",
+    "abstract": "Reconfigurable manufacturing systems (RMS) are critical for future market adjustment given their rapid adaptation to fluctuations in consumer demands, the introduction of new technological advances, and disruptions in linked supply chain sections. The adjustable hard settings of such systems require a flexible soft planning mechanism that enables realtime production planning and scheduling amid the existing complexity and variability in their configuration settings. This study explores the application of multi agent reinforcement learning (MARL) for dynamic scheduling in soft planning of the RMS settings. In the proposed framework, deep Qnetwork (DQN) agents trained in centralized training learn optimal job machine assignments in real time while adapting to stochastic events such as machine breakdowns and reconfiguration delays. The model also incorporates a negotiation with an attention mechanism to enhance state representation and improve decision focus on critical system features. Key DQN enhancements including prioritized experience replay, nstep returns, double DQN and soft target update are used to stabilize and accelerate learning. Experiments conducted in a simulated RMS environment demonstrate that the proposed approach outperforms baseline heuristics in reducing makespan and tardiness while improving machine utilization. The reconfigurable manufacturing environment was extended to simulate realistic challenges, including machine failures and reconfiguration times. Experimental results show that while the enhanced DQN agent is effective in adapting to dynamic conditions, machine breakdowns increase variability in key performance metrics such as makespan, throughput, and total tardiness. The results confirm the advantages of applying the MARL mechanism for intelligent and adaptive scheduling in dynamic reconfigurable manufacturing environments.",
+    "authors": [
+      "Manonmani Sekar",
+      "Nasim Nezamoddini"
+    ],
+    "year": 2025,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2511.07707",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2511.07707",
+    "oa_pdf_url": "https://arxiv.org/pdf/2511.07707",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.eswa.2020.113701",
+    "title": "Deep reinforcement learning based preventive maintenance policy for serial production lines",
+    "abstract": "",
+    "authors": [
+      "Jing Huang",
+      "Qing Chang",
+      "Jorge F. Arinez"
+    ],
+    "year": 2020,
+    "doi": "10.1016/j.eswa.2020.113701",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Expert Systems with Applications",
+    "url": "https://openalex.org/W3037319445",
+    "oa_pdf_url": "https://www.sciencedirect.com/science/article/am/pii/S095741742030525X?via%3Dihub",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2509.15767",
+    "title": "Learning to Optimize Capacity Planning in Semiconductor Manufacturing",
+    "abstract": "In manufacturing, capacity planning is the process of allocating production resources in accordance with variable demand. The current industry practice in semiconductor manufacturing typically applies heuristic rules to prioritize actions, such as future change lists that account for incoming machine and recipe dedications. However, while offering interpretability, heuristics cannot easily account for the complex interactions along the process flow that can gradually lead to the formation of bottlenecks. Here, we present a neural network-based model for capacity planning on the level of individual machines, trained using deep reinforcement learning. By representing the policy using a heterogeneous graph neural network, the model directly captures the diverse relationships among machines and processing steps, allowing for proactive decision-making. We describe several measures taken to achieve sufficient scalability to tackle the vast space of possible machine-level actions. Our evaluation results cover Intel's small-scale Minifab model and preliminary experiments using the popular SMT2020 testbed. In the largest tested scenario, our trained policy increases throughput and decreases cycle time by about 1.8% each.",
+    "authors": [
+      "Philipp Andelfinger",
+      "Jieyi Bi",
+      "Qiuyu Zhu",
+      "Jianan Zhou",
+      "Bo Zhang",
+      "Fei Fei Zhang",
+      "Chew Wye Chan",
+      "Boon Ping Gan",
+      "Wentong Cai",
+      "Jie Zhang"
+    ],
+    "year": 2025,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2509.15767",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2509.15767",
+    "oa_pdf_url": "https://arxiv.org/pdf/2509.15767",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.cie.2025.110966",
+    "title": "Adaptive manufacturing control with Deep Reinforcement Learning for dynamic WIP management in industry 4.0",
+    "abstract": "In the context of Industry 4.0, manufacturing systems face increased complexity and uncertainty due to elevated product customisation and demand variability. This paper presents a novel framework for adaptive Work-In-Progress (WIP) control in semi-heterarchical architectures, addressing the limitations of traditional analytical methods that rely on exponential processing time distributions. Integrating Deep Reinforcement Learning (DRL) with Discrete Event Simulation (DES) enables model-free control of flow-shop production systems under non-exponential, stochastic processing times. A Deep Q-Network (DQN) agent dynamically manages WIP levels in a CONstant Work In Progress (CONWIP) environment, learning optimal control policies directly from system interactions. The framework’s effectiveness is demonstrated through extensive experiments with varying machine numbers, processing times, and system variability. The results show robust performance in tracking the target throughput and adapting the processing time variability, achieving Mean Absolute Percentual Errors (MAPE) in the throughput – calculated as the percentage difference between the actual and the target throughput – ranging from 0.3% to 2.3% with standard deviations of 5. 5% to 8. 4%. Key contributions include the development of a data-driven WIP control approach to overcome analytical methods’ limitations in stochastic environments, validating DQN agent adaptability across varying production scenarios, and demonstrating framework scalability in realistic manufacturing settings. This research bridges the gap between conventional WIP control methods and Industry 4.0 requirements, offering manufacturers an adaptive solution for enhanced production efficiency. • Proposes an adaptive WIP control for Industry 4.0 with Reinforcement Learning (RL). • Utilises Deep Q-Networks for model-free WIP control in semi-heterarchical systems. • Shows robust RL performance with minimal errors in varied production scenarios. • Bridges the gap between traditional methods and complex manufacturing demands. • Validated via simulations, ensuring improved responsiveness and efficiency.",
+    "authors": [
+      "Silvestro Vespoli",
+      "Giulio Mattera",
+      "Maria Grazia Marchesano",
+      "Luigi Nele",
+      "Guido Guizzi"
+    ],
+    "year": 2025,
+    "doi": "10.1016/j.cie.2025.110966",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Computers & Industrial Engineering",
+    "url": "https://openalex.org/W4407640780",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2606.10705",
+    "title": "Event-Driven Reinforcement Learning Enables Long-Horizon Control in Semiconductor Fabrication",
+    "abstract": "Reinforcement learning promises to optimize sequential decisions in large-scale systems. Semiconductor manufacturing systems are stochastic and highly constrained environments where heterogeneous wafers traverse hundreds of processing steps across extensive equipment networks. These characteristics yield complex, high-dimensional decision problems with delayed feedback and long-horizon requirements, complicating production planning and control. We propose a deep reinforcement learning framework for multi-objective policy optimization at this scale. Specifically, we formulate control as a centralized-agent problem, where a core policy coordinates system-wide decisions, while system evolution is represented as an interconnected temporal process driven by discrete events. Accordingly, we develop a tailored event-driven temporal-difference formulation that remains general and can be integrated with various policy optimization methods under relevant training settings. We investigate several core model-free algorithms incorporated into this framework and evaluate their effectiveness using high-fidelity simulations of diverse, industry-real operating scenarios. Across extensive validation experiments, agents trained in both offline and online settings show significant and consistent gains in throughput and utilization. We further evaluate performance and generalization across training phases, clarifying the relative strengths of alternative reinforcement learning formulations and algorithms. Overall, the results support the scalability, generality, and transferability of the proposed framework for controlling event-driven complex adaptive systems.",
+    "authors": [
+      "Yavar Yeganeh",
+      "Mahsa Shekari",
+      "Nicla Frigerio",
+      "Daniele Pagano",
+      "Andrea Matta"
+    ],
+    "year": 2026,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2606.10705",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2606.10705",
+    "oa_pdf_url": "https://arxiv.org/pdf/2606.10705",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.jmsy.2020.02.004",
+    "title": "Petri-net-based dynamic scheduling of flexible manufacturing system via deep reinforcement learning with graph convolutional network",
+    "abstract": "",
+    "authors": [
+      "Liang Hu",
+      "Zhenyu Liu",
+      "Weifei Hu",
+      "Yueyang Wang",
+      "Jianrong Tan",
+      "Fei Qing Wu"
+    ],
+    "year": 2020,
+    "doi": "10.1016/j.jmsy.2020.02.004",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Journal of Manufacturing Systems",
+    "url": "https://openalex.org/W3008389987",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2610.40421",
+    "title": "Uncertainty-aware Feedback Loop Diagnosis: integrating reinforcement learning and conformal prediction for reliable wafer defect classification",
+    "abstract": "Semiconductor manufacturing is a complex, multi-step process that requires both high precision and low operating costs. Therefore, detecting defects in a high-volume setting is an important component of wafer map analysis for reliable production. However, most state-of-the-art deep learning approaches require a full scan of the surface, which hinders the development of high-throughput inspection systems. To address this problem, we propose Uncertainty-aware Feedback Loop Diagnosis (UFLD), a novel algorithm that employs reinforcement learning for adaptive measurement acquisition and provides a prediction uncertainty level after each step, stopping the process once sufficient information is obtained. Unlike existing methods that rely on ensemble models or auxiliary confidence estimation deep learning models, UFLD utilizes a more parameter-efficient conformal prediction framework to determine the optimal stopping time. The proposed UFLD reduces acquisition time by about $40\\%$ and achieves $98.4\\%$ inspection accuracy, without requiring an additional learned confidence-estimation network. We validated our approach on the MixedWM38 dataset, demonstrating its advantages over existing adaptive acquisition procedures and standard convolutional neural networks.",
+    "authors": [
+      "Aleksandr Dekhovich",
+      "Carlas Smith",
+      "Oleg Soloviev"
+    ],
+    "year": 2026,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2610.40421",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2610.40421",
+    "oa_pdf_url": "https://arxiv.org/pdf/2610.40421",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1080/00207543.2023.2233641",
+    "title": "A deep reinforcement learning based hyper-heuristic for modular production control",
+    "abstract": "In nowadays production, fluctuations in demand, shortening product life-cycles, and highly configurable products require an adaptive and robust control approach to maintain competitiveness.This approach must not only optimise desired production objectives but also cope with unforeseen machine failures, rush orders, and changes in short-term demand.Previous control approaches were often implemented using a single operations layer and a standalone deep learning approach, which may not adequately address the complex organisational demands of modern manufacturing systems.To address this challenge, we propose a hyper-heuristics control model within a semi-heterarchical production system, in which multiple manufacturing and distribution agents are spread across pre-defined modules.The agents employ a deep reinforcement learning algorithm to learn a policy for selecting low-level heuristics in a situation-specific manner, thereby leveraging system performance and adaptability.We tested our approach in simulation and transferred it to a hybrid production environment.By that, we were able to demonstrate its multi-objective optimisation capabilities compared to conventional approaches in terms of mean throughput time, tardiness, and processing of prioritised orders in a multi-layered production system.The modular design is promising in reducing the overall system complexity and facilitates a quick and seamless integration into other scenarios.",
+    "authors": [
+      "Marcel Panzer",
+      "Benedict Bender",
+      "Norbert Gronau"
+    ],
+    "year": 2023,
+    "doi": "10.1080/00207543.2023.2233641",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "International Journal of Production Research",
+    "url": "https://openalex.org/W4383906732",
+    "oa_pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/00207543.2023.2233641?download=true",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2306.03158",
+    "title": "Task-Oriented Metaverse Design in the 6G Era",
+    "abstract": "As an emerging concept, the Metaverse has the potential to revolutionize the social interaction in the post-pandemic era by establishing a digital world for online education, remote healthcare, immersive business, intelligent transportation, and advanced manufacturing. The goal is ambitious, yet the methodologies and technologies to achieve the full vision of the Metaverse remain unclear. In this paper, we first introduce the three infrastructure pillars that lay the foundation of the Metaverse, i.e., human-computer interfaces, sensing and communication systems, and network architectures. Then, we depict the roadmap towards the Metaverse that consists of four stages with different applications. To support diverse applications in the Metaverse, we put forward a novel design methodology: task-oriented design, and further review the challenges and the potential solutions. In the case study, we develop a prototype to illustrate how to synchronize a real-world device and its digital model in the Metaverse by task-oriented design, where a deep reinforcement learning algorithm is adopted to minimize the required communication throughput by optimizing the sampling and prediction systems subject to a synchronization error constraint.",
+    "authors": [
+      "Zhen Meng",
+      "Changyang She",
+      "Guodong Zhao",
+      "Muhammad A. Imran",
+      "Mischa Dohler",
+      "Yonghui Li",
+      "Branka Vucetic"
+    ],
+    "year": 2023,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2306.03158",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2306.03158",
+    "oa_pdf_url": "https://arxiv.org/pdf/2306.03158",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.knosys.2022.108765",
+    "title": "Average reward adjusted deep reinforcement learning for order release planning in manufacturing",
+    "abstract": "One of the key challenges in production planning, especially in discrete manufacturing, is to determine when to release which orders to the shop floor. The major aim of this planning task is to balance Work-In-Process (WIP) and utilisation levels together with timely completion of orders. The two most crucial attributes of production planning are (i) the highly nonlinear relationship between WIP, flow times and output, and (ii) the dynamically changing environment. Nonetheless, most state-of-the-art models use static lead times to address this problem. Only recently, some papers set lead times dynamically based on the flow time forecasts to react to the dynamic operational characteristics reporting promising results. This paper contributes to this line of research by presenting an order release model that uses reinforcement learning (RL) to set lead times dynamically over time. The applied RL agent is especially designed for processes with periodic feedback and highly variable context. We compare the performance of our new RL algorithm to static order release models and state-of-the-art deep Q-Learning agents by using a multi-stage, multi-product flow-shop simulation model. The results show that, especially for scenarios with high utilisation, our proposed method outperforms the other approaches.",
+    "authors": [
+      "Manuel Schneckenreither",
+      "Stefan Haeussler",
+      "Juanjo Peiró"
+    ],
+    "year": 2022,
+    "doi": "10.1016/j.knosys.2022.108765",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Knowledge-Based Systems",
+    "url": "https://openalex.org/W4223559272",
+    "oa_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0950705122003598/pdf",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2604.22818",
+    "title": "Representation Homogeneity and Systemic Instability in AI-Dominated Financial Markets: A Structural Approach",
+    "abstract": "This paper investigates how similarity in the informational representation of market states among Artificial Intelligence (AI) trading agents can generate systemic instability in financial markets. We construct a structural multi-agent market model calibrated using high-frequency microstructural moments. AI agents are modeled through a two-layer decision architecture consisting of a nonlinear representation layer and an adaptive linear readout layer. The representation layer maps raw market states into high-dimensional feature vectors, while the readout layer generates return forecasts that feed into a risk-controlled trading rule. This representation-based microfoundation separates two objects that are often conflated in the literature: representation homogeneity (the degree to which agents encode market states into similar feature spaces) and forecast overlap (the degree to which agents produce similar return predictions). We show theoretically that these two concepts are related but not equivalent, and that representation homogeneity can compress the effective space of forecast disagreement under stress even when predictions appear diverse in normal times. Through controlled factorial experiments that vary representation homogeneity while conditioning on alternative risk-aversion and learning-rate distributions, we hypothesize that increasing representation similarity amplifies synchronization in beliefs and positions, leading to volatility clustering, liquidity stress, and elevated tail risk. Our structural mechanisms suggest that low perceived volatility regimes can endogenously accumulate hidden leverage through position stickiness, which subsequently collapses when shocks trigger synchronized deleveraging. The results provide a structural foundation for macroprudential policies aimed at monitoring and preserving diversity in how AI systems represent and process market information.",
+    "authors": [
+      "Yimeng Qiu",
+      "Qiwei Han"
+    ],
+    "year": 2026,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2604.22818",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2604.22818",
+    "oa_pdf_url": "https://arxiv.org/pdf/2604.22818",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1109/comst.2020.2988367",
+    "title": "Deep Reinforcement Learning for Autonomous Internet of Things: Model, Applications and Challenges",
+    "abstract": "The Internet of Things (IoT) extends the Internet connectivity into billions of IoT devices around the world, where the IoT devices collect and share information to reflect status of the physical world. The Autonomous Control System (ACS), on the other hand, performs control functions on the physical systems without external intervention over an extended period of time. The integration of IoT and ACS results in a new concept - autonomous IoT (AIoT). The sensors collect information on the system status, based on which the intelligent agents in the IoT devices as well as the Edge/Fog/Cloud servers make control decisions for the actuators to react. In order to achieve autonomy, a promising method is for the intelligent agents to leverage the techniques in the field of artificial intelligence, especially reinforcement learning (RL) and deep reinforcement learning (DRL) for decision making. In this paper, we first provide a tutorial of DRL, and then propose a general model for the applications of RL/DRL in AIoT. Next, a comprehensive survey of the state-of-art research on DRL for AIoT is presented, where the existing works are classified and summarized under the umbrella of the proposed general DRL model. Finally, the challenges and open issues for future research are identified.",
+    "authors": [
+      "Lei Lei",
+      "Yue Tan",
+      "Kan Zheng",
+      "Shiwen Liu",
+      "Kuan Zhang",
+      "Xuemin Shen"
+    ],
+    "year": 2020,
+    "doi": "10.1109/comst.2020.2988367",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "IEEE Communications Surveys & Tutorials",
+    "url": "https://openalex.org/W3017275226",
+    "oa_pdf_url": "https://arxiv.org/pdf/1907.09059",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2307.05812",
+    "title": "Safe Reinforcement Learning for Strategic Bidding of Virtual Power Plants in Day-Ahead Markets",
+    "abstract": "This paper presents a novel safe reinforcement learning algorithm for strategic bidding of Virtual Power Plants (VPPs) in day-ahead electricity markets. The proposed algorithm utilizes the Deep Deterministic Policy Gradient (DDPG) method to learn competitive bidding policies without requiring an accurate market model. Furthermore, to account for the complex internal physical constraints of VPPs we introduce two enhancements to the DDPG method. Firstly, a projection-based safety shield that restricts the agent's actions to the feasible space defined by the non-linear power flow equations and operating constraints of distributed energy resources is derived. Secondly, a penalty for the shield activation in the reward function that incentivizes the agent to learn a safer policy is introduced. A case study based on the IEEE 13-bus network demonstrates the effectiveness of the proposed approach in enabling the agent to learn a highly competitive, safe strategic policy.",
+    "authors": [
+      "Ognjen Stanojev",
+      "Lesia Mitridati",
+      "Riccardo de Nardis di Prata",
+      "Gabriela Hug"
+    ],
+    "year": 2023,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2307.05812",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2307.05812",
+    "oa_pdf_url": "https://arxiv.org/pdf/2307.05812",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1109/tnsm.2022.3190493",
+    "title": "Secure Task Offloading in Blockchain-Enabled Mobile Edge Computing With Deep Reinforcement Learning",
+    "abstract": "Mobile Edge Computing (MEC) is a promising and fast-developing paradigm that provides cloud services at the edge of the network. MEC enables IoT devices to offload and execute their real-time applications at the proximity of these devices with low latency. Such applications include efficient manufacture inspection, virtual/augmented reality, image recognition, Internet of Vehicles (IoV), and e-Health. However, task offloading experiences security and privacy attacks such as data tampering, private data leakage, data replication, etc. To this end, in this paper, we propose a new blockchain-based framework for secure task offloading in MEC systems with guaranteed performance in terms of execution delay and energy consumption. First, blockchain technology is introduced as a platform to achieve data confidentiality, integrity, authentication, and privacy of task offloading in MEC. Second, we formulate an integration model of resource allocation and task offloading for a multi-user with multi-task MEC systems to optimize the energy and time cost. This is an NP-hard problem because of the curse-of-dimensionality and dynamic characteristics challenges of the considered scenario. Therefore, a deep reinforcement learning-based algorithm is developed to derive the close-optimal task offloading decision efficiently. Theoretical analysis and experimental results demonstrate that the proposed framework is resilient to several task offloading security attacks and it can save about 22.2% and 19.4% of system consumption with respect to the local and edge execution scenarios. Moreover, the benchmark analysis proves that the framework consumes few resources in terms of memory and disk usage, CPU utilization, and transaction throughput.",
+    "authors": [
+      "Ahmed Samy",
+      "Ibrahim A. Elgendy",
+      "Haining Yu",
+      "Weizhe Zhang",
+      "Hongli Zhang"
+    ],
+    "year": 2022,
+    "doi": "10.1109/tnsm.2022.3190493",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "IEEE Transactions on Network and Service Management",
+    "url": "https://openalex.org/W4285505241",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2610.15183",
+    "title": "Game-Theoretic Reinforcement Learning based Topology-Agnostic Defense for Virtual Power Plants",
+    "abstract": "The rapid proliferation of distributed energy resources (DERs) aggregated by virtual power plants (VPPs) elevates cybersecurity risk by expanding the attack surface. A coordinated cyberattack has the potential to disrupt distribution-system, bulk-system, and market operations. Existing cyberphysical defense strategies largely assume access to grid network models and operating conditions, which may not be available to third-party aggregators. This paper proposes a novel hybrid, perturbation-based cyber-physical defense for VPP-operated DERs that blends game-theoretic planning with model-free reinforcement learning (RL) under a Bayesian belief-update framework. Topology agnosticism is defined from the VPP information and implementation perspective: the VPP does not require access to the feeder topology, line parameters, switching configuration, or full system state. This work advances the state of the art through three contributions: (1) a multi-output Gaussian process with Hamiltonian Monte Carlo for discrete attacker-type inference, probability of detection, and confidence of detection for modeling the belief distribution; (2) moment-matched Gaussian propagation of posterior beliefs across episodes; and (3) an RL policy that adaptively integrates Stackelberg leader (VPP) actions with exploration. Furthermore, we establish equilibrium existence and derive an episode-level closed-loop utility bound connecting attacker-belief uncertainty with GT-RL action alignment. Evaluations on IEEE 13- and 123-Bus feeders with DER portfolios demonstrate effective detection under attacker-model uncertainty and evaluated feeder re-configuration conditions, while requiring no explicit feeder-topology knowledge. Overall, the results indicate that combining bi-level game-theoretic planning, nonparametric Bayesian inference, and adaptive RL is a promising direction for VPP cybersecurity.",
+    "authors": [
+      "Pooja Algikar",
+      "Stefano Fenu",
+      "Kumarsinh Jhala",
+      "Siby Plathottam"
+    ],
+    "year": 2026,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2610.15183",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2610.15183",
+    "oa_pdf_url": "https://arxiv.org/pdf/2610.15183",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1038/s41524-024-01474-5",
+    "title": "Deep reinforcement learning for inverse inorganic materials design",
+    "abstract": "A major obstacle to the realization of novel inorganic materials with desirable properties is efficient materials discovery over both the materials property and synthesis spaces. In this work, we propose and compare two novel reinforcement learning (RL) approaches to inverse inorganic oxide materials design to target promising compounds using specified property and synthesis objectives. Our models successfully learn chemical guidelines such as negative formation energy, charge neutrality, and electronegativity balance while maintaining high chemical diversity and uniqueness. We demonstrate multi-objective RL algorithms that can generate novel compounds with both desirable materials properties (band gap, formation energy, bulk modulus, shear modulus) and synthesis objectives (low sintering and calcination temperatures). We apply template-based crystal structure prediction to suggest feasible crystal structure matches for target inorganic compositions identified by our machine learning (ML) algorithms to highlight the plausibility of the identified target compositions. We analyze the benefits and drawbacks of the ML approaches tested in this work in the context of accelerated inorganic materials design. This work isolates and evaluates the effects of different RL methodologies to suggest promising, valid compounds of interest by exploring the chemical design space for materials discovery.",
+    "authors": [
+      "Christopher J. Karpovich",
+      "Elton Pan",
+      "Elsa Olivetti"
+    ],
+    "year": 2024,
+    "doi": "10.1038/s41524-024-01474-5",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "npj Computational Materials",
+    "url": "https://openalex.org/W4405577466",
+    "oa_pdf_url": "https://www.nature.com/articles/s41524-024-01474-5.pdf",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1109/pimrc59610.2024.10817284",
+    "title": "Resource Optimization for Tail-Based Control in Wireless Networked Control Systems",
+    "abstract": "Achieving control stability is one of the key design challenges of scalable Wireless Networked Control Systems (WNCS) under limited communication and computing resources. This paper explores the use of an alternative control concept defined as tail-based control, which extends the classical Linear Quadratic Regulator (LQR) cost function for multiple dynamic control systems over a shared wireless network. We cast the control of multiple control systems as a network-wide optimization problem and decouple it in terms of sensor scheduling, plant state prediction, and control policies. Toward this, we propose a solution consisting of a scheduling algorithm based on Lyapunov optimization for sensing, a mechanism based on Gaussian Process Regression (GPR) for state prediction and uncertainty estimation, and a control policy based on Reinforcement Learning (RL) to ensure tail-based control stability. A set of discrete time-invariant mountain car control systems is used to evaluate the proposed solution and is compared against four variants that use state-of-the-art scheduling, prediction, and control methods. The experimental results indicate that the proposed method yields 22% reduction in overall cost in terms of communication and control resource utilization compared to state-of-the-art methods.",
+    "authors": [
+      "Rasika Vijithasena",
+      "Rafaela Scaciota",
+      "Mehdi Bennis",
+      "Sumudu Samarakoon"
+    ],
+    "year": 2024,
+    "doi": "10.1109/PIMRC59610.2024.10817284",
+    "pmid": null,
+    "arxiv_id": "2406.14301",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2406.14301",
+    "oa_pdf_url": "https://arxiv.org/pdf/2406.14301",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.64972/jaat.2026v4.187p25e:331-345",
+    "title": "Real-Time Assembly Line Balancing Optimization Based on Deep Reinforcement Learning",
+    "abstract": "The issue of real-time optimisation for assembly-line balancing in large-scale, high-throughput production can be effectively resolved with deep reinforcement learning. The goal of this research is to address the dynamic scheduling problem with varying station restrictions and a fluctuating workload. The concepts of work allocation and the actual restrictions of a system in discrete manufacturing are integrated in a comprehensive mathematical model. In this paper, a digital twin-driven simulation platform constructed from actual industrial data and factory deployment records was used to develop a graph-based neural network with prioritised experience replay. The method outperforms traditional integer linear programming, DQN, and metaheuristic baselines by up to 6.3% in terms of throughput and reduces load imbalance by over 28% under stress, according to experiments conducted on over 60,000 production cycles. It achieves a median task throughput of 0.942 and an average decision latency of 38ms. According to robustness study, the system will continue to function steadily with a throughput loss of less than 5% even in the event of large loads and equipment failures. The resources have been optimised and the response time to environmental changes has been improved. The technical viability of deep reinforcement learning for intelligent assembly line balance has been confirmed based on the aforementioned findings, and real-time, data-driven production optimisation support for industrial deployment is offered.",
+    "authors": [
+      "Franciszka Joanna Truskolaska",
+      "Zuzanna Czesława Latocha"
+    ],
+    "year": 2026,
+    "doi": "10.64972/jaat.2026v4.187p25e:331-345",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Journal of Applied Automation Technologies",
+    "url": "https://openalex.org/W7163529911",
+    "oa_pdf_url": "http://www.wpias.edu.pl/ojs/index.php/JAAT/article/download/187/214",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "arxiv:2506.22474",
+    "title": "RL-based Adaptive Task Offloading in Mobile-Edge Computing for Future IoT Networks",
+    "abstract": "The Internet of Things (IoT) has been increasingly used in our everyday lives as well as in numerous industrial applications. However, due to limitations in computing and power capabilities, IoT devices need to send their respective tasks to cloud service stations that are usually located at far distances. Having to transmit data far distances introduces challenges for services that require low latency such as industrial control in factories and plants as well as artificial intelligence assisted autonomous driving. To solve this issue, mobile edge computing (MEC) is deployed at the networks edge to reduce transmission time. In this regard, this study proposes a new offloading scheme for MEC-assisted ultra dense cellular networks using reinforcement learning (RL) techniques. The proposed scheme enables efficient resource allocation and dynamic offloading decisions based on varying network conditions and user demands. The RL algorithm learns from the networks historical data and adapts the offloading decisions to optimize the networks overall performance. Non-orthogonal multiple access is also adopted to improve resource utilization among the IoT devices. Simulation results demonstrate that the proposed scheme outperforms other stateof the art offloading algorithms in terms of energy efficiency, network throughput, and user satisfaction.",
+    "authors": [
+      "Ziad Qais Al Abbasi",
+      "Khaled M. Rabie",
+      "Senior Member",
+      "Xingwang Li",
+      "Senior Member",
+      "Wali Ullah Khan",
+      "Asma Abu Samah"
+    ],
+    "year": 2025,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": "2506.22474",
+    "venue": "arXiv",
+    "url": "https://arxiv.org/abs/2506.22474",
+    "oa_pdf_url": "https://arxiv.org/pdf/2506.22474",
+    "sources": [
+      "arxiv"
+    ]
+  },
+  {
+    "id": "doi:10.1287/stsy.2021.0081",
+    "title": "Queueing Network Controls via Deep Reinforcement Learning",
+    "abstract": "Novel advanced policy gradient (APG) methods, such as trust region policy optimization and proximal policy optimization (PPO), have become the dominant reinforcement learning algorithms because of their ease of implementation and good practical performance. A conventional setup for notoriously difficult queueing network control problems is a Markov decision problem (MDP) that has three features: infinite state space, unbounded costs, and long-run average cost objective. We extend the theoretical framework of these APG methods for such MDP problems. The resulting PPO algorithm is tested on a parallel-server system and large-size multiclass queueing networks. The algorithm consistently generates control policies that outperform state-of-art heuristics in literature in a variety of load conditions from light to heavy traffic. These policies are demonstrated to be near optimal when the optimal policy can be computed. A key to the successes of our PPO algorithm is the use of three variance reduction techniques in estimating the relative value function via sampling. First, we use a discounted relative value function as an approximation of the relative value function. Second, we propose regenerative simulation to estimate the discounted relative value function. Finally, we incorporate the approximating martingale-process method into the regenerative estimator.",
+    "authors": [
+      "Jim G. Dai",
+      "Mark O. Gluzman"
+    ],
+    "year": 2022,
+    "doi": "10.1287/stsy.2021.0081",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Stochastic Systems",
+    "url": "https://openalex.org/W3047127288",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.ress.2025.111767",
+    "title": "Deep reinforcement learning for optimal planning of production line maintenance with deterioration",
+    "abstract": "Manufacturing companies often contend with deteriorating production systems that can significantly hinder overall performance. Therefore, optimizing maintenance planning strategies plays a crucial role in enhancing production efficiency. In this study, we address a novel maintenance decision-making problem in serial production lines, where machine degradation leads to product quality deterioration and throughput loss at the final stage. We propose a new framework that jointly considers product quality trends, buffer dynamics, and machine production states to optimize a preventive maintenance policy for the last machine in the line. To achieve this, we utilize an average-reward deep reinforcement learning (DRL) approach within a discrete event simulation environment and compare their effectiveness to conventional dispatching methods. Our results, based on a digital twin enriched with real production data, show that the proposed DRL approach consistently outperforms traditional dispatching rules and practitioner-designed heuristics. This study is the first to apply DRL to maintenance decision-making in serial production systems that explicitly model product quality degradation, machine production states and buffer interactions—addressing a key gap in current literature.",
+    "authors": [
+      "Michael Geurtsen",
+      "Cas Leenen",
+      "Ivo Adan",
+      "Zümbül Atan"
+    ],
+    "year": 2025,
+    "doi": "10.1016/j.ress.2025.111767",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Reliability Engineering & System Safety",
+    "url": "https://openalex.org/W4414693509",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1109/tii.2024.3431095",
+    "title": "Deep Reinforcement Learning-Based Dynamic Reconfiguration Planning for Digital Twin-Driven Smart Manufacturing Systems With Reconfigurable Machine Tools",
+    "abstract": "Smart manufacturing systems are a new paradigm in Industry 4.0 driven by the emerging information and communication technology and artificial intelligence that converge to digital twin, which are able to perceive, recognize, and handle the changes in demand and production. Reconfigurable machine tools (RMTs) can promote the flexibility of smart manufacturing systems. The fundamental problem lies in dynamically reconfiguring the RMTs in smart manufacturing systems efficiently and accurately by considering the flexibility of production precedence and operation sequences simultaneously. Therefore, in this article, a deep reinforcement learning-based reconfiguration planning method of digital twin-driven smart manufacturing systems with RMT is proposed to seek optimal reconfiguration policy online. The reconfiguration processes of smart manufacturing systems are modeled by considering reconfiguration cost, moving cost, and processing cost. DeepQ-network is adopted to explore the state space and action space to find the optimal reconfiguration scheme with the highest return. An industry case study is presented to demonstrate the effectiveness and efficiency of the proposed method, where the reconfiguration processes of a smart manufacturing system consisting of five RMTs for producing four parts are discussed.",
+    "authors": [
+      "Jintang Huang",
+      "Sihan Huang",
+      "Shokraneh K. Moghaddam",
+      "Yuqian Lu",
+      "Guoxin Wang",
+      "Yan Yan",
+      "Xuejiang Shi"
+    ],
+    "year": 2024,
+    "doi": "10.1109/tii.2024.3431095",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "IEEE Transactions on Industrial Informatics",
+    "url": "https://openalex.org/W4401109146",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.cie.2021.107221",
+    "title": "Solving the online batching problem using deep reinforcement learning",
+    "abstract": "In e-commerce markets, on-time delivery is of great importance to customer satisfaction. In this paper, we present a Deep Reinforcement Learning (DRL) approach, together with a heuristic, for deciding how and when arrived orders should be batched and picked in a warehouse to minimize the number of tardy orders. In particular, the technique facilitates making decisions on whether an order should be picked individually (pick-by-order) or picked in a batch with other orders (pick-by-batch), and if so, with which other orders. We approach the problem by formulating it as a semi-Markov decision process and developing a vector-based state representation that includes the characteristics of the warehouse system. This allows us to create a deep reinforcement learning solution that learns a strategy by interacting with the environment and solve the problem with a proximal policy optimization algorithm. We evaluate the performance of the proposed DRL approach by comparing it with several batching and sequencing heuristics in different problem settings. The results show that the DRL approach can develop a strategy that produces consistent, good solutions and performs better than the proposed heuristics in most of the tested cases. We show that the strategy learned by DRL is different from the hand-crafted heuristics. In this paper, we demonstrate that the benefits from recent advancements of Deep Reinforcement Learning can be transferred to solve sequential decision-making problems in warehousing operations.",
+    "authors": [
+      "Bram Cals",
+      "Yingqian Zhang",
+      "Remco Dijkman",
+      "Claudy van Dorst"
+    ],
+    "year": 2021,
+    "doi": "10.1016/j.cie.2021.107221",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Computers & Industrial Engineering",
+    "url": "https://openalex.org/W3134792445",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1109/access.2020.2991773",
+    "title": "Distributed Edge Computing Offloading Algorithm Based on Deep Reinforcement Learning",
+    "abstract": "As a mode of processing task request, edge computing paradigm can reduce task delay and effectively alleviate network congestion caused by the proliferation of Internet of things(IoT) devices compared with cloud computing. However, in the actual construction of the network, there are various edge autonomous subnets in the adjacent areas, which leads to the possibility of unbalance of server load among autonomous subnets during the peak period of task request. In this paper, a deep reinforcement learning algorithm is proposed to solve the complex computation offloading problem for the heterogeneous Edge Computing Server(ECS) collaborative computing. The problem is solved based on the real-time state of the network and the attributes of the task, which adopts Actor Critic and Policy Gradient's Deep Deterministic Policy Gradient(DDPG) to make optimized decisions of computation offloading. Considering multi-task, the heterogeneity of edge subnet and mobility of edge devices, the proposed algorithm can learn the network environment and generate the computation offloading decision to minimize the task delay.The simulation results show that the proposed DDPG-based algorithm is competitive compared with the Deep Q Network(DQN) algorithm and Asynchronous Advantage Actor-Critic(A3C) algorithm. Moreover, the optimal solutions are leveraged to analyze the influence of edge network parameters on task delay.",
+    "authors": [
+      "Yunzhao Li",
+      "Feng Qi",
+      "Zhili Wang",
+      "Xiuming Yu",
+      "Sujie Shao"
+    ],
+    "year": 2020,
+    "doi": "10.1109/access.2020.2991773",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "IEEE Access",
+    "url": "https://openalex.org/W3022369195",
+    "oa_pdf_url": "https://ieeexplore.ieee.org/ielx7/6287639/8948470/09084152.pdf",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.58346/jowua.2026.i2.007",
+    "title": "Energy Efficiency and Throughput Optimization in Massive MIMO Systems Using Deep Reinforcement Learning",
+    "abstract": "The importance of Massive Multiple-Input Multiple-Output (Massive MIMO) technology is an essential feature of today 5G and the future 6G wireless communication like it is capable of making the differences in spectral efficiency, network capacity, and the number of users it can serve significant. Based on joint optimization of energy efficiency (EE) and system throughput, also known as spectral efficiency (SE) is a problem that is difficult to address due to high-dimensional state space, dynamic channel conditions, inter-user interference, and hard power constraints. Conventional optimization models which include convex optimization and heuristic scheduling algorithms do not lend themselves well to the fast-paced conditions of wireless networks and a large number of antennas. This paper suggests a Deep Reinforcement Learning (DRL)-based optimization system that can enhance energy efficiency and throughput in Massive MIMO systems simultaneously. The resource allocation problem is called a Markov Decision Process (MDP) in which the agent learns the optimal policies to deal with beamforming, power distribution, antenna activation, and user scheduling by interacting with the network environment. The framework mainly uses the Proximal Policy Optimization (PPO) algorithm and is compared to the traditional methods of convex optimization and heuristic baselines. Large-scale simulations were carried out based on Rayleigh fading channel models, realistic base station-user topologies and antenna configurations up to 64 to 512 antennas. The results of the experiments prove that the proposed DRL framework plays a significant role in enhancing the performance of the network. As an example, a DRL model with 128 antennas had 8.5 bits/Joule energy efficiency and 8.2 bps/Hz spectral efficiency, compared to 6.7 bits/Joule and 6.1 bps/Hz with convex optimization. The difference in throughput between different levels of user density increased by 15-25 percent and the QoS violation rates were kept at below 1 percent and inference latency at less than 5 ms, which allowed real-time deployment. In general, the findings establish that DRL offers a scalable and adaptive optimization strategy that is efficient in balancing energy usage and throughput in large-scale wireless networks. The given framework is a step in the direction of the creation of self-optimizing, energy-conscious intelligent communication systems of the next-generation 6G networks.",
+    "authors": [
+      "Nareshkumar Jagadhabi"
+    ],
+    "year": 2026,
+    "doi": "10.58346/jowua.2026.i2.007",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Journal of Wireless Mobile Networks Ubiquitous Computing and Dependable Applications",
+    "url": "https://openalex.org/W7167494079",
+    "oa_pdf_url": "https://doi.org/10.58346/jowua.2026.i2.007",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1109/tii.2023.3292538",
+    "title": "Deep Reinforcement Learning-Driven Scheduling in Multijob Serial Lines: A Case Study in Automotive Parts Assembly",
+    "abstract": "Multijob production (MJP) is a class of flexible manufacturing systems, which produces different products within the same production system. MJP is widely used in product assembly, and efficient MJP scheduling is crucial for productivity. Most of the existing MJP scheduling methods are inefficient for multijob serial lines with practical constraints. We propose a deep reinforcement learning (DRL)-driven scheduling framework for multijob serial lines by properly considering the practical constraints of identical machines, finite buffers, machine breakdown, and delayed reward. We analyze the starvation and the blockage time, and derive a DRL-driven scheduling strategy to reduce the blockage time and balance the loads. We validate the proposed framework by using real-world factory data collected over six months from a tier-one vendor of a world top-three automobile company. Our case study shows that the proposed scheduling framework improves the average throughput by 24.2% compared with the conventional approach.",
+    "authors": [
+      "Sanghoon Lee",
+      "J. Won Kim",
+      "Gwangjin Wi",
+      "Yuchang Won",
+      "Yongsoon Eun",
+      "Kyung‐Joon Park"
+    ],
+    "year": 2023,
+    "doi": "10.1109/tii.2023.3292538",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "IEEE Transactions on Industrial Informatics",
+    "url": "https://openalex.org/W4385656710",
+    "oa_pdf_url": "https://ieeexplore.ieee.org/ielx7/9424/4389054/10210628.pdf",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1080/03155986.2023.2287996",
+    "title": "Real-time production scheduling using a deep reinforcement learning-based multi-agent approach",
+    "abstract": "In the real-time scheduling (RTS) research field, it has been shown that employing multiple dispatching rules (MDRs) for the components in a flexible manufacturing system will improve production performance much more than a single dispatching rule (SDR). To fulfill the goal of Industry 4.0 in production control and improve production performance, this study deploys a deep reinforcement learning-based multi-agent (DRLBMA) approach for real-time scheduling. The proposed approach uses the MDRs strategy by integrating two main methodologies: an off-line learning module and a Deep Q-learning-based multi-agent module. The proposed method employs a two-level self-organizing map (SOM) to determine the system’s states. The proposed methodology determines the best MDRs decision. The approach is applied to a case study of a smart manufacturing system. The results of the proposed method are compared to different scheduling strategies, such as reinforcement learning (RL)-based real-time scheduling, two-level self-organized map (SOM), and continuous rescheduling using a single dispatching rule, such as earliest due date (EDD), shortest processing time (SPT), and longest processing time (LPT). The findings reveal that, in terms of the total weighted tardiness, throughput, and mean cycle time performance criteria, the proposed DRLBMA-based real-time scheduling is more efficient than these scheduling strategies.",
+    "authors": [
+      "Sharareh Taghipour",
+      "Hamed A. Namoura",
+      "Mani Sharifi",
+      "Mageed A. Ghaleb"
+    ],
+    "year": 2024,
+    "doi": "10.1080/03155986.2023.2287996",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "INFOR Information Systems and Operational Research",
+    "url": "https://openalex.org/W4392757263",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.procir.2023.09.229",
+    "title": "Enhancing economic efficiency in modular production systems through deep reinforcement learning",
+    "abstract": "In times of increasingly complex production processes and volatile customer demands, the production adaptability is crucial for a company's profitability and competitiveness. The ability to cope with rapidly changing customer requirements and unexpected internal and external events guarantees robust and efficient production processes, requiring a dedicated control concept at the shop floor level. Yet in today's practice, conventional control approaches remain in use, which may not keep up with the dynamic behaviour due to their scenario-specific and rigid properties. To address this challenge, deep learning methods were increasingly deployed due to their optimization and scalability properties. However, these approaches were often tested in specific operational applications and focused on technical performance indicators such as order tardiness or total throughput. In this paper, we propose a deep reinforcement learning based production control to optimize combined techno-financial performance measures. Based on pre-defined manufacturing modules that are supplied and operated by multiple agents, positive effects were observed in terms of increased revenue and reduced penalties due to lower throughput times and fewer delayed products. The combined modular and multi-staged approach as well as the distributed decision-making further leverage scalability and transferability to other scenarios.",
+    "authors": [
+      "Marcel Panzer",
+      "Norbert Gronau"
+    ],
+    "year": 2024,
+    "doi": "10.1016/j.procir.2023.09.229",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Procedia CIRP",
+    "url": "https://openalex.org/W4391425683",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1007/s10462-024-10756-9",
+    "title": "Deep reinforcement learning-based methods for resource scheduling in cloud computing: a review and future directions",
+    "abstract": "Abstract With the acceleration of the Internet in Web 2.0, Cloud computing is a new paradigm to offer dynamic, reliable and elastic computing services. Efficient scheduling of resources or optimal allocation of requests is one of the prominent issues in emerging Cloud computing. Considering the growing complexity of Cloud computing, future Cloud systems will require more effective resource management methods. In some complex scenarios with difficulties in directly evaluating the performance of scheduling solutions, classic algorithms (such as heuristics and meta-heuristics) will fail to obtain an effective scheme. Deep reinforcement learning (DRL) is a novel method to solve scheduling problems. Due to the combination of deep learning and reinforcement learning (RL), DRL has achieved considerable performance in current studies. To focus on this direction and analyze the application prospect of DRL in Cloud scheduling, we provide a comprehensive review for DRL-based methods in resource scheduling of Cloud computing. Through the theoretical formulation of scheduling and analysis of RL frameworks, we discuss the advantages of DRL-based methods in Cloud scheduling. We also highlight different challenges and discuss the future directions existing in the DRL-based Cloud scheduling.",
+    "authors": [
+      "Guangyao Zhou",
+      "Wenhong Tian",
+      "Rajkumar Buyya",
+      "Ruini Xue",
+      "Liang Song"
+    ],
+    "year": 2024,
+    "doi": "10.1007/s10462-024-10756-9",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Artificial Intelligence Review",
+    "url": "https://openalex.org/W4395047770",
+    "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s10462-024-10756-9.pdf",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.rineng.2026.110652",
+    "title": "FORCE: A federated deep reinforcement learning framework for scalable and privacy-preserving process control in smart manufacturing",
+    "abstract": "• A federated reinforcement learning framework is developed for distributed manufacturing control. • Hypergraph neural encoding captures complex multi-machine and multi-resource relationships. • Dhole-optimized DDPG improves training stability, robustness, and convergence speed. • FORCE increases throughput up to 96% while reducing energy and communication overhead. • The framework ensures data privacy by sharing only encrypted model updates across nodes. The increasing complexity and interconnections inherent in modern manufacturing systems have increased a demand for integrated methodologies to boost productivity, quality and streamline operations across the entire system. Existing isolated process-level or system-level optimization approaches are no longer enough to attain global efficiency. These traditional methods focus on the optimization of individual processes, neglecting their interdependencies at the system level and causing lower throughput, spoil product quality, and reduce responsiveness in uncertain situations. To overcome these drawbacks, a novel Federated Orchestrated deep Reinforcement learning for process Control and Execution (FORCE) model has been proposed in this paper. The proposed model uses a federated reinforcement learning model which combines federated learning with the adaptive reinforcement learning model for efficient process control. The proposed model uses a Hypergraph Neural State Encoder for converting raw inputs into high-order relational representations and statistical refinement for generating compressed and denoised features. The study also leverages an adaptive control system integrated with a Deep Deterministic Policy Gradient (DDPG) model optimized using a Dhole optimization algorithm to enable real-time production control that sequences training tasks to accelerate convergence and improve policy robustness. The proposed model has been evaluated using various metrics such as accuracy, precision, f1-score, specificity, sensitivity, throughput, and Mathew’s correlation coefficient. The proposed FORCE model achieves the highest accuracy of 97%, while the previous techniques such as DDQN-PER, SATD3, and GCNN-DRL achieves the accuracy of 95%, 93%, and 90% respectively.",
+    "authors": [
+      "Vijay Gurav"
+    ],
+    "year": 2026,
+    "doi": "10.1016/j.rineng.2026.110652",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Results in Engineering",
+    "url": "https://openalex.org/W7155408612",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1109/access.2026.3659187",
+    "title": "A Deep Reinforcement Learning-Based Energy-Aware Open Shop Scheduling Method",
+    "abstract": "Energy-aware scheduling is essential for achieving operational efficiency in modern smart manufacturing systems under dynamic production conditions. This research tackles the flexible operation ordering and complex state space of the Energy-Aware Open Shop Scheduling Problem (EOSSP). The EOSSP remains highly challenging due to its combinatorial complexity nature and the need to jointly optimize productivity, energy usage, and delivery reliability. This study presents a Deep Reinforcement Learning (DRL)-based framework that reformulates the EOSSP as a multi-objective Markov Decision Process. The DRL agent learns adaptive scheduling policies through experience replay and target network stabilization, ensuring robust convergence and improved sample efficiency. Results emphasize a fundamental trade-off between solution quality and computational efficiency. Exact method and traditional heuristics, while effective for small instances, face scalability and adaptability limitations under dynamic and uncertain production conditions. Numerical results demonstrated the proposed method consistently maintains a near-optimal gap within 5% of global benchmarks with statistical significance (p < 0.05). The weight preferences study confirmed that even minor variations can cause a significant shift in the solution set along the Pareto Front. Increasing specific weight beyond threshold led to solutions that exhibited an over-optimization bias toward the dedicated objective at the unnecessary expense of other objectives. This research bridges deep reinforcement learning and sustainable manufacturing. Providing a scalable EOSSP solution for high-throughput environments such as semiconductor fabs or data centers.",
+    "authors": [
+      "Ywh-Leh Chou"
+    ],
+    "year": 2026,
+    "doi": "10.1109/access.2026.3659187",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "IEEE Access",
+    "url": "https://openalex.org/W7126080762",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1155/acis/3899532",
+    "title": "Deep Reinforcement Learning With Graph Attention Networks for Workflow Scheduling in Smart Manufacturing",
+    "abstract": "The Fourth Industrial Revolution has driven the formation of smart manufacturing—where production processes are highly automated based on real‐time data. A core component of this model is the Industrial Internet of Things (IIoT), which enables devices, such as robots, CNC machines, sensor systems, AI cameras, conveyor belts, and automated guided vehicles (AGVs) to connect into a unified network. These devices not only collect and transmit data but also coordinate processing, decision‐making, and automatically adjust operations to optimize production performance. In the smart factory model, IIoT systems are deployed to collect and transmit status data from production equipment, such as CNC machines, robots, sensors, conveyor belts, and AGVs. This infrastructure is typically built according to a layered architecture, in which IoT devices and the edge layer are responsible for recording signals and status in real‐time, while the fog and cloud layers support data storage and synchronization on a broader scale. Through this continuous connection mechanism, the system can accurately observe the operational status of machinery and workflow at the shop floor, creating a reliable data foundation for monitoring, analysis, and scheduling tasks in smart factories. Integrating IoT into manufacturing helps factories achieve many important benefits, such as (1) reducing cycle time through automated monitoring and coordination, (2) increasing accuracy and product quality through sensors and AI inspection, (3) reducing energy costs through data‐driven operation optimization, (4) increasing self‐recovery capability when the system can automatically detect and adjust to failures, and (5) optimizing workflow with tight coordination between devices. Workflow scheduling plays a role in intelligent coordination among robots, CNC machines, sensors, AI inspection systems, and automated transportation infrastructure, ensuring that each task is executed on the most suitable type of resource, within the system’s capacity limits, at the most appropriate time while contributing to reducing energy costs. This research aims to develop an intelligent scheduling algorithm based on deep reinforcement learning combined with graph attention networks (GATs) to optimize the completion time of workflows in the smart factory model.",
+    "authors": [
+      "Toan Thanh Phan",
+      "Tuan Anh Nguyen",
+      "Thoai Minh Vu",
+      "Tuan Bao Phan"
+    ],
+    "year": 2026,
+    "doi": "10.1155/acis/3899532",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Applied Computational Intelligence and Soft Computing",
+    "url": "https://openalex.org/W7223097191",
+    "oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1155/acis/3899532",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.3390/app13053083",
+    "title": "Applicability of Deep Reinforcement Learning for Efficient Federated Learning in Massive IoT Communications",
+    "abstract": "To build intelligent model learning in conventional architecture, the local data are required to be transmitted toward the cloud server, which causes heavy backhaul congestion, leakage of personalization, and insufficient use of network resources. To address these issues, federated learning (FL) is introduced by offering a systematical framework that converges the distributed modeling process between local participants and the parameter server. However, the challenging issues of insufficient participant scheduling, aggregation policies, model offloading, and resource management still remain within conventional FL architecture. In this survey article, the state-of-the-art solutions for optimizing the orchestration in FL communications are presented, primarily querying the deep reinforcement learning (DRL)-based autonomy approaches. The correlations between the DRL and FL mechanisms are described within the optimized system architectures of selected literature approaches. The observable states, configurable actions, and target rewards are inquired into to illustrate the applicability of DRL-assisted control toward self-organizing FL systems. Various deployment strategies for Internet of Things applications are discussed. Furthermore, this article offers a review of the challenges and future research perspectives for advancing practical performances. Advanced solutions in these aspects will drive the applicability of converged DRL and FL for future autonomous communication-efficient and privacy-aware learning.",
+    "authors": [
+      "Prohim Tam",
+      "Riccardo Corrado",
+      "Chanthol Eang",
+      "Seokhoon Kim"
+    ],
+    "year": 2023,
+    "doi": "10.3390/app13053083",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Applied Sciences",
+    "url": "https://openalex.org/W4322631204",
+    "oa_pdf_url": "https://www.mdpi.com/2076-3417/13/5/3083/pdf?version=1677724169",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.1016/j.cie.2025.110856",
+    "title": "Deep reinforcement learning for machine scheduling: Methodology, the state-of-the-art, and future directions",
+    "abstract": "",
+    "authors": [
+      "Maziyar Khadivi",
+      "Todd Charter",
+      "Marjan Yaghoubi",
+      "Masoud Jalayer",
+      "Maryam Ahang",
+      "Ardeshir Shojaeinasab",
+      "Homayoun Najjaran"
+    ],
+    "year": 2025,
+    "doi": "10.1016/j.cie.2025.110856",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Computers & Industrial Engineering",
+    "url": "https://openalex.org/W4406141308",
+    "oa_pdf_url": null,
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "openalex:W7215656527",
+    "title": "AI in Manufacturing and Processing: Shaping the Factories of the Future",
+    "abstract": "This is a review of Artificial Intelligence (AI) and its impact in manufacturing and processing sectors. It emphasizes the fact that AI is to be integrated with Industry 4.0 technologies processes, i.e., the IoT, big data, edge computing, and cyber-physical systems that will allow monitoring in real-time, predictive maintenance, intelligent automation, and process optimization. The most important ones are the enhanced level of productivity, quality of goods, efficiency in terms of costs and better decision-making skills. Poor quality of data, high cost of implementation, employee resistance, and cybersecurity are some of the challenges of AI implementation in spite of its superiority. Future trends are also reviewed and they include explainable AI, human-AI collaboration, sustainable manufacturing, evaluation of federated learning and the presence of digital twins. With further development of AI, its ability to develop more intelligent, adaptive and environmentally friendly industrial systems is huge. Given that current main obstacles to the successful implementation of AI can be addressed by conducting research, innovating, and making important investments, it will lead to the next step of the industrial revolution.",
+    "authors": [
+      "Muhammad Mohsin Kabeer"
+    ],
+    "year": 2022,
+    "doi": null,
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "BULLET : Jurnal Multidisiplin Ilmu",
+    "url": "https://openalex.org/W7215656527",
+    "oa_pdf_url": "https://journal.mediapublikasi.id/index.php/bullet/article/download/5519/3834",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.30574/wjaets.2025.15.2.0794",
+    "title": "Automation and AI-Driven ITSM in Smart Factories",
+    "abstract": "The study examines how AIOps, Robotic Process Automation (RPA) and autonomous service management can transform IT Service Management (ITSM) in smart factories. With the combination of these technologies, factories may deploy predictive maintenance and self-healing systems, which will guarantee sustained, effective functioning with minimum downtime. The paper underlines the importance of ITSM strategies as they improve service delivery especially in Industry 4.0 where automation and AI-powered processes play a critical role in ensuring operational agility. The methodology entails the use of real-life case studies of smart factories which have already implemented the innovations as well as performance evaluation measures to determine the effectiveness. The most important findings show that AIOps and RPA can dramatically increase the accuracy of predictive maintenance and operational performance, and autonomous service management minimizes manual interference and increases system resiliency. The study identifies the possibility of AI-based ITSM strategies to transform the nature of service delivery in much automated data-driven factory settings.",
+    "authors": [
+      "Adedotun Lawrence Omotade"
+    ],
+    "year": 2025,
+    "doi": "10.30574/wjaets.2025.15.2.0794",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "World Journal of Advanced Engineering Technology and Sciences",
+    "url": "https://openalex.org/W4413902659",
+    "oa_pdf_url": "https://journalwjaets.com/sites/default/files/fulltext_pdf/WJAETS-2025-0794.pdf",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.30696/jac.xviii.1.2024.239-245",
+    "title": "AUTONOMOUS DATA FACTORIES: LEVERAGING GENERATIVE AI FOR OPTIMIZATION",
+    "abstract": "The paradigm shift towards autonomous data factories has revolutionized contemporary data management practices, aiming to automate tasks across the data lifecycle. In this paper, we explore the potential of leveraging generative artificial intelligence (AI) techniques to enable self-adaptation and optimization within autonomous data factory environments. Specifically, we investigate methodologies such as Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs) and their applicability in automating data generation, content creation, and model refinement processes. By harnessing generative AI capabilities, data factories can evolve into dynamic ecosystems capable of responding to evolving data requirements and optimizing system performance in real-time. We discuss the challenges and opportunities associated with implementing generative AI in autonomous data factories and provide insights into future research directions in this burgeoning field.",
+    "authors": [
+      "Kashish Parwani",
+      "Sandeep Das",
+      "Sarvam Mittal",
+      "Rahul Raj"
+    ],
+    "year": 2024,
+    "doi": "10.30696/jac.xviii.1.2024.239-245",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Journal of Analysis and Computations",
+    "url": "https://openalex.org/W4404251829",
+    "oa_pdf_url": "http://dx.doi.org/10.30696/jac.xviii.1.2024.239-245",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.3389/fbioe.2024.1439638",
+    "title": "Continuous Process Verification 4.0 application in upstream: adaptiveness implementation managed by AI in the hypoxic bioprocess of the Pichia pastoris cell factory",
+    "abstract": "The experimental approach developed in this research demonstrated how the cloud, the Internet of Things (IoT), edge computing, and Artificial Intelligence (AI), considered key technologies in Industry 4.0, provide the expected horizon for adaptive vision in Continued Process Verification (CPV), the final stage of Process Validation (PV). Pichia pastoris producing Candida rugosa lipase 1 under the regulation of the constitutive GAP promoter was selected as an experimental bioprocess. The bioprocess worked under hypoxic conditions in carbon-limited fed-batch cultures through a physiological control based on the respiratory quotient (RQ). In this novel bioprocess, a digital twin (DT) was built and successfully tested. The implementation of online sensors worked as a bridge between the microorganism and AI models, to provide predictions from the edge and the cloud. AI models emulated the metabolism of Pichia based on critical process parameters and actionable factors to achieve the expected quality attributes. This innovative AI-aided Adaptive-Proportional Control strategy (AI-APC) improved the reproducibility comparing to a Manual-Heuristic Control strategy (MHC), showing better performance than the Boolean-Logic-Controller (BLC) tested. The accuracy, indicated by the Mean Relative Error (MRE), was for the AI-APC lower than 4%, better than the obtained for MHC (10%) and BLC (5%). Moreover, in terms of precision, the same trend was observed when comparing the Root Mean Square Deviation (RMSD) values, becoming lower as the complexity of the controller increases. The successful automatic real time control of the bioprocess orchestrated by AI models proved the 4.0 capabilities brought by the adaptive concept and its validity in biopharmaceutical upstream operations.",
+    "authors": [
+      "Arnau Gasset",
+      "van Wijngaarden Joeri B. G.",
+      "Ferran Mirabent",
+      "Albert Sales‐Vallverdú",
+      "Xavier Garcia‐Ortega",
+      "José Luis González Montesinos",
+      "Toni Manzano",
+      "Francisco Valero"
+    ],
+    "year": 2024,
+    "doi": "10.3389/fbioe.2024.1439638",
+    "pmid": "39416276",
+    "arxiv_id": null,
+    "venue": "Frontiers in Bioengineering and Biotechnology",
+    "url": "https://openalex.org/W4403080058",
+    "oa_pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/bioengineering-and-biotechnology/articles/10.3389/fbioe.2024.1439638/pdf",
+    "sources": [
+      "openalex"
+    ]
+  },
+  {
+    "id": "doi:10.61577/jaiar.2024.100006",
+    "title": "Education 4.0 and 5.0: integrating Artificial Intelligence (AI) for personalized and adaptive learning",
+    "abstract": "This research paper explores how the integration of Artificial Intelligence (AI) in the education sector is bringing about transformative changes, particularly within the frameworks of Education 4.0 and 5.0.In response to the evolving technological landscape, education is undergoing a shift to address the challenges of the 21st century, moving away from traditional models to embrace more personalized and adaptive approaches.Education 4.0 represents a significant shift where technology, notably AI, is harnessed to enhance the learning experience.The paper investigates the utilization of AI technologies, such as machine learning algorithms and natural language processing, to create personalized learning environments.These environments are designed to meet the specific needs and preferences of individual learners, fostering a more engaging and effective educational experience.The move from Education 3.0 to 4.0 signifies a departure from standardized, one-size-fits-all approaches to education, embracing a more dynamic and responsive system.Expanding on the principles of Education 4.0, Education 5.0 takes the integration of AI in education a step further by emphasizing adaptive learning.The paper delves into the concept of adaptive learning, exploring how AI systems can dynamically adjust instructional strategies based on real-time feedback and learner progress.Education 5.0 seeks to optimize the learning journey by tailoring content, pace, and assessments to each student's abilities and learning style, aiming to improve overall educational outcomes.Additionally, the research examines the challenges and ethical considerations associated with the widespread adoption of AI in education.It critically evaluates issues related to data privacy, bias in AI algorithms, and the potential impact on teacher-student relationships.The findings emphasize the need to strike a balance between technological innovation and ethical considerations, ensuring the responsible and effective integration of AI in personalized and adaptive learning environments.",
+    "authors": [
+      "Nitin Liladhar Rane",
+      "Saurabh Choudhary",
+      "Jayesh Rane"
+    ],
+    "year": 2024,
+    "doi": "10.61577/jaiar.2024.100006",
+    "pmid": null,
+    "arxiv_id": null,
+    "venue": "Journal of Artificial Intelligence and Robotics",
+    "url": "https://openalex.org/W4399984917",
+    "oa_pdf_url": "https://www.reseaprojournals.com/emsystem/uploads/archive_files/Education 4.0 and 5.0 integrating Artificial Intelligence (AI) for personalized and adaptive learning.pdf",
+    "sources": [
+      "openalex"
+    ]
+  }
+]

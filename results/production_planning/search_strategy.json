@@ -1,0 +1,67 @@
+{
+  "concepts": {
+    "intervention": [
+      "deep reinforcement learning",
+      "DRL",
+      "adaptive AI",
+      "reinforcement learning",
+      "adaptive artificial intelligence"
+    ],
+    "population": [
+      "manufacturing production systems",
+      "production lines",
+      "factories",
+      "manufacturing plants",
+      "industrial production"
+    ],
+    "outcome_throughput": [
+      "production throughput",
+      "output rate",
+      "throughput improvement",
+      "output increase"
+    ],
+    "outcome_leadtime": [
+      "lead time reduction",
+      "lead time decrease",
+      "delivery time",
+      "cycle time"
+    ],
+    "outcome_inventory": [
+      "inventory reduction",
+      "inventory decrease",
+      "stock level",
+      "inventory control"
+    ],
+    "outcome_utilization": [
+      "resource utilization",
+      "capacity utilization",
+      "equipment utilization",
+      "resource efficiency"
+    ],
+    "outcome_resilience": [
+      "resilience to disruptions",
+      "disruption resilience",
+      "robustness",
+      "fault tolerance"
+    ],
+    "outcome_efficiency": [
+      "computational efficiency",
+      "runtime",
+      "scalability",
+      "algorithm speed"
+    ],
+    "outcome_cost": [
+      "cost savings",
+      "cost reduction",
+      "economic benefit",
+      "expense reduction"
+    ]
+  },
+  "queries": [
+    "deep reinforcement learning manufacturing throughput",
+    "adaptive AI factories lead time",
+    "DRL production lines inventory reduction",
+    "reinforcement learning plants resource utilization"
+  ],
+  "rationale": "The queries pair each intervention synonym with a single outcome or population concept to maximize recall while keeping each query short (2–4 words). No Boolean operators, quotes, or field tags are used, ensuring compatibility with databases that require every word to match."
+}
