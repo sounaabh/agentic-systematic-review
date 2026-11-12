@@ -41,7 +41,7 @@ between synthesis and critic (conditional edge).
 
 | Project requirement | Implementation |
 |---|---|
-| Multi-agent architecture | 9 agents as LangGraph nodes (`src/agents/`) |
+| Multi-agent architecture | 11 agent roles in 8 LangGraph nodes (`src/agents/`) |
 | Protocol generation / template | Protocol Agent, or `--protocol configs/protocol_template.yaml` |
 | Search strategy | Search Strategy Agent (concepts → synonyms → queries) |
 | Multi-source retrieval + dedup | `src/tools/` (OpenAlex, arXiv, Semantic Scholar, PubMed), `dedup.py` |
