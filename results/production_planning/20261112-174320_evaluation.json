@@ -2,36 +2,42 @@
   "run": "20261112-174320",
   "screening": {
     "reference": "human consensus (disagreements counted as include)",
-    "records_checked": 0,
+    "records_checked": 30,
     "ai_final_vs_humans": {
-      "n": 0,
-      "accuracy": null,
-      "recall_sensitivity": null,
-      "specificity": null,
-      "precision": null,
-      "kappa": null,
+      "n": 30,
+      "accuracy": 0.967,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.938,
+      "precision": 0.933,
+      "kappa": 0.933,
       "missed_includes": 0,
-      "false_includes": 0
+      "false_includes": 1
     },
     "ai_reviewer_A_vs_humans": {
-      "n": 0,
-      "accuracy": null,
-      "recall_sensitivity": null,
-      "specificity": null,
-      "precision": null,
-      "kappa": null,
+      "n": 30,
+      "accuracy": 0.933,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.875,
+      "precision": 0.875,
+      "kappa": 0.867,
       "missed_includes": 0,
-      "false_includes": 0
+      "false_includes": 2
     },
     "ai_reviewer_B_vs_humans": {
-      "n": 0,
-      "accuracy": null,
-      "recall_sensitivity": null,
-      "specificity": null,
-      "precision": null,
-      "kappa": null,
+      "n": 30,
+      "accuracy": 0.967,
+      "recall_sensitivity": 1.0,
+      "specificity": 0.938,
+      "precision": 0.933,
+      "kappa": 0.933,
       "missed_includes": 0,
-      "false_includes": 0
+      "false_includes": 1
+    },
+    "time": {
+      "human_minutes_per_abstract": 0.83,
+      "estimated_manual_dual_screening_minutes": 66.7,
+      "records_screened_by_ai": 40,
+      "ai_full_pipeline_minutes": 14.8
     }
   },
   "completeness": {
