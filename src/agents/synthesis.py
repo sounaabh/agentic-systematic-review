@@ -58,6 +58,9 @@ def synthesis_agent(state: ReviewState) -> ReviewState:
                  "\n\nREVISE IT TO FIX THESE ISSUES:\n- " + "\n- ".join(feedback[-1]["issues"]))
 
     text = ask_text(get_llm(), SYNTH_PROMPT, user) if table else "_No studies met the inclusion criteria._"
+    # Keep the synthesis inside its report section: drop a top title, demote other big headings
+    text = re.sub(r"^#{1,2} .*synthesis.*\n+", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"^#{1,2} ", "### ", text, flags=re.MULTILINE)
     rev = state.get("revisions", -1) + 1
     log(state["run_id"], "synthesis", "draft_written", {"revision": rev, "chars": len(text)})
     save_json(state["run_id"], f"synthesis_v{rev}.json", {"text": text})

@@ -68,6 +68,7 @@ def report_agent(state: ReviewState) -> ReviewState:
         f"{'https://doi.org/' + s['record']['doi'] if s['record'].get('doi') else s['record'].get('url', '')}"
         for s in state["studies"])
     sources = ", ".join(pr.get("identified", {}).keys())
+    n_inc = pr.get("included_final", 0)
     queries = "\n".join(f"  - `{q}`" for q in state["search_strategy"]["queries"])
 
     md = f"""# Systematic Review: {p['research_question']}
@@ -95,7 +96,7 @@ title and abstract by two independent LLM reviewers ({m.get('screener_a_model')}
 with different prompts. Disagreements and uncertain cases were resolved by an adjudicator agent.
 
 **Data extraction.** Open-access full texts were retrieved when available (otherwise the abstract was used),
-split into passages and searched with hybrid retrieval (BM25 + dense embeddings, reciprocal rank fusion).
+split into passages and searched with {m.get('retrieval_mode', 'BM25 keyword retrieval')}.
 Each extracted value cites the passage ids it was taken from.
 
 **Quality appraisal.** A simplified checklist inspired by the Mixed Methods Appraisal Tool (MMAT).
@@ -112,7 +113,7 @@ Each extracted value cites the passage ids it was taken from.
 {pr.get('identified_total')} records were identified, {pr.get('duplicates_removed')} duplicates removed and
 {pr.get('screened')} records screened. Inter-reviewer agreement: Cohen's kappa = {m.get('screening_kappa')}
 (raw agreement {m.get('screening_raw_agreement')}; {m.get('screening_conflicts')} records adjudicated).
-{pr.get('included_final')} studies were included ({pr.get('full_text_retrieved')} with full text).
+{n_inc} {'study was' if n_inc == 1 else 'studies were'} included ({pr.get('full_text_retrieved')} with full text).
 
 ### 2.2 Study characteristics
 

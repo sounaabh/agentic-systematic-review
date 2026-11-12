@@ -59,6 +59,14 @@ class _Embedder:
         return cls._instance
 
 
+def retrieval_mode() -> str:
+    """Describes what was ACTUALLY used, for an honest Methods section."""
+    if _Embedder.get():
+        return (f"hybrid retrieval (BM25 + dense embeddings with {CONFIG['llm']['embedding_model']}, "
+                "reciprocal rank fusion)")
+    return "BM25 keyword retrieval (dense embeddings not available with this LLM provider)"
+
+
 def _cos(a, b):
     na, nb = math.sqrt(sum(x * x for x in a)), math.sqrt(sum(x * x for x in b))
     return sum(x * y for x, y in zip(a, b)) / (na * nb) if na and nb else 0.0

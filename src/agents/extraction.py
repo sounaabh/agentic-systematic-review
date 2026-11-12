@@ -8,7 +8,7 @@ are checked against the real chunks (traceability).
 from src.audit import log, save_json
 from src.config import CONFIG
 from src.llm import ask_structured, get_llm
-from src.rag import StudyIndex
+from src.rag import StudyIndex, retrieval_mode
 from src.state import Extraction, QualityAppraisal, ReviewState
 from src.tools.fulltext import chunk_text, download_pdf, pdf_to_text
 
@@ -96,7 +96,8 @@ def extraction_agent(state: ReviewState) -> ReviewState:
               "excluded_fulltext": len(extractions) - len(confirmed),
               "included_final": len(confirmed)}
     metrics = {**state["metrics"],
-               "traceability_rate": round(len(traced) / len(confirmed), 3) if confirmed else None}
+               "traceability_rate": round(len(traced) / len(confirmed), 3) if confirmed else None,
+               "retrieval_mode": retrieval_mode()}
 
     save_json(run_id, "extractions.json", extractions)
     save_json(run_id, "quality.json", quality)

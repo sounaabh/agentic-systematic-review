@@ -17,9 +17,15 @@ SOURCES = {
 }
 
 SYSTEM = """You are an information specialist designing the literature search for a systematic review.
-1. Identify the 2-3 key concepts of the protocol and list synonyms for each.
-2. Write 2 to 3 SHORT keyword queries (4-8 words, no Boolean operators, no field tags).
-   Each query must combine at least two concepts. Together they should give high recall."""
+1. Identify the key concepts of the protocol and list synonyms for each.
+2. Write 3 to 4 SHORT keyword queries for high recall:
+   - each query has 2 to 4 words only (databases require EVERY word to match),
+   - each query combines the intervention with ONE outcome or population concept,
+   - if the question has several outcomes (e.g. creativity AND entrepreneurship),
+     write separate queries for each instead of putting them in the same query,
+   - no Boolean operators, no quotes, no field tags.
+   Good: "generative AI creativity", "ChatGPT entrepreneurship students".
+   Bad: "AI art generators originality business model development"."""
 
 
 def search_strategy_agent(state: ReviewState) -> ReviewState:
@@ -27,7 +33,7 @@ def search_strategy_agent(state: ReviewState) -> ReviewState:
     user = (f"Research question: {p['research_question']}\nPopulation: {p['population']}\n"
             f"Intervention: {p['intervention']}\nOutcomes: {', '.join(p['outcomes'])}\nContext: {p['context']}")
     strategy = ask_structured(get_llm(json_mode=True), SearchStrategy, SYSTEM, user)
-    strategy.queries = [q.strip() for q in strategy.queries if q.strip()][:3]
+    strategy.queries = [q.strip().strip('"') for q in strategy.queries if q.strip()][:4]
 
     log(state["run_id"], "search_strategy", "strategy_generated", strategy.model_dump())
     save_json(state["run_id"], "search_strategy.json", strategy.model_dump())
@@ -38,6 +44,7 @@ def retrieval_agent(state: ReviewState) -> ReviewState:
     cfg = CONFIG["search"]
     year_from = state["protocol"].get("year_from") or cfg.get("year_from")
     raw: list[Record] = []
+    per_source: dict[str, list[Record]] = {}
     identified = {}
 
     for source in cfg["sources"]:
@@ -50,12 +57,17 @@ def retrieval_agent(state: ReviewState) -> ReviewState:
                 print(f"  ! {source} failed for '{q}': {e}")
                 continue
             identified[source] += len(hits)
-            raw += hits
+            per_source.setdefault(source, []).extend(hits)
             log(state["run_id"], "retrieval", "search_executed", {"source": source, "query": q, "hits": len(hits)})
             print(f"  {source:17s} {len(hits):4d} hits  <- {q}")
 
+    # Interleave sources round-robin (1st of each source, then 2nd of each...) so that
+    # relevance-ranked results from every database survive the screening cap fairly.
+    lists = list(per_source.values())
+    for i in range(max((len(l) for l in lists), default=0)):
+        raw += [l[i] for l in lists if i < len(l)]
+
     unique, n_dup = deduplicate(raw)
-    # Interleave sources so the cap keeps a fair mix, then cap
     cap = cfg["max_records_to_screen"]
     capped = unique[:cap]
     prisma = {"identified": identified, "identified_total": len(raw),
