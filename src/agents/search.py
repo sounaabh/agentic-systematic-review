@@ -19,6 +19,8 @@ SOURCES = {
 SYSTEM = """You are an information specialist designing the literature search for a systematic review.
 1. Identify the key concepts of the protocol and list synonyms for each.
 2. Write 3 to 4 SHORT keyword queries for high recall:
+   - the FIRST query is the core of the question: intervention + main task or
+     topic (e.g. "reinforcement learning dynamic scheduling"); never drop the main task,
    - each query has 2 to 4 words only (databases require EVERY word to match),
    - each query combines the intervention with ONE outcome or population concept,
    - if the question has several outcomes (e.g. creativity AND entrepreneurship),

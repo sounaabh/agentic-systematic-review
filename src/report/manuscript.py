@@ -47,7 +47,13 @@ def report_agent(state: ReviewState) -> ReviewState:
                   ", ".join(e.get("evidence", []))] for e in incl]
     qa_items = ["clear_aims", "appropriate_design", "adequate_sample_or_data", "valid_outcome_measures",
                 "limitations_addressed", "overall"]
-    qa_rows = [[q["key"]] + [q.get(i, "") for i in qa_items] for q in state["quality"]]
+    incl_keys = {e["key"] for e in incl}
+    qa_rows = [[q["key"]] + [q.get(i, "") for i in qa_items] for q in state["quality"] if q["key"] in incl_keys]
+    incl_studies = [s for s in state["studies"] if s["key"] in incl_keys]
+    excl = [e for e in state["extractions"] if e["key"] not in incl_keys]
+    excluded_md = ("\n**Excluded after full-text assessment:**\n" + "\n".join(
+        f"- {e['key']} *{e.get('title', '')}*: {e.get('exclusion_reason') or 'did not meet the criteria'}"
+        for e in excl) + "\n") if excl else ""
 
     with open(d / "extraction_table.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
@@ -56,7 +62,7 @@ def report_agent(state: ReviewState) -> ReviewState:
         w.writerow(cols)
         for e in state["extractions"]:
             w.writerow([", ".join(e[c]) if isinstance(e.get(c), list) else e.get(c, "") for c in cols])
-    (d / "references.bib").write_text(_bibtex(state["studies"]), encoding="utf-8")
+    (d / "references.bib").write_text(_bibtex(incl_studies), encoding="utf-8")
 
     critic_log = "\n".join(
         f"- Revision {c['revision']}: {'approved' if c['approved'] else 'revision requested'}"
@@ -66,7 +72,7 @@ def report_agent(state: ReviewState) -> ReviewState:
         f"{' et al.' if len(s['record'].get('authors') or []) > 3 else ''} ({s['record'].get('year')}). "
         f"*{s['record']['title']}*. {s['record'].get('venue') or ''}. "
         f"{'https://doi.org/' + s['record']['doi'] if s['record'].get('doi') else s['record'].get('url', '')}"
-        for s in state["studies"])
+        for s in incl_studies)
     sources = ", ".join(pr.get("identified", {}).keys())
     n_inc = pr.get("included_final", 0)
     queries = "\n".join(f"  - `{q}`" for q in state["search_strategy"]["queries"])
@@ -118,7 +124,7 @@ Each extracted value cites the passage ids it was taken from.
 ### 2.2 Study characteristics
 
 {_md_table(char_rows, ['Key', 'Study', 'Design', 'Sample / data', 'AI method', 'Effect', 'Quality', 'Evidence'])}
-
+{excluded_md}
 ### 2.3 Quality appraisal
 
 {_md_table(qa_rows, ['Key', 'Clear aims', 'Design', 'Sample/data', 'Outcome measures', 'Limitations', 'Overall'])}

@@ -3,6 +3,9 @@
     python resynthesize.py runs/20261112-154058
         -> synthesis -> critic -> report again (e.g. after improving the prompts)
 
+    python resynthesize.py runs/20261112-154058 --report-only
+        -> rebuilds review.md from the saved synthesis and critic log (no LLM calls)
+
     python resynthesize.py runs/20261112-154058 --extract-remaining
         -> first extracts the included studies that were skipped because of the
            max_studies cap, then synthesis -> critic -> report
@@ -38,10 +41,24 @@ def included_after_human(run: Path) -> list[str]:
     return [i for i in ids if i not in dropped]
 
 
+def saved_synthesis(run: Path) -> dict:
+    """Last synthesis draft + the critic reviews of that synthesis round, from the audit log."""
+    events = [json.loads(l) for l in (run / "audit.jsonl").read_text(encoding="utf-8").splitlines()]
+    starts = [i for i, e in enumerate(events)
+              if e["agent"] == "synthesis" and e["event"] == "draft_written" and e["data"].get("revision") == 0]
+    last_round = events[starts[-1]:] if starts else events
+    critic = [e["data"] for e in last_round if e["agent"] == "critic" and e["event"] == "review"]
+    rev = max((e["data"]["revision"] for e in last_round
+               if e["agent"] == "synthesis" and e["event"] == "draft_written"), default=0)
+    text = load(run, f"synthesis_v{rev}.json")["text"]
+    return {"synthesis": text, "critic_feedback": critic, "revisions": rev}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("run")
     ap.add_argument("--extract-remaining", action="store_true")
+    ap.add_argument("--report-only", action="store_true", help="rebuild the report, no LLM calls")
     args = ap.parse_args()
 
     run = Path(args.run)
@@ -73,6 +90,12 @@ def main():
         save_json(state["run_id"], "extractions.json", state["extractions"])
         save_json(state["run_id"], "quality.json", state["quality"])
         save_json(state["run_id"], "evidence_chunks.json", state["studies"])
+
+    if args.report_only:
+        state.update(saved_synthesis(run))
+        state.update(report_agent(state))
+        print(f"Report rebuilt: {state['report_path']}")
+        return
 
     while True:
         state.update(synthesis_agent(state))
