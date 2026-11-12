@@ -1,29 +1,33 @@
+# Personal LLM settings (provider, models, API keys) go in your own .env file.
+# This file holds the shared review settings used for the final runs.
+
 # ---- LLM ----------------------------------------------------------
-# provider: ollama | groq | nvidia
+# provider: ollama | groq | nvidia   (override with LLM_PROVIDER in .env)
 llm:
   provider: ollama
   model: qwen2.5:7b            # main model (protocol, adjudication, extraction, synthesis)
   temperature: 0               # 0 = reproducible runs
   num_ctx: 8192                # context window (Ollama only)
   # Screener B uses a different model to simulate an independent second reviewer.
-  # Leave empty ("") to reuse the main model with a different prompt (faster).
   screener_b_model: llama3.1:8b
-  embedding_model: nomic-embed-text   # for dense retrieval; set "" to use BM25 only
+  embedding_model: nomic-embed-text   # dense retrieval (Ollama only); "" = BM25 only
+  reasoning_effort: low        # Groq gpt-oss models: low | medium | high
 
-# Examples for other providers:
-#   provider: groq    model: llama-3.3-70b-versatile   (needs GROQ_API_KEY in .env)
-#   provider: nvidia  model: meta/llama-3.1-70b-instruct (needs NVIDIA_API_KEY)
+# Groq example (.env):  LLM_PROVIDER=groq  LLM_MODEL=openai/gpt-oss-120b
+#                       SCREENER_B_MODEL=openai/gpt-oss-20b  EMBEDDING_MODEL=
+# Groq free tier: 8K tokens/min and 200K tokens/day per model -> the sizes below
+# are chosen so a full run fits in one day's quota.
 
 # ---- Search -------------------------------------------------------
 search:
-  sources: [openalex, semantic_scholar, arxiv]
-  max_results_per_query: 40    # per source, per query
-  max_records_to_screen: 150   # cap after deduplication (keeps runs short)
+  sources: [openalex, arxiv]   # semantic_scholar is rate-limited without an API key
+  max_results_per_query: 25    # per source, per query
+  max_records_to_screen: 70    # cap after deduplication
   year_from: 2020
 
 # ---- Full text + RAG ----------------------------------------------
 fulltext:
-  max_studies: 15              # max included studies to fetch/extract
+  max_studies: 10              # max included studies to fetch/extract
   chunk_words: 220
   chunk_overlap: 40
   top_k_chunks: 8
