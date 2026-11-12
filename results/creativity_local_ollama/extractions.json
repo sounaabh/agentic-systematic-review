@@ -1,0 +1,136 @@
+[
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "theoretical analysis",
+    "setting": "theoretical and practical guidelines for AI creativity",
+    "sample_or_dataset": "not reported",
+    "ai_method": "autoregressive models with prompting",
+    "comparison": "specific observable human groups",
+    "outcomes": [
+      "AI can emerge as a hypothetical new creator with the same creative abilities as the human creators it was trained on",
+      "practical guidelines for measuring the statistical creativity of large language models (LLMs)"
+    ],
+    "key_findings": "The study proposes a theoretical framework for understanding AI creativity, suggesting that AI can be as creative as humans if it can fit a sufficient amount of conditional data without marginalizing generation conditions. Practical guidelines are provided for assessing and fostering AI’s creative potential.",
+    "effect_direction": "positive",
+    "limitations": "The challenge lies in the availability of sufficient conditional data and the capacity of the AI model to fit those data. Future work is needed to address whether AI can effectively fit the necessary data.",
+    "evidence": [
+      "S1-c6",
+      "S1-c10",
+      "S1-c21",
+      "S1-c22",
+      "S1-c30",
+      "S1-c31",
+      "S1-c36",
+      "S1-c37"
+    ],
+    "key": "S1",
+    "record_id": "arxiv:2401.01623",
+    "title": "Can AI Be as Creative as Humans?",
+    "full_text": true
+  },
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "survey, case study",
+    "setting": "educational and professional settings",
+    "sample_or_dataset": "students, knowledge workers, university students",
+    "ai_method": "generative AI tools, such as ChatGPT and other content generators",
+    "comparison": "extrinsically motivated students vs. intrinsically motivated students, intelligent learning assistants",
+    "outcomes": [
+      "impact on creativity",
+      "impact on entrepreneurial competencies",
+      "authorial agency",
+      "ethical challenges"
+    ],
+    "key_findings": "Generative AI tools can support creativity by reducing knowledge gaps, providing immediate feedback, and enabling learners to work more independently. However, the impact on creativity and entrepreneurial competencies varies based on motivation and individual differences. Ethical challenges arise from the use of AI in authorship and academic integrity.",
+    "effect_direction": "positive",
+    "limitations": "Mixed findings, need for further empirical research, focus on measurable outcomes rather than deeper processes of meaning-making and authorship.",
+    "evidence": [
+      "S2-c10",
+      "S2-c13",
+      "S2-c21",
+      "S2-c22",
+      "S2-c38",
+      "S2-c44",
+      "S2-c47",
+      "S2-c48"
+    ],
+    "key": "S2",
+    "record_id": "arxiv:2512.07117",
+    "title": "Human Agency and Creativity in AI-Assisted Learning Environments",
+    "full_text": true
+  },
+  {
+    "eligible_confirmed": false,
+    "exclusion_reason": "The study does not report any quantitative impact on human creativity or entrepreneurial competencies.",
+    "study_type": "Theoretical framework",
+    "setting": "Socio-technical",
+    "sample_or_dataset": "not reported",
+    "ai_method": "Generative Artificial Intelligence (GAI)",
+    "comparison": "not reported",
+    "outcomes": [],
+    "key_findings": "The study introduces a socio-technical framework for evaluating generative AI creativity, proposing a tripartite model that includes Input Network Diversity, Process Translation Depth, and Output Stabilization.",
+    "effect_direction": "unclear",
+    "limitations": "The study focuses on theoretical and conceptual contributions rather than empirical evidence of impact on human creativity or entrepreneurial competencies.",
+    "evidence": [],
+    "key": "S3",
+    "record_id": "openalex:W7219372573",
+    "title": "Rethinking Machine Creation: A Socio-Technical Framework for Evaluating Generative AI Creativity",
+    "full_text": false
+  },
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "case study",
+    "setting": "mathematics and creative collaboration",
+    "sample_or_dataset": "three examples from the second author’s research",
+    "ai_method": "AI systems, including generative AI tools",
+    "comparison": "human creativity and generative AI tools",
+    "outcomes": [
+      "enhancement of human creativity",
+      "augmentation of human capabilities",
+      "discovery of new solutions"
+    ],
+    "key_findings": "The study demonstrates that AI tools can augment human creativity in various domains, such as mathematics, by providing computational support and generating novel ideas. However, the findings also suggest that AI should be used to support rather than replace human creativity.",
+    "effect_direction": "positive",
+    "limitations": "The study is based on anecdotal examples and may not be generalizable to all creative fields. The role of AI in creative work is multifaceted, and the study does not fully explore the potential for AI to monopolize creativity in specific fields.",
+    "evidence": [
+      "S4-c14",
+      "S4-c15",
+      "S4-c16",
+      "S4-c18",
+      "S4-c23",
+      "S4-c24",
+      "S4-c27"
+    ],
+    "key": "S4",
+    "record_id": "doi:10.1016/b978-0-443-34073-4.00009-5",
+    "title": "Human-AI Co-Creativity: Exploring Synergies Across Levels of Creative Collaboration",
+    "full_text": true
+  },
+  {
+    "eligible_confirmed": true,
+    "exclusion_reason": null,
+    "study_type": "experiment",
+    "setting": "online experiment",
+    "sample_or_dataset": "writers who wrote short stories, some of whom obtained story ideas from an LLM",
+    "ai_method": "generative AI, including large language models (LLMs)",
+    "comparison": "writers who did not obtain story ideas from an LLM vs. writers who did",
+    "outcomes": [
+      "creativity of stories",
+      "quality of stories",
+      "enjoyment of stories"
+    ],
+    "key_findings": "Access to generative AI ideas caused stories to be evaluated as more creative, better written, and more enjoyable, especially among less creative writers, but reduced the collective diversity of novel content.",
+    "effect_direction": "mixed",
+    "limitations": "The study focuses on short stories and may not generalize to other types of creative outputs. The experiment may not fully capture the complex dynamics of real-world creativity and collaboration.",
+    "evidence": [
+      "S5-c0"
+    ],
+    "key": "S5",
+    "record_id": "doi:10.1126/sciadv.adn5290",
+    "title": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
+    "full_text": false
+  }
+]

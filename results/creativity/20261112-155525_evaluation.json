@@ -1,0 +1,50 @@
+{
+  "run": "20261112-155525",
+  "screening": {
+    "reference": "human consensus (disagreements counted as include)",
+    "records_checked": 30,
+    "ai_final_vs_humans": {
+      "n": 30,
+      "accuracy": 0.367,
+      "recall_sensitivity": 0.409,
+      "specificity": 0.25,
+      "precision": 0.6,
+      "kappa": -0.267,
+      "missed_includes": 13,
+      "false_includes": 6
+    },
+    "ai_reviewer_A_vs_humans": {
+      "n": 30,
+      "accuracy": 0.4,
+      "recall_sensitivity": 0.409,
+      "specificity": 0.375,
+      "precision": 0.643,
+      "kappa": -0.164,
+      "missed_includes": 13,
+      "false_includes": 5
+    },
+    "ai_reviewer_B_vs_humans": {
+      "n": 30,
+      "accuracy": 0.367,
+      "recall_sensitivity": 0.409,
+      "specificity": 0.25,
+      "precision": 0.6,
+      "kappa": -0.267,
+      "missed_includes": 13,
+      "false_includes": 6
+    },
+    "human_1_vs_human_2_kappa": 0.467,
+    "time": {
+      "human_minutes_per_abstract": 1.25,
+      "estimated_manual_dual_screening_minutes": 175.0,
+      "records_screened_by_ai": 70,
+      "ai_full_pipeline_minutes": 26.2
+    }
+  },
+  "completeness": {
+    "evidence_table_fields_filled": 0.955,
+    "studies_with_full_text": "6/11",
+    "traceability_rate": 1.0,
+    "inter_agent_kappa": 0.679
+  }
+}

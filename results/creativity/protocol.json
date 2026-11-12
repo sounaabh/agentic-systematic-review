@@ -1,0 +1,40 @@
+{
+  "research_question": "What is the effect of generative AI tools on human creativity and entrepreneurial competencies?",
+  "population": "Individuals (students, professionals, entrepreneurs) engaged in creative or entrepreneurial activities",
+  "intervention": "Use of generative AI tools (e.g., ChatGPT, DALL·E, Midjourney, Stable Diffusion) as a support or co‑creation aid",
+  "comparator": "none / not required (studies may use pre‑post designs, within‑subject comparisons, or no comparison group)",
+  "outcomes": [
+    "Measures of creative performance (e.g., originality, fluency, flexibility, elaboration)",
+    "Entrepreneurial competency scores (e.g., opportunity recognition, risk tolerance, resource mobilization)",
+    "Self‑reported creativity or entrepreneurial self‑efficacy",
+    "Quality or novelty of generated artefacts/products"
+  ],
+  "context": "Educational, workplace, or startup environments where generative AI tools are applied to creative or entrepreneurial tasks",
+  "study_designs": [
+    "Randomized controlled trial",
+    "Quasi‑experimental pre‑post study",
+    "Observational cohort or cross‑sectional survey",
+    "Case study or mixed‑methods investigation",
+    "Simulation or laboratory experiment"
+  ],
+  "inclusion_criteria": [
+    "Empirical primary research reporting quantitative or qualitative data on the impact of generative AI tools",
+    "Participants are humans using the AI tool for creative or entrepreneurial tasks",
+    "The study includes at least one of the specified outcomes (creativity or entrepreneurial competencies)",
+    "The intervention explicitly involves a generative AI system (text, image, audio, video generation)",
+    "Published in a peer‑reviewed journal, conference proceeding, or reputable scholarly outlet",
+    "Full text available in English"
+  ],
+  "exclusion_criteria": [
+    "Editorials, opinion pieces, commentaries, or reviews without original data",
+    "Studies focusing solely on AI performance without measuring human outcomes",
+    "Non‑English language publications",
+    "Papers that do not involve a generative AI tool (e.g., only predictive AI or traditional software)",
+    "Research on non‑human subjects (e.g., animal studies, purely algorithmic evaluations)",
+    "Duplicate reports of the same dataset without new analysis"
+  ],
+  "year_from": 2020,
+  "languages": [
+    "English"
+  ]
+}

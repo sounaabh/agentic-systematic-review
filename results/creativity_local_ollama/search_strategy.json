@@ -1,0 +1,30 @@
+{
+  "concepts": {
+    "generative AI": [
+      "generative AI tools",
+      "ChatGPT",
+      "AI creativity"
+    ],
+    "creativity": [
+      "creativity levels",
+      "innovation outcomes"
+    ],
+    "entrepreneurship": [
+      "entrepreneurial competencies",
+      "entrepreneurial performance"
+    ],
+    "problem-solving": [
+      "problem-solving abilities"
+    ],
+    "adaptability": [
+      "adaptability to new technologies"
+    ]
+  },
+  "queries": [
+    "generative AI creativity",
+    "AI tools entrepreneurship",
+    "generative AI problem-solving",
+    "AI adaptability startups"
+  ],
+  "rationale": "These queries are designed to capture the key concepts with high recall, focusing on the intervention and specific outcomes or populations. Each query is kept short and uses only relevant keywords to ensure that the search results are relevant and comprehensive."
+}

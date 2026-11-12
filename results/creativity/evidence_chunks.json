@@ -1,0 +1,595 @@
+[
+  {
+    "key": "S1",
+    "record": {
+      "id": "doi:10.1126/sciadv.adn5290",
+      "title": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
+      "abstract": "Creativity is core to being human. Generative artificial intelligence (AI)-including powerful large language models (LLMs)-holds promise for humans to be more creative by offering new ideas, or less creative by anchoring on generative AI ideas. We study the causal impact of generative AI ideas on the production of short stories in an online experiment where some writers obtained story ideas from an LLM. We find that access to generative AI ideas causes stories to be evaluated as more creative, better written, and more enjoyable, especially among less creative writers. However, generative AI-enabled stories are more similar to each other than stories by humans alone. These results point to an increase in individual creativity at the risk of losing collective novelty. This dynamic resembles a social dilemma: With generative AI, writers are individually better off, but collectively a narrower scope of novel content is produced. Our results have implications for researchers, policy-makers, and practitioners interested in bolstering creativity.",
+      "authors": [
+        "Anil Rajnikant Doshi",
+        "Oliver Hauser"
+      ],
+      "year": 2024,
+      "doi": "10.1126/sciadv.adn5290",
+      "pmid": "38996021",
+      "arxiv_id": null,
+      "venue": "Science Advances",
+      "url": "https://openalex.org/W4400578758",
+      "oa_pdf_url": "https://www.science.org/doi/pdf/10.1126/sciadv.adn5290?download=true",
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S1-c0",
+        "text": "Generative AI enhances individual creativity but reduces the collective diversity of novel content. Creativity is core to being human. Generative artificial intelligence (AI)-including powerful large language models (LLMs)-holds promise for humans to be more creative by offering new ideas, or less creative by anchoring on generative AI ideas. We study the causal impact of generative AI ideas on the production of short stories in an online experiment where some writers obtained story ideas from an LLM. We find that access to generative AI ideas causes stories to be evaluated as more creative, better written, and more enjoyable, especially among less creative writers. However, generative AI-enabled stories are more similar to each other than stories by humans alone. These results point to an increase in individual creativity at the risk of losing collective novelty. This dynamic resembles a social dilemma: With generative AI, writers are individually better off, but collectively a narrower scope of novel content is produced. Our results have implications for researchers, policy-makers, and practitioners interested in bolstering creativity."
+      }
+    ]
+  },
+  {
+    "key": "S2",
+    "record": {
+      "id": "arxiv:2607.07521",
+      "title": "Creativity from Friction: Human-AI Interaction for Exploratory Structural Design",
+      "abstract": "AI agents that generate final answers based on user input often do not meet the needs of creative fields. Fields such as structural design and architecture need interactive systems that help users externalise and develop ideas, explore alternatives, and refine partial solutions. The final product of such designs needs to comply with many constraints concerning, e.g., spatial configuration, mechanical behaviour, material quantities, and costs. These constraints create friction in the design process, which can stimulate novel and creative solutions. In this paper, we discuss the misalignment between current generative AI goals to remove friction and provide final solutions and the needs of creators, such as structural designers, who develop ideas through iterative work. We present the design dimensions of systems allowing for constrained human-AI co-creation that rely on vision-language models making structural exploration conversational, multimodal, and responsive to evolving human intent in ways that follow and augment the discipline's creative process. Through a pilot design interface based on these principles and a study with experts in the field, this paper shows how structural designers perceive interactive AI systems and how such systems can support design space exploration by reducing repetitive modelling friction while preserving reflective design friction.",
+      "authors": [
+        "Ricardo Maia Avelino",
+        "Rita Sevastjanova",
+        "Tom Van Mele",
+        "Philippe Block",
+        "Mennatallah El-Assady"
+      ],
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2607.07521",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2607.07521",
+      "oa_pdf_url": "https://arxiv.org/pdf/2607.07521",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S2-c1",
+        "text": "the discipline’s creative pro- cess. Through a pilot design interface based on these principles and a study with experts in the field, this paper shows how structural designers perceive interactive AI systems and how such sys- tems can support design space exploration by re- ducing repetitive modelling friction while preserv- ing reflective design friction. 1. Introduction Generative AI is often evaluated for its ability to produce plausible final outputs such as an image, a text, a plan, or a model from user input. However, creative design work 1Block Research Group, Department of Architecture, ETH Zurich, Switzerland 2IVIA Lab, Department of Computer Science, ETH Zurich, Switzerland. Correspondence to: Ricardo Maia Avelino <mricardo@ethz.ch>. ICML’26 Workshop on Human-AI Co-Creativity, Seoul, South Korea. Copyright 2026 by the author(s). rarely progresses as a one-shot process to the final product. Designers externalise partial ideas, compare alternatives, and use intermediate models to think, collaborate, and create. This view resonates with Sch¨on’s model for professionals of creative disciplines that engage in “reflection-in-action” adapting their creation process to ever evolving constraints and ideas (Sch¨on, 1983). Thus, generative AI in creative do- mains must shift from workflow automation to exploration augmentation (Rezwana & Maher, 2023; Wang et al., 2025). Structural design makes this need particularly visible. It is a creative discipline, but not an unconstrained one. Structural engineers must balance"
+      },
+      {
+        "id": "S2-c10",
+        "text": "intrinsic ambiguity. Together, these dimensions can guide the role of AI in ex- ploratory structural design. The next section proposes a workflow that embeds these design dimensions. 3. A Co-creation Structural Design Workflow Based on the dimensions presented above, this work pro- poses a co-creative workflow for exploratory structural de- sign allowing for human⇄model⇄AI interaction and an- chored on pre-defined and intrinsic discipline constraints (Figure 2). Explicit constraints, such as design parameters, site conditions, and regulations, are defined at the begin- ning of the process. These are complemented by intrin- sic discipline constraints based on engineering validity or knowledge. Some of this knowledge should be embedded in the model’s grounding, while some remains part of the designer’s tacit expertise and professional judgement about what is likely to perform well. Motivated by these con- straints, the human and AI agents co-create in a design loop where the design intent is co-developed between them. Through multimodal inputs, both agents can edit and inter- act with the model. Due to interactivity and state awareness, both agents can perceive the model changes and review the current state. The agents share bi-directional feedback throughout the design process. We argue that this cycle can support an augmented design exploration, which might lead to more creative ways to satisfy the constraints. The goal is not to automate"
+      },
+      {
+        "id": "S2-c11",
+        "text": "the current state. The agents share bi-directional feedback throughout the design process. We argue that this cycle can support an augmented design exploration, which might lead to more creative ways to satisfy the constraints. The goal is not to automate the production of a final structural form but to follow the design process, reducing unproductive modelling friction while preserving the productive friction through which designers inspect, revise, and negotiate constraints. By editing the structural model, receiving feedback from the AI agent, the human agent acquires important insights that influence the design process. The generated designs can then be evaluated for quantitative or qualitative performance and the results might reveal problems that then act as additional constraints requiring new creative solutions. To understand the effectiveness and potential of this design workflow, we conducted a preliminary study on a pilot struc- tural design interface that enables bi-directional multimodal interactive structural design using Google Gemini 3.1 Flash- Lite (Google DeepMind, 2026) as its underlying reasoning model. The study is described in the following section. 4. Preliminary Design Study We conduct a preliminary study to examine how expert users interact with an AI-supported structural design interface in a constrained design scenario. This study offers qualitative insight into how designers use, trust, revise, and respond to an AI agent during early-stage structural design and how"
+      },
+      {
+        "id": "S2-c13",
+        "text": "addition, the building must provide an open space in the middle to allow a public plaza such that the building cannot cross a virtual sphere with diameter of 10.0 m positioned in the centre of the support footprint. Designers are instructed to develop creative but structurally feasible solutions with at least 5 storeys and 2000 m2 floor area. 4.2. Participants and Procedure We recruit n = 3 participants with experience in the fields of architecture, structural engineering, and parametric mod- elling. Each session starts with a consent form and then pro- ceeds in six stages guided by a questionnaire (Appendix A). A test facilitator observes and assists participants, espe- cially when they struggle or feel uncertain about using the AI interface, following the pair-analytics design approach (Arias-Hernandez et al., 2011). The stages are defined as: 1. Demographics: Participants fill out a survey of their professional and educational experience and their knowl- edge of 3D modelling and AI (Appendix B). Figure 3. Boundaries of the user study. The building must stay within the red boundary, avoid the spherical object, and be sup- ported in the green zone. Measurements are indicated in metres. 2. Task presentation: Participants receive the design prob- lem and printed pages of the orthographic views of the building and are asked to develop their ideas by sketching their"
+      },
+      {
+        "id": "S2-c20",
+        "text": "AI-supported process helped develop the idea of a circular internal court from the ground floor to the roof, which had not been consid- ered before. P01 changed their design idea twice, achieving a design that successfully met the constraints. P02 also changed their design idea in the sketching phase, erasing the top bays of the building to create a more interesting staggering effect. This interaction shows that professionals in creative domains find new solutions as they develop their original designs. An AI system that acts as a co-creative assistant can, therefore, enrich the design journey and spark new creative insights from structural designers. 5.2. Productive and Unproductive Friction Not all friction should be removed from creative work. Some friction is productive since it forces designers to con- front constraints, compare alternatives, and make judge- ments. Other friction, however, is unproductive, including repetitive modelling actions, interface overhead, and low- level translation between intent and geometry. In our study, all participants identified the reduction of repet- itive modelling as an area where AI was helpful. P01 em- phasised that AI quickly created repetitive elements. P02 noted that the AI made it possible to quickly generate a structure from a grid and remove unwanted bays through simple prompts, avoiding manual removal that would other- wise have taken longer. P03 similarly highlighted the rapid"
+      },
+      {
+        "id": "S2-c23",
+        "text": "6 Creativity from Friction: Human–AI Interaction for Exploratory Structural Design 5.4. Automation, Collaboration, or Co-creation? Users were asked whether they would categorise their in- teraction as automation, collaboration, or co-creation, and why. The reflection of the participants revealed different expectations about the agency in human–AI structural de- sign workflows. P01 categorised the current interaction as automation, describing co-creation as an AI system capable of issuing early warnings about feasibility or problematic design decisions. P02 described the interaction as collabora- tion because both the human and AI can modify the model. For P02, co-creation means an AI system that would “sug- gest things automatically” or highlight when the design was drifting from the original constraints. P03 also described the current experience as a collaboration and appreciated being in control of the design process and “figuring out new ideas” independently as the project progressed. These responses support the argument that co-creation in structural design does not necessarily mean greater AI autonomy. Instead, it requires a careful distribution of agency which should adapt to the user’s preference as discussed in (Holter & El-Assady, 2024). 5.5. Limitations This paper presents a position and a preliminary study rather than an exhaustive evaluation of structural validity. The par- ticipant sample was small, even if it allowed one to identify interaction patterns and design dimensions. The interface"
+      },
+      {
+        "id": "S2-c24",
+        "text": "2024). 5.5. Limitations This paper presents a position and a preliminary study rather than an exhaustive evaluation of structural validity. The par- ticipant sample was small, even if it allowed one to identify interaction patterns and design dimensions. The interface is in continuous development, so not all drawing functions comparable to CAD software are currently supported. In particular, users have reported missing functions of click- and-drag and snap that could facilitate the action of human and AI agents. Furthermore, in the present study, changes in the design direction were initiated mainly by designers themselves rather than AI. The current study also does not establish that AI use alone caused more creative outcomes. Instead, it identifies interaction patterns between designers and structural artefacts that can guide how AI-powered in- terfaces might more effectively support co-creation. Future work could study this process subjected to increased AI au- tonomy, where it could proactively suggest actions or signal potential design redirections. 6. Conclusion We argue that creative AI systems for structural design, as well as for other creative disciplines, should not be designed as final-answer generators, but rather as interactive partners for exploring the design space. Observing participants in- teract with a prototype AI interface, this paper shows how design intent and user objective evolve together with the artefact. The final artefact is then"
+      },
+      {
+        "id": "S2-c25",
+        "text": "final-answer generators, but rather as interactive partners for exploring the design space. Observing participants in- teract with a prototype AI interface, this paper shows how design intent and user objective evolve together with the artefact. The final artefact is then shaped by the constraints of the design problem and by the intrinsic feasibility con- straints of structural design. Future AI-assisted structural design systems should then follow this process, assisting by removing unproductive friction coming from modelling repetition while preserving productive friction that support designers in achieving their final outcome. We argue that for structural design, constraints have a dual effect: they reduce the design space while also creating opportunities to stimulate creativity. We propose design dimensions for future human–AI tools for structural de- sign including model grounding in discipline-specific knowl- edge, human- and AI-readable data structures allowing both agents to modify the model, state awareness and interaction history enabling real-time inspection and traceability, and multimodal expression of design intent for a more natural and flexible workflow. The preliminary study described in this paper has reinforced the importance of these design dimensions, and future work will focus on further interface development, systematic evaluation of AI systems for struc- tural design, exploration of different levels of AI autonomy and improving domain specific model grounding. We be- lieve that future work on these"
+      }
+    ]
+  },
+  {
+    "key": "S3",
+    "record": {
+      "id": "doi:10.1145/3803784.3807570",
+      "title": "How Creatives Approach GenAI Image Generation: Tensions Between Structured Guidance, Self-Experimentation, and Creative Autonomy",
+      "abstract": "As generative AI tools increasingly influence creative practice, they raise longstanding HCI questions about how creatives learn complex software and how they can be better supported. We conducted an interview study with artists and hobbyists (n=8) and a follow-up survey (n=159) to understand how this population approaches and seeks guidance for GenAI image tools. We found that creatives commonly use either self-experimentation or tutorials to explore GenAI tools, yet many struggle with confusing AI terminology. To gain further insight into creatives' learning experiences, we developed a research probe to elicit creatives' perceptions of structured guidance. Our user study with 17 creatives revealed that, even when creatives described the guidance as helpful for understanding AI, many still preferred self-experimentation, feeling that guidance could limit their creativity. Our findings highlight a central tension in supporting AI literacy for creatives: balancing guidance and promoting literacy while preserving creative freedom.",
+      "authors": [
+        "Haidan Liu",
+        "Isabelle Kwan",
+        "Taiga Okuma",
+        "Jeffrey Loverock",
+        "Nicholas Vincent",
+        "Parmit K Chilana"
+      ],
+      "year": 2026,
+      "doi": "10.1145/3803784.3807570",
+      "pmid": null,
+      "arxiv_id": "2605.10898",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2605.10898",
+      "oa_pdf_url": "https://arxiv.org/pdf/2605.10898",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S3-c20",
+        "text": "results of the approaches questions are shown in Figure 3. Respon- dents were recruited through our local university and community contacts and online platforms such as Reddit and Twitter and were entered into a raffle for a $50 Amazon gift card. Respondent Demographics and Backgrounds: We initially received 220 responses, and then manually inspected the response data and removed those that were spam, nonsensical or incomplete. This process left us with a total of 159 responses from participants across 13 countries, including the United States (44.7%), Canada (34.6%), the United Kingdom (13.8%), and other countries (6.9%). Re- spondents had diverse art education backgrounds, with the majority (64.1%) holding a bachelor’s degree or higher in art or a related field, 30.2% having some art education, and 5.7% having no formal art education. Results: Building on prior work on creatives’ difficulties in understanding AI systems [33, 90] and our interview findings, we used the survey to contextualize how creatives currently attempt to make sense of GenAI image tools. We compared a low digital-tool- use subgroup (i.e., respondents who never, rarely, or sometimes use digital tools in their art practice; 𝑛= 80) with the full sample (𝑛= 159). Survey responses showed that creatives most commonly relied on third-party tutorials (52.8%), such as YouTube videos or online courses, followed by self-experimentation (29.6%), while official"
+      },
+      {
+        "id": "S3-c28",
+        "text": "6). Prior work shows that artists often evaluate results first and then infer what model behaviors, prompt components, or parameter choices might have produced them [45, 77], and that this backward reasoning supports mental model formation in opaque systems [50, 53, 67]. To align with this reasoning pattern, Peek-Box pre- sented outputs before explanations. Across contexts, the probe used contrastive examples to illustrate how changes in prompts and settings can shift outputs and to surface cases where results diverged from intended details, supporting more realistic expec- tations. The style transfer and sketch to image contexts extended this framing by allowing participants to adjust a style intensity or creativity setting and observe trade-offs between constraint and variation. 4.2 Participants We recruited 17 participants (6F/10M/1GNC, gender non-conforming) from various professions, including artists, graphic designers, web designers, students, civil engineers, executive directors and photog- raphers. Most participants (14 out of 17) had some experience with GenAI image tools (Table 1), but none of them were ML experts. Participants included both self-identified artists and art hobbyists; across the sample, Gen AI was used primarily for exploration and early-stage ideation. Recruitment was conducted through adver- tising within our university, personal connections, social media advertising, and snowball sampling. 4.3 Study Design and Procedure Choice of Application We selected OpenArt AI [71] for its clear, modular interfaces"
+      },
+      {
+        "id": "S3-c33",
+        "text": "used an inductive analysis approach [94] to explore How Creatives Approach GenAI Image Generation C&C ’26, July 13–16, 2026, London, United Kingdom Figure 6: An example of the Text-to-Image tutorial. The interactive design allows users to click through the explanation interactively. Here, we aim to show the effect of different prompts. Each card corresponds to the prompt displayed below it. Before users click on a card, all cards display “Generate Image” (a). After clicking, the card flips to reveal the image (b) corresponding to the prompt displayed below the card. Since the first image (b) is missing some information from the prompt, we then introduce the AI’s attention mechanism. emerging themes from the on-screen interactions, think-aloud, notes, and follow-up interviews. Next, we used axial coding to organize participant responses around three key dimensions: (1) how participants conceptualized the image generation process, (2) how participants perceived and used the structured guidance in the tutorial, and (3) how they interpreted unexpected or undesired outputs produced. Descriptive Analysis of Questionnaire Responses: We ana- lyzed post-task questionnaires to capture participants’ self-reported confusion, confidence, enjoyment, and satisfaction for each task on 5-point Likert scales (higher scores indicate greater intensity or agreement). Tutorial helpfulness was rated from Strongly Disagree (1) to Strongly Agree (5). Following the comparative structured ob- servation method, we treat these ratings as"
+      },
+      {
+        "id": "S3-c36",
+        "text": "Interface Walk-through (before each) 3-5 min Interface Walk-through (before each) 3-5 min Image-to-Image Task Self-experimentation 7 min Post-study Questionnaire 3 min Interview 15 min Pre-study Questionnaire 3 min Post-task Questionnaire (after each) 2 min each Post-task Questionnaire (after each) 2 min each Image-to-Image Task Structured Guidance 7 min The two approaches (structured guidance and self experimentation) varied across participants Figure 8: User study session procedure. Participants worked through two text-to-image tasks and two image-to-image tasks, completing each task once with structured guidance using the research probe and once through self-experimentation. By experiencing both approaches, participants could compare them directly and reflect on their experiences, following the comparative structured observational study method [58]. Figure 9: Images used in the study tasks. (a) and (b) for text-to-image, (c) and (d) for style transfer, and (e) for sketch-to-image generation. How Creatives Approach GenAI Image Generation C&C ’26, July 13–16, 2026, London, United Kingdom that mental models do not have firm boundaries; when mechanisms are opaque, people often reuse familiar system analogies. These evaluation difficulties also contributed to a gulf of ex- ecution [67], a mismatch between what users intend to do and what actions they believe the system affords. In several cases, when participants could not interpret model behavior, they defaulted to prompt-centric action strategies. For example, when the output fell short of"
+      },
+      {
+        "id": "S3-c39",
+        "text": "what was actually going to be prioritized:“It was new information for me based on the tutorial...I will be aware of what I [say] to AI.”(P10) Post-Task Reflections on Self-Experimentation vs. Struc- tured Guidance: Across tasks, participants reported slightly lower confusion ratings (structured guidance: M = 2.33, SD = 0.92 vs self- experimentation M = 2.68, SD = 1.22) and slightly higher satisfaction (structured guidance: M = 3.91, SD = 0.78 vs self-experimentation M = 3.36, SD = 0.99) when structured guidance was available compared to self-experimentation. Confidence ratings were comparable with self-experimentation, while enjoyment showed little difference. We use these ratings to contextualize participants’ qualitative reflec- tions rather than to evaluate the effectiveness of the research probe. The patterns we observed suggest that participants experienced the tutorial as reducing uncertainty and improving their sense of output quality without greatly altering confidence or enjoyment. For example, P7 who started with self-experimentation and later tried the tutorial, felt that the tutorial, “would [have] been more supportive to enhance learning... at first” and noting that during the self-experimentation phase “it was more confusing to me ... trying to make sure the output matches what I had on the PDF [task description provided in the session] was kind of frustrating.”(P7) Participants also used the post-task reflections to compare not only how they felt but"
+      },
+      {
+        "id": "S3-c49",
+        "text": "cues for unexpected re- sults; use unexpected outputs as learning examples Creatives often valued coherent, actionable guidance over technical fidelity Who defines a “good” guidance and who the guidance serves Prioritize the target users’ creative goals; keep tech- nical depth optional Creatives’ need for guidance varied by depth and by moment in the creative process One-size guidance vs. creating in ac- tive use Offer on-demand, in-context guidance that lets users choose depth and timing of guidance the HCI community to consider: How can we support the effec- tive use of AI-based creative tools without making creatives feel constrained? In our study, we also observed that creatives tend to approach AI understanding selectively, preferring to learn about how AI works only insofar as it supports their immediate creative goals, rather than seeking comprehensive technical understanding of the system. This aligns with prior work that advocates for teach- ing only the aspects of AI that matter to users’ tasks [42] and prior work indicating that users with greater AI knowledge are more likely to adopt partnership-oriented mental models, whereas less experienced users often treat AI as a tool to be directed [84]. 6.3 Addressing Misconceptions and Misunderstandings about GenAI A key finding with implications for design was the gap between participants’ understanding of how GenAI works and its actual capabilities, which could"
+      },
+      {
+        "id": "S3-c53",
+        "text": "Prior interview work has examined these ethical concerns in depth, such as creatives’ attitudes toward their work being used as training data [31]. From this perspective, our probe can be seen as an exploration toward “critical AI literacy”: flawed mental models often lead to misinformed user behavior [50]. Building on this, future learning resource designs could more di- rectly support ethical reflection by clarifying how training data relates to outputs and by surfacing questions around provenance, authorship, and responsible use. Future studies could also examine how creatives’ AI literacy develops over time, including how they plan their interactions with AI, monitor whether the tool supports C&C ’26, July 13–16, 2026, London, United Kingdom Liu et al. their goals, and reflect on how AI shapes their creative decisions during collaboration with GenAI [93]. 6.5 Limitations Our study has several limitations. First, our formative survey re- lied on 159 self-reported responses from artists and hobbyists who participate in online communities, introducing potential biases like self-selection and social desirability. Second, our lower digital-tool- use subgroup was defined based on self-reported frequency of using digital tools in art practice, which only imperfectly captures techni- cal background. Future work could use more precise measures, such as formal education, programming experience, or self-reported AI familiarity, to better capture variation in technical expertise among creatives. Additionally, while"
+      },
+      {
+        "id": "S3-c54",
+        "text": "digital tools in art practice, which only imperfectly captures techni- cal background. Future work could use more precise measures, such as formal education, programming experience, or self-reported AI familiarity, to better capture variation in technical expertise among creatives. Additionally, while our analysis highlighted issues with tutorial complexity, it is also possible that some users struggled not because of the content itself but because effective tutorials can be difficult to find. Since our study suggests that creatives may prior- itize achieving their creative goals, it may be valuable to explore project based AI literacy support. Future work could explore per- sonalized tutorials that adapt to users’ goals and prior knowledge, aligning with prior work suggesting that AI literacy needs can be highly individualized [30]. While we touched on ethical concerns raised by creatives, our study primarily focuses on the conceptual understanding side of AI literacy. Future work could examine how creators’ ethical concerns intersect with and are shaped by their conceptual understanding of AI systems. 7 Conclusions This paper uses the lens of mental models to understand how cre- atives build AI literacy when working with GenAI image tools. We find that simplified structured guidance can support creatives’ reasoning about GenAI, yet many still prefer self-experimentation to protect their creative autonomy. These findings surface a central tension for HCI: learning pathways"
+      }
+    ]
+  },
+  {
+    "key": "S4",
+    "record": {
+      "id": "doi:10.3390/jintelligence13060060",
+      "title": "Generative AI in Game Design: Enhancing Creativity or Constraining Innovation?",
+      "abstract": "Generative AI tools are increasingly being integrated into game design and development workflows, offering new possibilities for creativity, efficiency, and innovation. This paper explores the evolving role of these tools from the perspective of game designers and developers, focusing on the benefits and challenges they present in fostering creativity. Through a mixed-method study, we conducted an online survey (n = 42) with game design professionals, followed by in-depth online interviews (n = 9), to investigate how generative AI influences the creative process, decision-making, and artistic vision. Our findings reveal that while generative AI accelerates ideation, enhances prototyping, and automates repetitive tasks, it also raises concerns about originality, creative dependency, and undermine of human-authored content. Future work will aim to address these challenges by investigating strategies to balance leveraging AI’s capabilities with preserving the integrity of human creativity. This includes developing collaborative human-AI workflows that maintain human oversight, designing systems that support rather than replace creative decision-making, and establishing ethical guidelines to ensure transparency, accountability, and authorship in AI-assisted content creation. By doing so, we aim to contribute to a more nuanced understanding of generative AI’s role in creative practices and its implications for the game design and development lifecycle.",
+      "authors": [
+        "Sultan A. Alharthi"
+      ],
+      "year": 2025,
+      "doi": "10.3390/jintelligence13060060",
+      "pmid": "40558810",
+      "arxiv_id": null,
+      "venue": "Journal of Intelligence",
+      "url": "https://openalex.org/W4410722094",
+      "oa_pdf_url": "https://www.mdpi.com/2079-3200/13/6/60/pdf?version=1748089078",
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S4-c0",
+        "text": "Generative AI in Game Design: Enhancing Creativity or Constraining Innovation?. Generative AI tools are increasingly being integrated into game design and development workflows, offering new possibilities for creativity, efficiency, and innovation. This paper explores the evolving role of these tools from the perspective of game designers and developers, focusing on the benefits and challenges they present in fostering creativity. Through a mixed-method study, we conducted an online survey (n = 42) with game design professionals, followed by in-depth online interviews (n = 9), to investigate how generative AI influences the creative process, decision-making, and artistic vision. Our findings reveal that while generative AI accelerates ideation, enhances prototyping, and automates repetitive tasks, it also raises concerns about originality, creative dependency, and undermine of human-authored content. Future work will aim to address these challenges by investigating strategies to balance leveraging AI’s capabilities with preserving the integrity of human creativity. This includes developing collaborative human-AI workflows that maintain human oversight, designing systems that support rather than replace creative decision-making, and establishing ethical guidelines to ensure transparency, accountability, and authorship in AI-assisted content creation. By doing so, we aim to contribute to a more nuanced understanding of generative AI’s role in creative practices and its implications for the game design and development lifecycle."
+      }
+    ]
+  },
+  {
+    "key": "S5",
+    "record": {
+      "id": "arxiv:2110.14810",
+      "title": "Telling Creative Stories Using Generative Visual Aids",
+      "abstract": "Can visual artworks created using generative visual algorithms inspire human creativity in storytelling? We asked writers to write creative stories from a starting prompt, and provided them with visuals created by generative AI models from the same prompt. Compared to a control group, writers who used the visuals as story writing aid wrote significantly more creative, original, complete and visualizable stories, and found the task more fun. Of the generative algorithms used (BigGAN, VQGAN, DALL-E, CLIPDraw), VQGAN was the most preferred. The control group that did not view the visuals did significantly better in integrating the starting prompts. Findings indicate that cross modality inputs by AI can benefit divergent aspects of creativity in human-AI co-creation, but hinders convergent thinking.",
+      "authors": [
+        "Safinah Ali",
+        "Devi Parikh"
+      ],
+      "year": 2021,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2110.14810",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2110.14810",
+      "oa_pdf_url": "https://arxiv.org/pdf/2110.14810",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S5-c0",
+        "text": "Telling Creative Stories Using Generative Visual Aids Saﬁnah Ali∗ MIT Media Lab Cambridge, MA, USA safinah@mit.edu Devi Parikh Facebook AI Research; Georgia Institute of Technology Menlo Park, CA, USA parikh@gatech.edu Abstract Can visual artworks created using generative visual algorithms inspire human creativity in storytelling? We asked writers to write creative stories from a starting prompt, and provided them with visuals created by generative AI models from the same prompt. Compared to a control group, writers who used the visuals as story writing aid wrote signiﬁcantly more creative, original, complete and visualizable stories, and found the task more fun. Of the generative algorithms used (BigGAN, VQGAN, DALL-E, CLIPDraw), VQGAN was the most preferred. The control group that did not view the visuals did signiﬁcantly better in integrating the starting prompts. Findings indicate that cross modality inputs by AI can beneﬁt divergent aspects of creativity in human-AI co-creation, but hinders convergent thinking. 1 Introduction Generative AI algorithms have found applications in visual art, stylizing images and videos. Combined with Contrastive Language–Image Pre-training (or CLIP) by OpenAI [1], that learns visual concepts from natural language supervision, it has become possible to leverage a combination of generative approaches and CLIP to create images from language prompts. Repeated generation until the image sufﬁciently represents the prompt as scored by CLIP eventually creates a visual that"
+      },
+      {
+        "id": "S5-c1",
+        "text": "natural language supervision, it has become possible to leverage a combination of generative approaches and CLIP to create images from language prompts. Repeated generation until the image sufﬁciently represents the prompt as scored by CLIP eventually creates a visual that is semantically relevant to the prompt. This approach of combining CLIP with GANs such as StyleGAN, BigGAN, VQGAN, etc. to create visuals from textual prompts has led to a recent trend in creative technologists and artists sharing surreal AI-generated art from language prompts [2, 3]. We study whether artwork created using generative algorithms in one medium can inspire creativity in another. Artists ﬁnd creative inspiration from external stimulants, even across mediums [4]. Musician Debussy’s La Mer was inspired from The Great Wave [5]. Graphics have been used to inspire reading, writing and thinking [6, 7]. Teachers have found that using manually curated pictures helped students’ narrative building ability and interest in writing [8, 9]. Here, we study whether art created using GANs and other visual generative procedures help inspire creative storytelling. As opposed to manually curating artwork, generative algorithms automate the process of generating images contextual to a language prompt. Further, it is difﬁcult to manually curate (e.g. using search engines) visuals for unrealistic ﬁctional prompts, such as “an octopus playing a Ukulele”, but they can be generated using generative"
+      },
+      {
+        "id": "S5-c2",
+        "text": "the process of generating images contextual to a language prompt. Further, it is difﬁcult to manually curate (e.g. using search engines) visuals for unrealistic ﬁctional prompts, such as “an octopus playing a Ukulele”, but they can be generated using generative approaches. Generative art also contains surrealistic elements, which could introduce unexpected elements for the writer, which could inﬂuence the stories. 2 Methods We designed Visual Stories, a web interface where writers write a creative story from a starting prompt. They are aided with visuals generated using the same prompt for creative inspiration, using: (1) CLIP + BigGAN [10, 11]. (2) CLIP + VQGAN (Vector Quantized Generative Adversarial) ∗Work was conducted while author was at Facebook AI Research. 35th Conference on Neural Information Processing Systems (NeurIPS 2021), Sydney, Australia. arXiv:2110.14810v1 [cs.HC] 27 Oct 2021 Figure 1: Visuals used for the starting prompt “A galaxy in a melting pot.” generated using BigGAN, DALL-E decoder, CLIPDraw and VQGAN. Networks [12]. (3) CLIPDraw (stroke-based drawings) [13]. (4) CLIP+DALL-E (Decoder of the discrete VAE used for DALL-E) [14]. To understand whether the generative visuals beneﬁted writer’s creativity, we ran a human experiment, where adult participants who are ﬂuent in English were recruited from Amazon Mechanical Turk (AMT) to write creative stories from ﬁxed starting prompts. Participants were randomly divided into two groups: one that could"
+      },
+      {
+        "id": "S5-c3",
+        "text": "writer’s creativity, we ran a human experiment, where adult participants who are ﬂuent in English were recruited from Amazon Mechanical Turk (AMT) to write creative stories from ﬁxed starting prompts. Participants were randomly divided into two groups: one that could toggle between four visuals generated from the starting prompt they were provided (V+), and one that saw no visuals (V-). After the task, participants reﬂected on their writing experience, creativity of the stories, and usefulness of the visuals ( 5.3). The story writing web interface consisted of instructions (5.1), a starting prompt for the stories, a text box, a button to view and toggle through visuals (Figure 1). External judges blind to the conditions rated the stories using metrics from the “convergent integrative thinking” segment for verbal creativity of the Evaluation of Potential Creativity (EPoC) battery [15] ( 5.2). 3 Findings 362 stories were analyzed. Participants in the V+ condition, scored the task as more fun (4.126 ± 0.908) than participants in the V- condition (4.307 ± 0.808) (p = 0.0453). They also wrote longer stories (828 characters as compared to 796 characters in V-). 65% writers found the visuals inspiring. Images generated using VQGAN were the most frequently used images, and VQGAN, BigGAN and CLIPDraw generated images were used signiﬁcantly more than DALL-E (p = 0.0048). The visuals inspired"
+      },
+      {
+        "id": "S5-c4",
+        "text": "to 796 characters in V-). 65% writers found the visuals inspiring. Images generated using VQGAN were the most frequently used images, and VQGAN, BigGAN and CLIPDraw generated images were used signiﬁcantly more than DALL-E (p = 0.0048). The visuals inspired “characters”, “setting” and “details” of the stories the most. A chi-square test of goodness-of-ﬁt test was performed to determine whether the stories written by participants in the two study conditions were equally rated on the speciﬁed metrics of creativity by external raters. Rejecting the null hypothesis, preference for the two categories was not equally distributed in the population, and rated higher for the intervention group on the metrics of “Creativ- ity”, “Originality”, “Level of completion”, “Visualizability”, and “Plot” (p<0.05). Preference for “Integration of prompt” was rated signiﬁcantly higher for the control group (p<0.05). We found that the generated images inﬂuenced people’s creative process and outcome. They found the process more fun and the graphics helpful. External evaluation indicated that it beneﬁted writers’ divergent-exploratory thinking, and the stories were more creative and original. However, it hindered convergent-integrative thinking - the participants did not integrate the starting prompt as well as the control group. This could be caused by participants being distracted by the images, or follow the arc of the images and use the visuals as the prompt, steering away from"
+      },
+      {
+        "id": "S5-c5",
+        "text": "did not integrate the starting prompt as well as the control group. This could be caused by participants being distracted by the images, or follow the arc of the images and use the visuals as the prompt, steering away from the starting textual prompt. This could also indicate that perhaps the visual images were not sufﬁciently relevant to the starting prompt. Stories from the V+ condition were preferred by raters to be converted to an illustration or animation, implying that the stories helped the reader visualize it, inﬂuencing not just the writing process, but also the reading process. Generative approaches coupled with CLIP allow the creation of high quality visuals that are able to visualize unrealistic scenarios. Different approaches also bring unique aesthetic styles. While these are currently shared as digital artwork, in this work we explore how these can also be used as effective creative writing aids. Future work could explore how they could aid creativity in other media, such as music production. Not requiring manual curation makes them effective automated aids for creative writing. Instead of static images pre-generated from text, future work could use parts of the written story to dynamically update the aesthetics of the generation. 2 4 Ethical Implications In this work, we demonstrate how visual art generated by AI was a helpful writing aid."
+      },
+      {
+        "id": "S5-c6",
+        "text": "pre-generated from text, future work could use parts of the written story to dynamically update the aesthetics of the generation. 2 4 Ethical Implications In this work, we demonstrate how visual art generated by AI was a helpful writing aid. However, we also found that the writers veered away from the starting textual prompt, and towards the visuals. A cross medium AI collaborator helped with divergent thinking, but hindered convergent integrative thinking, and while designing creative collaborative AI, we must reﬂect on the cost it may potentially have in hindering the task at hand. There is also the risk of creativity aids becoming dependencies. For instance, one writer reﬂected that before the visuals, they were not sure what to write. Relying on these visual aids may hinder their verbal creativity when the visuals are missing. References [1] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry, Amanda Askell, Pamela Mishkin, Jack Clark, et al. Learning transferable visual models from natural language supervision. arXiv preprint arXiv:2103.00020, 2021. [2] Charlie Snell. Alien dreams: An emerging art scene. 2021. URL https://ml.berkeley. edu/blog/posts/clip-art/. [3] Ryan Murdock. Thoughts on deepdaze, bigsleep, and aleph2image. 2021. URL https: //rynmurdock.github.io/2021/02/26/Aleph2Image.html. [4] Paul Duncum. Visual culture isn’t just visual: Multiliteracy, multimodality and meaning. Studies in art education, 45(3):252–264, 2004. [5] Joshua Zinn. Great"
+      },
+      {
+        "id": "S5-c11",
+        "text": "visual images inspire you for creative story writing? • On a scale of 1-5, how fun was the writing process? • Would you want to share the story you wrote with your friends? [Yes, No, Maybe] • Do you think the story you wrote was creative? [Yes, it was very creative; Yes, but I can do better; It was not great, but not bad either; It was not that creative; No, it was not creative at all]. 4 • In 1-2 sentences, describe how the visuals inspire you for writing. • In 1-2 sentences, describe what you wish the website could provide that could better help you with writing. • Which parts of the story did the visuals help you with? [Characters, setting, details, plot, conﬂict, resolution, tone, none] 5.4 Study ﬁndings Figure 2: 65% writers found the visuals inspiring. Images generated using VQGAN were the most used images, and VQGAN, BigGAN and CLIPDraw generated images were used signiﬁcantly more than DALL-E generated images (X2 (3, N = 751) = 12.947 , p = 0.0048). Of the features of stories that the visuals inspired, “characters”, “setting” and “details” were the most common. 5.5 Sample stories 5.5.1 With the visual prompt (Figure 1) \"A galaxy in a melting pot was the ﬁrst impression Betsy had of the abstract painting. And yet,"
+      }
+    ]
+  },
+  {
+    "key": "S6",
+    "record": {
+      "id": "doi:10.1145/3635636.3656187",
+      "title": "Ai.llude: Encouraging Rewriting AI-Generated Text to Support Creative Expression",
+      "abstract": "In each step of the creative writing process, writers must grapple with their creative goals and individual perspectives. This process affects the writer's sense of authenticity and their engagement with the written output. Fluent text generation by AIs risks undermining the reflective loop of rewriting. We hypothesize that deliberately generating imperfect intermediate text can encourage rewriting and prompt higher level decision making. Using logs from 27 writing sessions using a text generation AI, we characterize how writers adapt and rewrite AI suggestions, and show that intermediate suggestions significantly motivate and increase rewriting. We discuss the implications of this finding, and future steps for investigating how to leverage intermediate text in AI writing support tools to support ownership over creative expression.",
+      "authors": [
+        "David Zhou",
+        "Sarah Sterman"
+      ],
+      "year": 2024,
+      "doi": "10.1145/3635636.3656187",
+      "pmid": null,
+      "arxiv_id": "2405.17843",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2405.17843",
+      "oa_pdf_url": "https://arxiv.org/pdf/2405.17843",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S6-c5",
+        "text": "and setting into a single continuation. Fluent continuations are designed to be grammatical and coherent to context. Intermedi- ate suggestions are meant to provide relevant content that cannot be directly incorporated into the text. Instead, suggestions must deliberately be altered to become grammatical and coherent. We hypothesize that shifting the focus of generative writing assistants away from creating perfect output to creating intermediate text that encourages rewriting will support the personal and reflective aspects of creative writing. We use three metrics to capture different aspects of rewriting behaviors: remaining AI text, sentence embedding similarity, and number of user edits. We use these metrics, along with qualitative analysis, to evaluate rewriting behaviors and writing engagement, as well as characterizing the difference between these two comple- tion paradigms. We find that writers tend to keep less of intermedi- ate suggestions compared to fluent continuations. Despite being perceived as more flawed, we find that writers are able to adopt intermediate suggestions more diversely; rather than simply for writing continuation, writers use these suggestions to help brain- storm ideas, even if none of the original suggestion remains in the final story. This paper contributes: (1) The concept of intermediate text and an implementation of an intermediate suggestion, a paradigm for engaging creative writers in editing AI-generated text. (2) Results from a 27-person study of"
+      },
+      {
+        "id": "S6-c22",
+        "text": "who self-identified as creative writers and consented to the study were recruited from university mailing lists, fliers posted in public locations (e.g. a local book store), and by word-of-mouth. We screened study applicants using their reported creative writing history: we recruited participants who had previously engaged in creative writing for personal expression or enjoyment. Study applicants who did not previously engage in creative writing or only wrote personal essays (e.g. college application essays) were not included. Thirty-two participants were recruited for the study. Five participants did not write for the full session, or only pressed the AI suggestion button and did not write any text; these sessions were excluded from the data analysis. This left 27 participants who completed the entire study. Of these, 11 identified as male, 14 identified as female, 1 self- described, and 1 did not disclose. The average age was 22.7 years (min: 18, max: 32). Nine participants self-identified as a begin- ner writer; 14 self-identified as an intermediate writer, and 4 self- identified as an expert writer. The three most commonly self-reported types of writing were short fiction (17), journals (12), and poetry (11). Fifteen participants had earned a bachelor’s degree, and 12 were currently undergraduate students. While we did not restrict recruitment, most participants were college students or recently C&C ’24, June 23–26, 2024,"
+      },
+      {
+        "id": "S6-c24",
+        "text": "to resign herself to the monotony... Suddenly, a squirrel scurried up to Alice and sat on her lap... The bank where Alice and her sister sat was lush with wildflowers of every color imaginable... Table 1: Two types of text completions can be requested. Top: user text. Bottom left: a potential fluent continuation. Bottom right: a potential intermediate suggestion. Figure user text: Alice in Wonderland (Lewis Carroll). graduated from college, with an average of 6.3 years of writing experience. Due to the limited age range of the sample set, and geo- graphic similarity, our results are likely influenced by demographic characteristics. In the pre-survey, participants mostly felt that AI text generators were good at generating fluent text (agree: 21, neutral: 5, disagree: 1) and at providing useful responses (agree: 19, neutral: 8), but par- ticipants were divided on whether AI text generators were good at providing new ideas (agree: 7, neutral: 13, disagree: 7). Study participants were compensated $10 USD. 4.2 Experimental Design 4.2.1 Writing Environment. To create a realistic and engaging writ- ing environment, writers were asked to imagine a fictitious scenario of writing a short story to be submitted to a literary column. Short story writing is a common task for studying writing assistants [8, 10, 12, 35, 45, 46, 49]; it is a task familiar to participants"
+      },
+      {
+        "id": "S6-c40",
+        "text": "simi- lar; 1: very semantically similar). Writers kept significantly less of intermediate suggestions than fluent suggestions, both on page and semantically: fluent suggestions had an average of 60% remaining text and intermediate suggestions had an average of 16% (𝑝= 0.00,𝑡= 11.51). Using sentence embedding similarity, fluent continuation had an average of 0.63 and intermediate suggestions had an average of 0.28 (𝑝= 0.00,𝑡= 8.70). The average text operation count (number of text-insert and text-delete events) between the provided suggestion and the final text was significantly different for fluent continuations and intermediate suggestions as well (fluent continuation: 444, interme- diate suggestion: 795, 𝑝= 0.001,𝑡= −3.09). Writers made nearly double the number of edits for intermediate suggestions compared to fluent continuations. Designing AI suggestions to provide intermediate solutions significantly changes how writers engage with the suggested text and results in a more user-written and effortful final outcome. 5.2.2 Intermediate suggestions motivate rewriting. Figure 5 presents survey responses related to responsibility [52] for fluent continua- tions and intermediate suggestions. The perception of Suggestion B as lower quality was reflected by the greater perceived need to rewrite it. While there was no significant difference regarding mo- tivation to read and evaluate what the suggestion offered (writers would read and think about the suggestion), significantly more C&C ’24, June 23–26, 2024, Chicago, IL, USA David Zhou"
+      },
+      {
+        "id": "S6-c41",
+        "text": "to rewrite it. While there was no significant difference regarding mo- tivation to read and evaluate what the suggestion offered (writers would read and think about the suggestion), significantly more C&C ’24, June 23–26, 2024, Chicago, IL, USA David Zhou and Sarah Sterman (a) Remaining words. Higher values correspond to more AI words kept. (b) Sentence embedding similarity. Higher values correspond to greater similarity. Figure 4: Suggestion A (fluent continuation) vs. Suggestion B (intermediate suggestion) average rewrites. Left: Rewrites of Suggestion A tend to have more AI text remaining compared to rewrites of Suggestion B. Right: Rewrites of Suggestion A tend to be more similar to their initially provided forms compared to rewrites of Suggestion B. Figure 5: Writers were similarly motivated to read and evaluate both Suggestion A and B text, but more writers felt the need to rewrite Suggestion B. writers reported that they felt the need to rewrite intermediate sug- gestions (𝑝= 0.025,𝑈= 268.5). To test for significance on ordinal data without assuming normality, the Mann-Whitney U test was used for Likert scale responses. 5.3 Mediating Ease vs Reflection In Section 5.2.1, we empirically observed significantly more rewrit- ing when using intermediate suggestions. Here, we analyze the per- ceived differences between both types of suggestions and find that fluent continuations are easier to integrate and useful for"
+      },
+      {
+        "id": "S6-c49",
+        "text": "23–26, 2024, Chicago, IL, USA David Zhou and Sarah Sterman As I settle into the hanging basket chair on my balcony, a mys- terious package arrives at my doorstep.... Text generation failed. Try again! Well. Intermediate suggestion. Fluent continuation. Let me be fair. I have only just now encountered this particular brand of A.I, and I obviously am not a skilled practitioner with this tool. Table 4: An example of intermediate suggestion design and a system error message being reappropriated for story development. User text is presented in black; text generated by Suggestion A is in blue, and Suggestion B in orange. Note that in the ai.llude interface, all AI text is presented in a single color. Writing is a reactive process between textual artifact and goals [23], and rewriting presents opportunities to discover and synthe- size new ideas [37]. As AI text generators have the potential to influence personal opinions in a co-writing context [34], the role of rewriting is not only integrating the suggestion text itself, but also helping the writer develop intention. Both Suggestion A and B provided new possibilities for the writer to explore. In our study, we found that writers would often use AI suggestions, particularly intermediate suggestions, as a platform for reflection and to make plans. Writers would sometimes use the suggestion to scaffold"
+      },
+      {
+        "id": "S6-c51",
+        "text": "et al.: 𝑟= 0.3). When evaluating only within AI suggestions, we found 𝑟= 0.3. When comparing the number of editing operations (note that Lee et al. count text-delete and cursor events while we counted text-insert and text-delete) and ownership, we found 𝑟= 0.1 (Lee et al.: 𝑟= 0.0) [35]. However, the connection of user- writing and user-rewriting to psychological ownership remains unclear. Neither our study nor Lee et al.’s conclusively shows the existence or lack of relationship. One direction for more detailed studies is improving metrics for assessing psychological ownership. Literature on psychological ownership suggests subdividing attitude and self-concept, which teases apart the impact of factors such as positive feelings and satisfaction (attitude) from the sense of the object as part of the self (self-concept) [52]. We suggest that further research into the separate components of psychological ownership may be beneficial for understanding the effects of design choices of AI writing tools on the processes of co-writing with AI. Much of the current literature on ownership is centered on possession, and not necessarily creation, which is an important factor when considering creative pursuits. 6.2 Imagining Future Intermediate Text Suggestion B used a predetermined list of suggestion prompts (Sec- tion 3.2). However, such fixed lists will not be relevant for all creative writing tasks, environments, or writers; therefore, personalizing outputs might"
+      },
+      {
+        "id": "S6-c53",
+        "text": "act of evaluating and revising [23]. Early iterations of Suggestion B discouraged evaluation and revision because the lack of punctuation and capitalization detrimentally hindered ease of reading. Suggestion B was then revised to provide grammatical segments while keeping the entire continuation itself ungrammatical to encourage both evaluation and revision. Creative value, which comes from the suggestion’s ability to induce effective surprise [7], requires intermediate text to provide relevant, yet novel suggestions for the writer. Suggestion B offered four segments that were designed to be relevant to short fiction writing, including setting and plot development. Although the nov- elty of each segment itself will depend on the capabilities of the underlying language model, we argue that designing intermediate text to surprise and inspire the writer will help decrease the re- liance on pure serendipity of text generation that may be otherwise distracting and potentially frustrating to read. 6.3 Limitations and Future Work Since users perceived the current design of intermediate suggestions as lower quality and not as easy to use (leading to less motivation to request it), one future direction is to explore how to improve user perception while retaining the increase in rewriting behaviors. Using personalized prompts based on individual writing needs and style may encourage rewriting more often by providing more relevant suggestions. Future systems should be more aware"
+      }
+    ]
+  },
+  {
+    "key": "S7",
+    "record": {
+      "id": "arxiv:2412.14077",
+      "title": "Dialogue with the Machine and Dialogue with the Art World: Evaluating Generative AI for Culturally-Situated Creativity",
+      "abstract": "This paper proposes dialogue as a method for evaluating generative AI tools for culturally-situated creative practice, that recognizes the socially situated nature of art. Drawing on sociologist Howard Becker's concept of Art Worlds, this method expands the scope of traditional AI and creativity evaluations beyond benchmarks, user studies with crowd-workers, or focus groups conducted with artists. Our method involves two mutually informed dialogues: 1) 'dialogues with art worlds' placing artists in conversation with experts such as art historians, curators, and archivists, and 2)'dialogues with the machine,' facilitated through structured artist- and critic-led experimentation with state-of-the-art generative AI tools. We demonstrate the value of this method through a case study with artists and experts steeped in non-western art worlds, specifically the Persian Gulf. We trace how these dialogues help create culturally rich and situated forms of evaluation for representational possibilities of generative AI that mimic the reception of generative artwork in the broader art ecosystem. Putting artists in conversation with commentators also allow artists to shift their use of the tools to respond to their cultural and creative context. Our study can provide generative AI researchers an understanding of the complex dynamics of technology, human creativity and the socio-politics of art worlds, to build more inclusive machines for diverse art worlds.",
+      "authors": [
+        "Rida Qadri",
+        "Piotr Mirowski",
+        "Aroussiak Gabriellan",
+        "Farbod Mehr",
+        "Huma Gupta",
+        "Pamela Karimi",
+        "Remi Denton"
+      ],
+      "year": 2024,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2412.14077",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2412.14077",
+      "oa_pdf_url": "https://arxiv.org/pdf/2412.14077",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S7-c0",
+        "text": "Dialogue with the Machine and Dialogue with the Art World: Evaluating Generative AI for Culturally-Situated Creativity Rida Qadri Google Research Piotr Mirowski Google DeepMind Aroussiak Gabriellan USC School of Architecture Farbod Mehr Farbod Mehr Studio Huma Gupta Department of Architecture, MIT Pamela Karimi Cornell University Remi Denton Google Research Abstract This paper proposes dialogue as a novel and experimental qualitative method for evaluating generative AI tools for culturally-situated creative practice. Drawing on sociologist Howard Becker’s concept of Art Worlds, this method expands the scope of traditional AI and creativity evaluations beyond benchmarks, user studies with crowd-workers, or focus groups conducted with artists. Our method involves two mutually informed dialogues: 1) ‘dialogues with art worlds,’ placing artists in conversation with experts such as art historians, curators, and archivists, and 2) ‘dialogues with the machine,’ facilitated through structured artist- and critic-led experimentation with state-of-the-art generative AI tools. We demonstrate the value of this method through a case study with artists and experts steeped in non-western art worlds, specifically the Persian Gulf. We trace how these dialogues help create culturally rich and situated forms of evaluation for representational possibilities of generative AI that mimic the reception of generative artwork in the broader art ecosystem. They also allow artists to shift their use of the tools to respond to their cultural and creative context."
+      },
+      {
+        "id": "S7-c1",
+        "text": "forms of evaluation for representational possibilities of generative AI that mimic the reception of generative artwork in the broader art ecosystem. They also allow artists to shift their use of the tools to respond to their cultural and creative context. Our study can provide generative AI researchers an understanding of complex dynamics of technology, creativity and the socio-politics of art worlds, to build more inclusive machines for diverse art worlds. 1 Introduction In his seminal work Art Worlds, sociologist Howard Becker emphasized the fundamentally collabora- tive nature of art creation [1]. Instead of focusing on a singular, isolated genius or on the aesthetic output, he argued for the study of an ‘art world’ – the network of critics, curators, suppliers, adminis- trators, and audiences who shape artistic activity. The study of art in this conception should not be isolated to artistic outputs, but also encompass the social processes that make art production possible. Said differently, we should study what artists do and how they do it, not just artistic symbolism or composition. Art production in this view is an inherently social process, not an individual or technical one. This scholarship changed the way art was studied [2]. As generative AI is integrated into the artistic domain, it also enters into existing art worlds and creates the possibility of shaping its"
+      },
+      {
+        "id": "S7-c2",
+        "text": "social process, not an individual or technical one. This scholarship changed the way art was studied [2]. As generative AI is integrated into the artistic domain, it also enters into existing art worlds and creates the possibility of shaping its own art worlds [3]. Applying Becker’s perspective to generative AI, the existing evaluation paradigm of AI for creativity must necessarily become ‘social’ and thus Preprint. Under review. arXiv:2412.14077v1 [cs.CY] 18 Dec 2024 expand in both its focus (beyond the output) and in who it involves (beyond the artist). Yet, existing benchmark-centered studies on creativity have focused on quantitative metrics for outputs (e.g., based on human evaluations of the generated image’s quality vs. its prompt such as in DrawBridge [4], PartiPrompts [5], or conversely, of the ambiguity of crowdsourced annotations of images [6]) or on automated methods and datasets for Artistic Image Aesthetic Assessment [7], including measures of the diversity of generated images [8], of their novelty vs. an existing dataset [9] or conversely, similarity to an desired image style [10]. More recently, there has been an emerging focus on socio-technical evaluations of AI. These ap- proaches draw on qualitative methods, bringing in more participatory perspectives, and ultimately expand the frame of what is being evaluated [11–20]. While these get closer to understanding AI as a socio-technical artifact, these studies have"
+      },
+      {
+        "id": "S7-c7",
+        "text": "cultural experts (hereafter referred to as “commentators”) to evaluate different dimensions of generative AI, such as how generative AI could shape cultural relevance and meaning of artworks, the forms of agency it affords or that artists can wrest from it and its possibilities as a tool for cultural and political representation. By applying these critical reflections on the generative AI production process and the outputs artists produced during the study, this process mimics what the reception of the generated artwork might be. We set up two interactive workshops. One workshop preceded the experimentation period of artists (discussed in Section 2.2) and one workshop followed it. Before the workshops we also asked each participant to record an introductory video showcasing their work and ideas for the study, which were viewed by all participants before the workshop. During workshop 1, we collectively reflected on the possibilities of generative AI broadly and historical intersections of technology and art. Commentators and artists also broke up into one-on-one loosely structured conversations to collectively develop ideas for the artists’ projects. In the second workshop we collectively evaluated artists’ processes and outputs, situating them within broader histories of art in the cultural context of the artists. Artists also had opportunities to attend ‘office hours’ with commentators and researchers and to discuss their projects throughout the experimentation period."
+      },
+      {
+        "id": "S7-c9",
+        "text": "Artists were free to use any model1, technique, and dataset they wanted. Ideas for what they explored and created during this period were informed by the dialogue with commentators in the first workshop, and shaped through periodic meetings with commentators throughout the experimentation period. Artists were encouraged to experiment with prompt engineering and fine-tuning as approaches to steer models towards their desired representations. Artists documented and shared their process and experience in a series of process logs and reflection videos. This method allows us to study not just artistic outputs but also processes of artistic production. The study of such processes is significant in extending the artists’ use of generative AI tools beyond the final artistic product, and also its impacts on the way they produce things. The process is as important in art as the output. Knowing about creative processes can also help us identify gaps in design, interface, interactions of generative AI systems and thus present developers with actionable pathways for improving generative AI as a tool for cultural representation. Moreover, having this process be informed by collective reflections also helps us see how far artists can push existing tools for more radical possibilities. This means insights and recommendations that emerge from this mutually informed dialogue do not just improve the interface of the technology but also its"
+      },
+      {
+        "id": "S7-c10",
+        "text": "reflections also helps us see how far artists can push existing tools for more radical possibilities. This means insights and recommendations that emerge from this mutually informed dialogue do not just improve the interface of the technology but also its possibilities of use in different cultural contexts and use cases. 1Image generation tools used by artists included, among others, MidJourney https://www.midjourney. com/home, DALL-E https://labs.openai.com/, Adobe Firefly https://www.adobe.com/products/ firefly.html, Stable Diffusion running on Replicate https://replicate.com/ or on Runway ML servers https://runwayml.com/, and Google Colab https://colab.research.google.com/. 3 3 Case Study: Art Worlds of the Persian Gulf We focused our project on artists from a similar cultural background since we were interested in fostering a dialogue on generative AI as a tool for cultural representation. All artists and expert commentators had expertise in the Islamic worlds broadly and the Persian gulf specifically. 3.0.1 Participant recruitment We recruited three artists and three commentators through personal networks of professional col- laboration. Prior work with art worlds [14] had helped us build connections that we leveraged for a snowball sampling of artists who both 1) had some experience with digital computational tools for creativity in their artistic practice and 2) identified with the Persian Gulf region (either through lived experience, heritage, or through their work). We similarly recruited art commentators who had expertise on the art"
+      },
+      {
+        "id": "S7-c13",
+        "text": "dialogues also allowed artists and commentators to collectively develop visions for generative AI through their experimentation, practice, and discussion that were suitable to the art worlds they were part of and attuned to the different processes of the artists. 3.1.1 Dialogue A: Aspirations for decentralized datasets We present a dialogue where multiple artists developed a specific pathway towards more culturally situated generative AI: building decentralized datasets. We present the multiple dialogues between the artists and commentators and artists and machines, through which artists iteratively added layers of specificity for this pathway. One exchange that led to this aspiration was between Artist-3 and the Museum Curator, discussing the limitations of existing datasets for female Iranian representation such as Qajar2 paintings or museum datasets. To address these limitations, Artist-3 developed an innovative approach by creating three distinct AI models, each drawing from different cultural sources. The first model utilized Instagram photos to capture contemporary representations of Iranian women, reflecting the modern digital landscape. This approach prompted the Museum Curator and Artist-3 to collectively explore the exclusions embedded in social media platforms, which may reflect certain normative standards. Artist- 2Qajar art corresponds to the architecture and paintings produced during the Qajar dynasty, which lasted from 1781 to 1925 in Persia / Iran. 4 3 understood the need to counterbalance these modern influences in"
+      },
+      {
+        "id": "S7-c19",
+        "text": "intent to explicitly politicize carpets through the new synthetic and hybridized carpet images. Moreover, Artist-2 was aesthetically pleased with the seamless integration of the graffiti into the carpets and ceramics: “the graffiti look like threads of the carpet were part of the graffiti that was literally woven into it. And same with the graffiti so that it felt like it was embedded within the design of the polychrome ceramic kind of patterning”. At the same time, the group reflection on the synthetic images also surfaced a nuanced critique of current generative AI capabilities. While the generated images integrated the slogans into the carpets and ceramics in aesthetically compelling ways, the text rendered was “gibberish” and “wasn’t communicating anything language-wise” (Artist-2). While participants recognized that text generation capabilities are limited across the board in current generative AI tools, the stakes of this particular failure were high. Commentators drew the connection between the generated images and cultural appropriation through pseudo-calligraphy utilized during the Byzantine and Renaissance periods: “this reminds me of 19th century orientalist paintings when they paint carpets and they go squiggle, squiggle, squiggle” (Museum Curator). Despite these representational limits, commentators and artists noted the role of art as social commentary, and Artist-2 reflect on how they would want an audience to interact with such art: “if it’s generating something that’s"
+      }
+    ]
+  },
+  {
+    "key": "S8",
+    "record": {
+      "id": "arxiv:2608.16886",
+      "title": "Evaluating Beyond the Screen: Collective Assessment of AI-Generated Business Plans with Resource-Constrained Entrepreneurs",
+      "abstract": "Entrepreneurs increasingly use end-user generative AI technologies such as ChatGPT for high-stakes documents like loan applications and business plans, where AI-generated errors---a wrong price, a fabricated product---can affect loan or funding outcomes. Current approaches to supporting evaluation of AI-generated text assume a single user assessing output alone, on screen. This can be especially demanding for resource-constrained entrepreneurs, whose digital and AI skills vary widely. In this early-stage work, we explore how evaluation might instead be organized in a group setting and completed as a collective activity. We extended BizChat, an AI-powered business-planning tool, with an evaluation module that links each generated claim to the entrepreneur's original input. We partner with community organizations in Maryland---embedding BizChat within various entrepreneurship programs---where workshop attendees (N=14) evaluated their plans through think-pair-share discussion. Early findings suggest interface scaffolds like claim-to-input links primed attendees with concrete, personal evaluations, which the group setting then extended beyond the screen: attendees requested printed copies, used rubrics to compare across plans, and drew on peers' knowledge to verify what they could not easily judge alone.",
+      "authors": [
+        "Qi Zhao",
+        "Marjory Pineda",
+        "Ketul Chhaya",
+        "Aakash Gautam",
+        "Yasmine Kotturi"
+      ],
+      "year": 2026,
+      "doi": null,
+      "pmid": null,
+      "arxiv_id": "2608.16886",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2608.16886",
+      "oa_pdf_url": "https://arxiv.org/pdf/2608.16886",
+      "sources": [
+        "arxiv"
+      ]
+    },
+    "full_text": true,
+    "evidence_chunks": [
+      {
+        "id": "S8-c0",
+        "text": "Evaluating Beyond the Screen: Collective Assessment of AI-Generated Business Plans with Resource-Constrained Entrepreneurs QI ZHAO, MARJORY PINEDA, and KETUL CHHAYA, University of Maryland, Baltimore County, USA AAKASH GAUTAM, University of Pittsburgh, USA YASMINE KOTTURI, University of Maryland, Baltimore County, USA Entrepreneurs increasingly use end-user generative AI technologies such as ChatGPT for high-stakes documents like loan applications and business plans, where AI-generated errors—a wrong price, a fabricated product—can affect loan or funding outcomes. Current approaches to supporting evaluation of AI-generated text assume a single user assessing output alone, on screen. This can be especially demanding for resource-constrained entrepreneurs, whose digital and AI skills vary widely. In this early-stage work, we explore how evaluation might instead be organized in a group setting and completed as a collective activity. We extended BizChat, an AI-powered business-planning tool, with an evaluation module that links each generated claim to the entrepreneur’s original input. We partner with community organizations in Maryland—embedding BizChat within various entrepreneurship programs—where workshop attendees (N=14) evaluated their plans through think-pair-share discussion. Early findings suggest interface scaffolds like claim-to-input links primed attendees with concrete, personal evaluations, which the group setting then extended beyond the screen: attendees requested printed copies, used rubrics to compare across plans, and drew on peers’ knowledge to verify what they could not easily judge alone. ACM Reference Format: Qi Zhao,"
+      },
+      {
+        "id": "S8-c1",
+        "text": "personal evaluations, which the group setting then extended beyond the screen: attendees requested printed copies, used rubrics to compare across plans, and drew on peers’ knowledge to verify what they could not easily judge alone. ACM Reference Format: Qi Zhao, Marjory Pineda, Ketul Chhaya, Aakash Gautam, and Yasmine Kotturi. 2026. Evaluating Beyond the Screen: Collective Assessment of AI-Generated Business Plans with Resource-Constrained Entrepreneurs. In Proceedings of ACM CI 2026 and ACM HCOMP 2026 Posters and Demos (CI ’26 and HCOMP ’26). ACM, Alexandria, VA, USA, 3 pages. 1 Introduction and Related Work Entrepreneurs increasingly use end-user generative AI technologies such as ChatGPT for high-stakes tasks, such as managing finances [16], completing loan applications [15], and writing business plans [1]. These documents must reflect the specifics of their business such as products, pricing, and operations to secure funding, and AI-generated errors—a wrong price, a fabricated product—can affect loan or funding outcomes [2, 20]. Current approaches to evaluating AI-generated text prioritize automated fact-checking [10], benchmark comparisons [19], crowdsourced ratings [4], and, auditing frameworks [18]. Across these approaches, however, evaluation is framed as a solo, on-screen task, where even human-evaluation studies rely on recruited participants completing assigned tasks [8] rather than stakeholders evaluating documents they depend on. This framing is especially demanding for resource-constrained entrepreneurs [21], who often lack access to professional feedback"
+      },
+      {
+        "id": "S8-c2",
+        "text": "a solo, on-screen task, where even human-evaluation studies rely on recruited participants completing assigned tasks [8] rather than stakeholders evaluating documents they depend on. This framing is especially demanding for resource-constrained entrepreneurs [21], who often lack access to professional feedback on business documents [3] and whose digital and AI skills vary widely [12]. It also overlooks a resource these entrepreneurs already have: each other. Entrepreneurs in resource-constrained communities already lean on peers and local organizations for business support: low-tech, in-person community collectives sustained entrepreneurs’ digital engagement [6, 9], and digital literacy itself can be measured as a capacity communities hold collectively rather than individually [5]. Evaluating AI-generated text, too, might be organized as a collective activity, particularly for entrepreneurs least served by individualized tools. 2 The BizChat Evaluation Module: A Probe for Collective Evaluation In this early-stage work, we explore how the evaluation of AI-generated text might be organized—and assessed—as a collective activity. As one step towards this collective activity, we first extended our system BizChat1 [13, 14], an AI-powered business-planning web application, with an evaluation module that helps entrepreneurs verify whether 1BizChat is available to use at https://bizchat.dev 1 arXiv:2608.16886v2 [cs.HC] 22 Sep 2026 2 Qi Zhao, Marjory Pineda, Ketul Chhaya, Aakash Gautam, and Yasmine Kotturi Fig. 1. The BizChat evaluation module. (Left) The primary evaluation interface displays each"
+      },
+      {
+        "id": "S8-c3",
+        "text": "verify whether 1BizChat is available to use at https://bizchat.dev 1 arXiv:2608.16886v2 [cs.HC] 22 Sep 2026 2 Qi Zhao, Marjory Pineda, Ketul Chhaya, Aakash Gautam, and Yasmine Kotturi Fig. 1. The BizChat evaluation module. (Left) The primary evaluation interface displays each generated section beside what the entrepreneur shared during onboarding; clicking a source card highlights the corresponding generated text in the business plan. (Right) The revision interface allows users to review, edit, and approve specific AI-suggested changes based on their feedback. their generated plan accurately reflects what they described. This module design draws on prior work showing that fine-grained attribution—linking AI-generated text to specific user inputs—reduces the verification burden on users [17]. For each plan section (e.g., Executive Summary, Service Line), the interface displays three panels side-by-side (Figure 1 Left)—what the entrepreneur originally said alongside how the system summarized it, the generated plan text, and a feedback section for users’ ratings and revisions. Users trace whether their input was faithfully carried through by reviewing each section in this structured format (Figure 1 Right); these interactions make evaluation tractable for a single user, providing critical scaffolding for the collective evaluation as described in the next section. 3 Approach and Early Findings: Supporting and Assessing Collective Evaluation Following a community-based participatory research (CBPR) approach [7], we are partnering with local organizations2 to embed"
+      },
+      {
+        "id": "S8-c4",
+        "text": "user, providing critical scaffolding for the collective evaluation as described in the next section. 3 Approach and Early Findings: Supporting and Assessing Collective Evaluation Following a community-based participatory research (CBPR) approach [7], we are partnering with local organizations2 to embed BizChat within ongoing community programming—to date, we have conducted three sessions on AI and entrepreneurship with 14 workshop attendees. In each, after hands-on BizChat use, attendees discussed their evaluations together (such as through Think-Pair-Share activities [11] with prompts like “How did you assess or trust what BizChat gave you?”) The module scaffolded the collective evaluation by making verification shareable: because each claim was linked back to the entrepreneur’s own words, checking whether the plan reflected what they had said became a visible comparison a neighbor could inspect and weigh in on. Paper rubrics extended this shared context, giving attendees common criteria for evaluating one another’s plans. Follow-up interviews with two attendees suggest evaluation extended beyond the workshop itself: both took printed copies of their plans, one shared hers with two people for feedback—one peer “said it is official,” and another “wanted to bulk it up”. Building on these sessions, we plan to continue the series, alternating individually-focused and group-based evaluation activities to further investigate the role of peer discussion and collective assessment. Over time, we aim to assess evaluation as"
+      },
+      {
+        "id": "S8-c5",
+        "text": "“wanted to bulk it up”. Building on these sessions, we plan to continue the series, alternating individually-focused and group-based evaluation activities to further investigate the role of peer discussion and collective assessment. Over time, we aim to assess evaluation as a community-level capacity, drawing on emerging measures of collective digital literacy [5] and on log data from BizChat’s in-the-wild deployment. 2Community partners include the Housing Authority of the City of Annapolis, Baltimore Community Lending, UMBC Alex. Brown Center for En- trepreneurship Evaluating Beyond the Screen: Collective Assessment of AI-Generated Business Plans with Resource-Constrained Entrepreneurs 3"
+      }
+    ]
+  },
+  {
+    "key": "S9",
+    "record": {
+      "id": "doi:10.1108/ijchm-10-2024-1595",
+      "title": "Generative AI in international hotel marketing: impacts on employee creativity and performance",
+      "abstract": "Purpose This study aims to explore how generative AI enhances employee creativity and performance in international hotel marketing. It applies an integrated technology–organization–environment (TOE) and antecedents–behavior–consequences (ABC) framework to examine the role of technological competence, organizational support, government support and artificial intelligence (AI) strategy in fostering employee innovation and performance. Design/methodology/approach A mixed-method approach was adopted, combining survey data from 206 international hotel marketers with semi-structured interviews. The study uses partial least squares structural equation modeling to test relationships and fuzzy-set qualitative comparative analysis (fsQCA) to identify configurations leading to high employee performance. Findings Technological competence, organizational support and government support significantly influence AI-driven innovative behavior. Innovative behavior, in turn, enhances employee creativity and performance, with creativity acting as a mediator. AI strategy amplifies the impact of organizational support on employee innovation. The fsQCA results reveal multiple pathways to achieving high employee performance, demonstrating the multifaceted nature of AI-enabled outcomes. Practical implications Hotels can enhance employee innovation and performance by investing in AI training and aligning AI strategies with organizational support. Policymakers should promote AI-friendly policies and partnerships to foster adoption. Organizations can further benefit from integrating generative AI tools with workflows to boost creativity and service quality, enhancing competitive advantage in the hospitality sector. Originality/value This study contributes by integrating the TOE and ABC frameworks to explore the cognitive and behavioral mechanisms underpinning AI-driven performance. It introduces AI strategy as a boundary condition and offers new insights into the nuanced ways AI influences creativity and productivity in hospitality management.",
+      "authors": [
+        "Shaofeng Wang",
+        "Hao Zhang"
+      ],
+      "year": 2025,
+      "doi": "10.1108/ijchm-10-2024-1595",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "International Journal of Contemporary Hospitality Management",
+      "url": "https://openalex.org/W4410522778",
+      "oa_pdf_url": null,
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S9-c0",
+        "text": "Generative AI in international hotel marketing: impacts on employee creativity and performance. Purpose This study aims to explore how generative AI enhances employee creativity and performance in international hotel marketing. It applies an integrated technology–organization–environment (TOE) and antecedents–behavior–consequences (ABC) framework to examine the role of technological competence, organizational support, government support and artificial intelligence (AI) strategy in fostering employee innovation and performance. Design/methodology/approach A mixed-method approach was adopted, combining survey data from 206 international hotel marketers with semi-structured interviews. The study uses partial least squares structural equation modeling to test relationships and fuzzy-set qualitative comparative analysis (fsQCA) to identify configurations leading to high employee performance. Findings Technological competence, organizational support and government support significantly influence AI-driven innovative behavior. Innovative behavior, in turn, enhances employee creativity and performance, with creativity acting as a mediator. AI strategy amplifies the impact of organizational support on employee innovation. The fsQCA results reveal multiple pathways to achieving high employee performance, demonstrating the multifaceted nature of AI-enabled outcomes. Practical implications Hotels can enhance employee innovation and performance by investing in AI training and aligning AI strategies with organizational support. Policymakers should promote AI-friendly policies and partnerships to foster adoption. Organizations can further benefit from integrating generative AI tools with workflows to boost creativity and service quality, enhancing competitive advantage in the hospitality sector. Originality/value This study"
+      },
+      {
+        "id": "S9-c1",
+        "text": "with organizational support. Policymakers should promote AI-friendly policies and partnerships to foster adoption. Organizations can further benefit from integrating generative AI tools with workflows to boost creativity and service quality, enhancing competitive advantage in the hospitality sector. Originality/value This study contributes by integrating the TOE and ABC frameworks to explore the cognitive and behavioral mechanisms underpinning AI-driven performance. It introduces AI strategy as a boundary condition and offers new insights into the nuanced ways AI influences creativity and productivity in hospitality management."
+      }
+    ]
+  },
+  {
+    "key": "S10",
+    "record": {
+      "id": "doi:10.1007/s10639-025-13409-8",
+      "title": "Do AI-generative tools kill or nurture creativity in EFL teaching and learning?",
+      "abstract": "",
+      "authors": [
+        "Ali Abbas Falah Alzubi",
+        "Mohd Nazim",
+        "Naji Alyami"
+      ],
+      "year": 2025,
+      "doi": "10.1007/s10639-025-13409-8",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "Education and Information Technologies",
+      "url": "https://openalex.org/W4407226745",
+      "oa_pdf_url": null,
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S10-c0",
+        "text": "Do AI-generative tools kill or nurture creativity in EFL teaching and learning?."
+      }
+    ]
+  },
+  {
+    "key": "S11",
+    "record": {
+      "id": "doi:10.1080/00218499.2025.2464305",
+      "title": "Harmony or Discord? The Intersection of Generative AI and Human Creativity in Advertising",
+      "abstract": "The intersection of Generative AI (Gen AI) and advertising represents a crucial turning point, highlighted by recent developments in academic research and practitioner application. This research, through interviews with senior advertising executives, explores the synergy between Gen AI and human creativity. We find that Gen AI reshapes creativity, handling routine tasks while human insights drive brand strategy and emotional connections. Concerns of creative homogenization and the ethical implications of Gen AI use highlight the irreplaceable human element. A debate about AI’s transparency in advertising reflects differing views on its role as a creative tool. Overall, the responsibility for the ethical application of Gen AI lies with humans, underscoring the need for guidelines and regulation as the advertising industry navigates its creative potential.",
+      "authors": [
+        "Vlad Demsar",
+        "Carla Ferraro",
+        "Sean Sands",
+        "August Kohn"
+      ],
+      "year": 2025,
+      "doi": "10.1080/00218499.2025.2464305",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "Journal of Advertising Research",
+      "url": "https://openalex.org/W4409123418",
+      "oa_pdf_url": null,
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S11-c0",
+        "text": "Harmony or Discord? The Intersection of Generative AI and Human Creativity in Advertising. The intersection of Generative AI (Gen AI) and advertising represents a crucial turning point, highlighted by recent developments in academic research and practitioner application. This research, through interviews with senior advertising executives, explores the synergy between Gen AI and human creativity. We find that Gen AI reshapes creativity, handling routine tasks while human insights drive brand strategy and emotional connections. Concerns of creative homogenization and the ethical implications of Gen AI use highlight the irreplaceable human element. A debate about AI’s transparency in advertising reflects differing views on its role as a creative tool. Overall, the responsibility for the ethical application of Gen AI lies with humans, underscoring the need for guidelines and regulation as the advertising industry navigates its creative potential."
+      }
+    ]
+  },
+  {
+    "key": "S12",
+    "record": {
+      "id": "doi:10.1016/j.caeai.2025.100501",
+      "title": "An exploration of the role of generative AI in fostering creativity in architectural learning environments",
+      "abstract": "This paper explores the role of generative AI (GenAI) in supporting creativity within architectural education through the lens of a student-led AI drawing competition. The research addresses two questions: (1) how creative are students' text prompts and the resulting AI-generated images, and is there a relationship between them? and (2) to what extent do students perceive GenAI as a supportive tool in their creative process? Drawing on a mixed-methods approach, the study combines semantic analysis of text prompts, aesthetic evaluation of AI-generated images, and a Creativity Support Index (CSI) survey, complemented by sentiment analysis of student feedback. The semantic analysis reveals varying levels of conceptual richness across prompts, with higher divergence correlating to more open-ended and expressive image results. The CSI data indicates strong support for exploratory and goal-directed creativity, with high scores in exploration and results-worth-effort dimensions. These findings suggest that GenAI can function as both a collaborator and provocateur in design pedagogy, facilitating creative ideation while inviting new pedagogical strategies centred on prompt literacy and reflective design. The study concludes by discussing implications for integrating AI tools into design education, emphasising the pedagogical value of prompt literacy, and calling for further research on creative agency and authorship in hybrid human–AI workflows. • Assesses creativity in AI-generated architectural prompts and images. • Introduces metrics for linguistic and visual creativity in design education. • Uses CSI to evaluate AI's effectiveness in supporting creative workflows. • Student feedback and sentiment analysis confirm strong engagement with AI tools. • Highlights prompt literacy as central to integrating AI in design pedagogy.",
+      "authors": [
+        "Carlos Medel-Vera",
+        "Sandy Britton",
+        "William Francis Gates"
+      ],
+      "year": 2025,
+      "doi": "10.1016/j.caeai.2025.100501",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "Computers and Education Artificial Intelligence",
+      "url": "https://openalex.org/W4416412516",
+      "oa_pdf_url": null,
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S12-c0",
+        "text": "An exploration of the role of generative AI in fostering creativity in architectural learning environments. This paper explores the role of generative AI (GenAI) in supporting creativity within architectural education through the lens of a student-led AI drawing competition. The research addresses two questions: (1) how creative are students' text prompts and the resulting AI-generated images, and is there a relationship between them? and (2) to what extent do students perceive GenAI as a supportive tool in their creative process? Drawing on a mixed-methods approach, the study combines semantic analysis of text prompts, aesthetic evaluation of AI-generated images, and a Creativity Support Index (CSI) survey, complemented by sentiment analysis of student feedback. The semantic analysis reveals varying levels of conceptual richness across prompts, with higher divergence correlating to more open-ended and expressive image results. The CSI data indicates strong support for exploratory and goal-directed creativity, with high scores in exploration and results-worth-effort dimensions. These findings suggest that GenAI can function as both a collaborator and provocateur in design pedagogy, facilitating creative ideation while inviting new pedagogical strategies centred on prompt literacy and reflective design. The study concludes by discussing implications for integrating AI tools into design education, emphasising the pedagogical value of prompt literacy, and calling for further research on creative agency and authorship in hybrid human–AI workflows. • Assesses"
+      },
+      {
+        "id": "S12-c1",
+        "text": "literacy and reflective design. The study concludes by discussing implications for integrating AI tools into design education, emphasising the pedagogical value of prompt literacy, and calling for further research on creative agency and authorship in hybrid human–AI workflows. • Assesses creativity in AI-generated architectural prompts and images. • Introduces metrics for linguistic and visual creativity in design education. • Uses CSI to evaluate AI's effectiveness in supporting creative workflows. • Student feedback and sentiment analysis confirm strong engagement with AI tools. • Highlights prompt literacy as central to integrating AI in design pedagogy."
+      }
+    ]
+  },
+  {
+    "key": "S13",
+    "record": {
+      "id": "doi:10.1142/s1084946726500135",
+      "title": "IS AI TRUST A BARRIER OR A BOOSTER? A POSTERIORI SEGMENTATION OF GENERATIVE AI ENTREPRENEURSHIP INTENTION AMONG INDONESIAN YOUTH",
+      "abstract": "This study examines how trust in generative AI relates to digital entrepreneurship intention among Indonesian youth who have used ChatGPT. Indonesia is a theoretically important context because AI adoption is accelerating, yet effective-use gaps, uneven digital skills and evolving governance arrangements shape whether AI becomes entrepreneurial opportunity or a source of caution. Survey data from 549 respondents were analyzed using PLS-SEM and prediction-oriented segmentation in SmartPLS. In the pooled model, AI trust does not have a significant direct association with digital entrepreneurship intention. However, AI trust positively relates to AI skills and supports an indirect pathway to intention through capability development. Segmentation reveals two subgroups with opposing trust-to-intention and skills-to-intention dynamics, while the trust-to-skills link remains positive in both groups. These findings suggest that, in the Indonesian youth context, trust matters less as a universal trigger of entrepreneurial intention than as an enabler of learning and skill accumulation. The study extends Social Cognitive Theory by showing that the translation of AI-related capability into entrepreneurial intention is context-sensitive and heterogeneous in an emerging economy setting.",
+      "authors": [
+        "Rina Herani",
+        "Jovita Angela",
+        "Risa Virgosita"
+      ],
+      "year": 2026,
+      "doi": "10.1142/s1084946726500135",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "Journal of Developmental Entrepreneurship",
+      "url": "https://openalex.org/W7168953161",
+      "oa_pdf_url": null,
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S13-c0",
+        "text": "IS AI TRUST A BARRIER OR A BOOSTER? A POSTERIORI SEGMENTATION OF GENERATIVE AI ENTREPRENEURSHIP INTENTION AMONG INDONESIAN YOUTH. This study examines how trust in generative AI relates to digital entrepreneurship intention among Indonesian youth who have used ChatGPT. Indonesia is a theoretically important context because AI adoption is accelerating, yet effective-use gaps, uneven digital skills and evolving governance arrangements shape whether AI becomes entrepreneurial opportunity or a source of caution. Survey data from 549 respondents were analyzed using PLS-SEM and prediction-oriented segmentation in SmartPLS. In the pooled model, AI trust does not have a significant direct association with digital entrepreneurship intention. However, AI trust positively relates to AI skills and supports an indirect pathway to intention through capability development. Segmentation reveals two subgroups with opposing trust-to-intention and skills-to-intention dynamics, while the trust-to-skills link remains positive in both groups. These findings suggest that, in the Indonesian youth context, trust matters less as a universal trigger of entrepreneurial intention than as an enabler of learning and skill accumulation. The study extends Social Cognitive Theory by showing that the translation of AI-related capability into entrepreneurial intention is context-sensitive and heterogeneous in an emerging economy setting."
+      }
+    ]
+  },
+  {
+    "key": "S14",
+    "record": {
+      "id": "doi:10.1007/s10758-026-10025-4",
+      "title": "AI-Driven Entrepreneurship Education: Fostering Entrepreneurial Career Intention Through Generative AI",
+      "abstract": "",
+      "authors": [
+        "Chang‐Soo Sung",
+        "Joo Yeon Park"
+      ],
+      "year": 2026,
+      "doi": "10.1007/s10758-026-10025-4",
+      "pmid": null,
+      "arxiv_id": null,
+      "venue": "Technology Knowledge and Learning",
+      "url": "https://openalex.org/W7203979629",
+      "oa_pdf_url": null,
+      "sources": [
+        "openalex"
+      ]
+    },
+    "full_text": false,
+    "evidence_chunks": [
+      {
+        "id": "S14-c0",
+        "text": "AI-Driven Entrepreneurship Education: Fostering Entrepreneurial Career Intention Through Generative AI."
+      }
+    ]
+  }
+]

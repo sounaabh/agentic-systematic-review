@@ -1,0 +1,39 @@
+{
+  "concepts": {
+    "generative AI": [
+      "generative AI",
+      "ChatGPT",
+      "DALL·E",
+      "Midjourney",
+      "Stable Diffusion"
+    ],
+    "creativity": [
+      "creativity",
+      "creative performance",
+      "originality",
+      "fluency",
+      "flexibility",
+      "elaboration"
+    ],
+    "entrepreneurial competency": [
+      "entrepreneurial competency",
+      "entrepreneurship",
+      "opportunity recognition",
+      "risk tolerance",
+      "resource mobilization",
+      "entrepreneurial self‑efficacy"
+    ],
+    "population": [
+      "students",
+      "professionals",
+      "entrepreneurs",
+      "individuals"
+    ]
+  },
+  "queries": [
+    "generative AI creativity",
+    "generative AI entrepreneurship",
+    "ChatGPT students"
+  ],
+  "rationale": "Each query is limited to 2‑4 words to meet high‑recall database requirements and pairs the intervention (generative AI tools) with a single outcome concept (creativity or entrepreneurship) or a key population term. Separate queries for creativity and entrepreneurship avoid conflating outcomes, ensuring that any record containing both the AI tool term and the specific outcome or population will be retrieved."
+}

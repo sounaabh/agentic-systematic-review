@@ -1,0 +1,57 @@
+[
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "yes",
+    "overall": "moderate",
+    "justification": "The study clearly aims to assess the creativity of AI models and provides a theoretical framework for doing so. The design is appropriate, using statistical creativity measures and practical guidelines. However, the adequacy of the sample or data is unclear as the study does not provide specific details on the data used. The outcome measures are valid, and the limitations are acknowledged and addressed, but the overall quality is moderate due to the lack of specific data details.",
+    "key": "S1",
+    "record_id": "arxiv:2401.01623"
+  },
+  {
+    "clear_aims": "unclear",
+    "appropriate_design": "unclear",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "unclear",
+    "overall": "low",
+    "justification": "The passages do not provide a clear statement of the study's aims, nor do they describe the design, sample, or outcome measures in a way that allows for a clear assessment. The text is more of a review of literature and theoretical perspectives rather than a structured study, making it difficult to evaluate the quality using the MMAT criteria.",
+    "key": "S2",
+    "record_id": "arxiv:2512.07117"
+  },
+  {
+    "clear_aims": "no",
+    "appropriate_design": "unclear",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "no",
+    "limitations_addressed": "unclear",
+    "overall": "low",
+    "justification": "The study lacks clear aims and valid outcome measures, focusing on a conceptual framework rather than empirical data. The design and sample/data are unclear as no empirical data or specific methods are described. The overall quality is low due to the absence of empirical validation and clear aims.",
+    "key": "S3",
+    "record_id": "openalex:W7219372573"
+  },
+  {
+    "clear_aims": "unclear",
+    "appropriate_design": "no",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "no",
+    "limitations_addressed": "unclear",
+    "overall": "low",
+    "justification": "The study lacks clear aims, and the design, outcome measures, and limitations are not adequately addressed. The overall quality is low due to these uncertainties and the focus on anecdotal examples.",
+    "key": "S4",
+    "record_id": "doi:10.1016/b978-0-443-34073-4.00009-5"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "unclear",
+    "overall": "moderate",
+    "justification": "The study clearly aims to assess the impact of generative AI on creativity and collective diversity. The design, using an online experiment, is appropriate for the research question. However, the adequacy of the sample or data is unclear without more information. The outcome measures are valid, but limitations, such as the generalizability of the results, are not addressed.",
+    "key": "S5",
+    "record_id": "doi:10.1126/sciadv.adn5290"
+  }
+]

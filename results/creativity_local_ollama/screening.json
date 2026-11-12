@@ -1,0 +1,501 @@
+[
+  {
+    "record_id": "doi:10.5334/jime.995",
+    "title": "The Staging of AI: Exploring Perspectives About Generative AI, Creativity and Education",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention entrepreneurial activities, generative AI tools, or the measurement of creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "rationale": "The study investigates generative AI's role in education and creativity, which aligns with criteria I1 and I2. While it doesn't explicitly measure creativity or entrepreneurial competencies, it explores emotional and intellectual responses related to AI and creativity, potentially relevant to I3.",
+      "confidence": 0.7
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The study focuses on the role of generative AI in education and creativity, aligning with criteria I1 and I2. However, it does not explicitly measure creativity or entrepreneurial competencies, which is required by criteria I3. While the exploration of emotional and intellectual responses related to AI and creativity might be relevant to entrepreneurial competencies, the abstract does not provide clear evidence of this. Therefore, the study's plausibility to meet the criteria is uncertain and would not meet the inclusion criteria I3, leading to exclusion."
+  },
+  {
+    "record_id": "arxiv:2401.01623",
+    "title": "Can AI Be as Creative as Humans?",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools in the context of entrepreneurial activities or creative processes, nor does it measure creativity or entrepreneurial competencies directly.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study investigates AI's creative potential (I1 & I2), discusses measuring creativity (I3) through 'Statistical Creativity,' and is published in a peer-reviewed journal (I4).",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "While the abstract does not explicitly mention entrepreneurial activities or creative processes, the study's focus on AI's creative potential and the measurement of creativity through 'Statistical Creativity' aligns with criteria I2 and I3. Additionally, the paper is published in a peer-reviewed journal, meeting criterion I4. Although there is some uncertainty regarding the direct involvement of individuals in entrepreneurial activities or creative processes, the study's relevance to the broader impact of generative AI on creativity makes it plausible that it could be checked at the full-text stage for more detailed analysis."
+  },
+  {
+    "record_id": "doi:10.1007/s11528-024-01036-y",
+    "title": "Generative AI, Creativity, Culture, and the Future of Learning: a Conversation with Mairéad Pratschke",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "Abstract is missing, making it impossible to determine if the study meets the inclusion criteria.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The title suggests a conversation exploring generative AI and its impact on learning and creativity, potentially aligning with the research question, but the lack of an abstract prevents assessment of whether it meets the inclusion criteria regarding entrepreneurial activities, AI tool use, and competency measurement.",
+      "confidence": 0.6
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The abstract is missing, and the title alone does not provide sufficient information to determine if the study meets all the inclusion criteria (I1, I2, I3). Therefore, the study cannot be definitively checked at the full-text stage based on the available information."
+  },
+  {
+    "record_id": "arxiv:2505.11463",
+    "title": "How AI Generates Creativity from Inauthenticity",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools or their impact on human creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "rationale": "The study involves musical improvisation with an AI (I1 & I2), and discusses creativity (I3). Although it's an opinion piece, it presents an argument and example related to generative AI and creativity.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "While the study discusses creativity and involves an AI (I1 & I2), it does not explicitly measure creativity or entrepreneurial competencies (I3). Additionally, it is an opinion piece without empirical data (E1), making it unsuitable for the full-text screening stage."
+  },
+  {
+    "record_id": "doi:10.1038/s41562-023-01751-1",
+    "title": "Creativity in the age of generative AI",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "Abstract is missing to determine if the study meets the inclusion criteria.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The title suggests a study involving generative AI and creativity, but without an abstract, it's impossible to determine if it meets the inclusion criteria regarding entrepreneurial competencies or measurement of those competencies.",
+      "confidence": 0.6
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The abstract is missing, making it impossible to determine if the study meets the inclusion criteria. Therefore, the study cannot be included based on the available information."
+  },
+  {
+    "record_id": "arxiv:2512.07117",
+    "title": "Human Agency and Creativity in AI-Assisted Learning Environments",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention entrepreneurial competencies or provide empirical data on the impact of generative AI tools on creativity and entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves students in a learning environment, utilizes generative AI tools (GenAI), and discusses creativity, aligning with all four inclusion criteria. It is published in a peer-reviewed journal (chapter in a book).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study involves students in a learning environment, which can be considered as individuals engaged in creative processes (I1). It discusses the use of generative AI tools (GenAI) (I2) and focuses on creativity through the concept of Mini-c creativity (I3). Additionally, it is published in a peer-reviewed journal (I4). While it does not explicitly mention entrepreneurial competencies, the generative AI tools and creative processes discussed could be relevant to entrepreneurial contexts. Therefore, the study plausibly meets the criteria and could be checked at the full-text stage."
+  },
+  {
+    "record_id": "openalex:W7219372573",
+    "title": "Rethinking Machine Creation: A Socio-Technical Framework for Evaluating Generative AI Creativity",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools or the measurement of creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves generative AI tools (I2), examines creativity (I3) within a socio-technical framework, and is published in a peer-reviewed journal (I4).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study involves generative AI tools (I2) as it discusses the use of GAI in the context of creativity. It also measures creativity (I3) through the proposed evaluation framework. Additionally, the study is published in a peer-reviewed journal (I4). While the abstract does not explicitly mention entrepreneurial competencies, the socio-technical framework could be relevant to entrepreneurial activities, and the study could be checked at full-text stage to confirm its relevance to the research question."
+  },
+  {
+    "record_id": "doi:10.1016/b978-0-443-34073-4.00009-5",
+    "title": "Human-AI Co-Creativity: Exploring Synergies Across Levels of Creative Collaboration",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract mentions human engagement in creative processes, the use of generative AI tools, and the measurement of creative potential.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves human and AI co-creation (I1 & I2), analyzes creativity (I3) within the context of generative AI tools, and is published in a journal (I4).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1126/sciadv.adn5290",
+    "title": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves individuals engaged in creative processes (writing short stories), mentions the use of generative AI tools, measures creativity, and is published in a peer-reviewed journal.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves writers using generative AI (LLMs) to produce short stories, measures creativity through evaluations, and is published in a peer-reviewed journal.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2607.07521",
+    "title": "Creativity from Friction: Human-AI Interaction for Exploratory Structural Design",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "rationale": "The abstract mentions structural designers, who are engaged in creative processes, and discusses the use of AI tools to support their work, which involves creativity and design exploration.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves structural designers using a vision-language model (generative AI tool) to explore design spaces, measuring their perception of the system and its impact on design space exploration, and is published in a peer-reviewed journal.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1080/10400419.2024.2354622",
+    "title": "The Paradox of Artificial Creativity: Challenges and Opportunities of Generative AI Artistry",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools in entrepreneurial activities or creative processes, nor does it explicitly measure creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves generative AI (I2), examines art which is a creative process (I1), and discusses creativity (I3) while being published in a peer-reviewed journal (I4).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "While the abstract does not explicitly mention entrepreneurial activities, the study involves generative AI tools (I2) and examines a creative process (I1). It also measures creativity (I3) and is published in a peer-reviewed journal (I4). Although the abstract is somewhat vague, the full text likely addresses the use of generative AI in creative processes and measures creativity, making the study plausibly meet the inclusion criteria. Therefore, it should be checked at the full-text stage."
+  },
+  {
+    "record_id": "doi:10.1145/3698061.3726924",
+    "title": "Beyond Productivity: Rethinking the Impact of Creativity Support Tools",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools or the measurement of creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "rationale": "The study examines the impact of 'generative AI' on 'creativity support tools' (I1 & I2) and discusses 'outcome measures' used in CST evaluations, which aligns with measuring creativity and entrepreneurial competencies (I3).",
+      "confidence": 0.8
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "While the study discusses the use of generative AI tools in the context of creativity support tools (I1 & I2), it primarily focuses on the evaluation metrics used in CSTs rather than directly measuring creativity or entrepreneurial competencies (I3). The abstract does not provide clear evidence that the study meets all the inclusion criteria, particularly in terms of directly measuring the impact on creativity or entrepreneurial competencies. Therefore, the study does not plausibly meet all the criteria and should be excluded."
+  },
+  {
+    "record_id": "doi:10.22329/il.v44i1.8258",
+    "title": "Generative AI and Argument Creativity",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools or measure creativity or entrepreneurial competencies directly.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "rationale": "The study investigates argument creativity using generative AI (I2 & I3), and while it doesn't explicitly focus on entrepreneurial activities, it does involve individuals engaged in argument construction (I1). However, the abstract doesn't provide details on measurement of creativity or entrepreneurial competencies.",
+      "confidence": 0.7
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The study involves individuals engaged in argument construction (I1) and mentions the use of generative AI tools (I2), which are related to creativity (I3). However, the abstract does not provide clear evidence that the study measures creativity or entrepreneurial competencies directly. Therefore, the plausibility of meeting criteria I3 and I4 is uncertain and would require further review at the full-text stage. Given the current information, the study does not meet the inclusion criteria."
+  },
+  {
+    "record_id": "arxiv:2503.15498",
+    "title": "Revival: Collaborative Artistic Creation through Human-AI Interactions in Musical Creativity",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not mention the use of generative AI tools or the measurement of creativity or entrepreneurial competencies.",
+      "confidence": 0.8
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3"
+      ],
+      "rationale": "The study involves a live performance with human and AI musicians (I1 & I2), and explores the impact of AI on musical creativity (I3).",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "While the study involves human and AI musicians (I1 & I2) and explores the impact of AI on musical creativity (I3), it does not provide empirical data or measurements of creativity or entrepreneurial competencies (I3). The abstract does not indicate any quantitative or qualitative measures of these competencies, and the study appears to be primarily descriptive of a performance rather than an empirical investigation. Therefore, it does not meet the inclusion criteria I3 and E1 applies."
+  },
+  {
+    "record_id": "arxiv:2510.16223",
+    "title": "Case Study of GAI for Generating Novel Images for Real-World Embroidery",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools in the context of entrepreneurial activities or creative processes, nor does it explicitly measure creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves a case study using generative AI (GAI) for embroidery pattern generation, directly addressing entrepreneurial (design) and creative processes, and implicitly measuring creativity through the evaluation of generated patterns. It is published in a peer-reviewed journal.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study involves a case study using generative AI (GAI) for embroidery pattern generation, which directly addresses entrepreneurial (design) and creative processes. While the abstract does not explicitly mention measuring creativity or entrepreneurial competencies, the evaluation of generated patterns implicitly measures creativity. Additionally, the study is published in a peer-reviewed journal, meeting the inclusion criteria. The uncertainty raised by Reviewer A is outweighed by the clear relevance to the research question and the peer-reviewed publication status."
+  },
+  {
+    "record_id": "doi:10.1007/s00146-024-01921-3",
+    "title": "Not “what”, but “where is creativity?”: towards a relational-materialist approach to generative AI",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools or measure creativity or entrepreneurial competencies directly.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study investigates generative AI tools within the cultural and creative industries, measures creativity through a systems model, and is published in a peer-reviewed journal. It addresses the impact of generative AI on creative labour, aligning with the research question.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study discusses the use of generative AI tools within the cultural and creative industries, aligns with the systems model of creativity, and is published in a peer-reviewed journal. While the abstract does not explicitly mention entrepreneurial competencies, the focus on creative labor and the broader context of generative AI's impact on creativity suggests it could be relevant. The study's alignment with the research question and its publication in a reputable venue support its inclusion."
+  },
+  {
+    "record_id": "doi:10.1145/3803784.3807570",
+    "title": "How Creatives Approach GenAI Image Generation: Tensions Between Structured Guidance, Self-Experimentation, and Creative Autonomy",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not clearly mention the use of generative AI tools in the context of entrepreneurial activities or creative processes, nor does it explicitly measure creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves artists and hobbyists using generative AI tools (I1 & I2), explores their learning processes related to these tools (I3), and is published in a peer-reviewed journal (I4).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study involves individuals engaged in creative processes (artists and hobbyists) and mentions the use of generative AI tools (I1 & I2). It also measures aspects related to learning and perception of these tools, which can be linked to creativity (I3). Additionally, the study is published in a peer-reviewed journal (I4). While it does not explicitly measure entrepreneurial competencies, the creative processes involved can be considered relevant to the broader context of the research question. The exclusion criteria are not met, as the study provides empirical data and is published in a reputable venue."
+  },
+  {
+    "record_id": "doi:10.3390/jintelligence13060060",
+    "title": "Generative AI in Game Design: Enhancing Creativity or Constraining Innovation?",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract mentions game designers and developers engaged in creative processes, the use of generative AI tools, and the measurement of its impact on creativity, aligning with the inclusion criteria.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves game designers and developers (I1 & I2), investigates the impact of generative AI on creativity (I3), and utilizes a mixed-methods approach with a survey and interviews (I4).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1109/icaie64856.2025.11158485",
+    "title": "Designing the Future of Entrepreneurship Education: Exploring an AI-Empowered Scaffold System for Business Plan Development",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract does not explicitly mention the use of generative AI tools or the measurement of creativity or entrepreneurial competencies.",
+      "confidence": 0.5
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves students engaged in entrepreneurial activities (I1) and investigates the use of generative AI tools (I2) to improve business plan development, which measures entrepreneurial competencies (I3) and is published in a peer-reviewed journal (I4).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study involves students engaged in entrepreneurial activities (I1) and investigates the use of generative AI tools (I2) to improve business plan development, which measures entrepreneurial competencies (I3) and is published in a peer-reviewed journal (I4). While the abstract does not explicitly mention generative AI tools, the context and focus on AI-empowered scaffold systems strongly suggest the use of such tools. The study also measures entrepreneurial competencies through the improvement of business plan development. Therefore, it plausibly meets the inclusion criteria and could be checked at the full-text stage."
+  },
+  {
+    "record_id": "doi:10.5281/zenodo.22685370",
+    "title": "AI as a Tool for Opportunity Recognition in Entrepreneurship in India",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract mentions the use of generative AI tools and measures the impact on entrepreneurial activities, specifically opportunity recognition.",
+      "confidence": 1.0
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study involves entrepreneurs engaged in entrepreneurial activities (I1) and examines the use of generative AI tools (I2) to measure opportunity recognition, a form of entrepreneurial competency (I3), and is published in a peer-reviewed journal (I4).",
+      "confidence": 1.0
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "no",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to assess the causal impact of generative AI on creativity and uses an online experimental design, which is appropriate. However, the passage provides no information about sample size or characteristics, and it does not describe how creativity and other outcomes were measured or validated. Additionally, the authors do not discuss study limitations. These gaps reduce confidence in the robustness of the findings, leading to a moderate overall rating.",
+    "key": "S1",
+    "record_id": "doi:10.1126/sciadv.adn5290"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "no",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "yes",
+    "overall": "low",
+    "justification": "The study clearly states its aim to examine how expert designers interact with an AI‑supported interface and uses a qualitative pilot study, which matches the research question. However, the sample size is only three participants, which is insufficient for robust conclusions, and the outcome measures are not described as validated or reliable, leaving their adequacy unclear. While the authors acknowledge these limitations, the methodological weaknesses lower the overall quality to low.",
+    "key": "S2",
+    "record_id": "arxiv:2607.07521"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "yes",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to understand how creatives approach GenAI tools. It employs a mixed‑methods design (survey and lab study) that fits the research question. Sample sizes are reported (159 survey respondents, 17 lab participants) and are adequate for exploratory work, though the lab sample is small. Outcome measures include validated Likert scales and systematic qualitative coding, providing credible data. The authors explicitly discuss several limitations (self‑selection bias, measurement imprecision, tutorial complexity), showing awareness of study constraints. Given these strengths and the modest sample size for the experimental component, the overall quality is moderate.",
+    "key": "S3",
+    "record_id": "doi:10.1145/3803784.3807570"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "no",
+    "overall": "moderate",
+    "justification": "The study clearly states its aims and uses a mixed‑methods design appropriate to the research question, with a reasonable sample for an exploratory study. However, the passage does not detail how outcome measures were validated, and it does not explicitly discuss study limitations, reducing confidence in the rigor.",
+    "key": "S4",
+    "record_id": "doi:10.3390/jintelligence13060060"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "yes",
+    "overall": "high",
+    "justification": "The study clearly states its aim to assess whether AI‑generated visuals enhance storytelling creativity. It uses a randomized controlled experimental design with a visual‑aid condition and a no‑visual control. A sizable dataset of 362 stories from AMT participants provides adequate data. Creativity outcomes are measured by blinded external judges using the established EPoC battery, ensuring valid assessment. The authors discuss limitations such as reduced convergent thinking and potential dependency on visual aids, showing awareness of study constraints. Hence, the study meets all checklist criteria and merits a high quality rating.",
+    "key": "S5",
+    "record_id": "arxiv:2110.14810"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "yes",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to test how intermediate AI suggestions affect creative rewriting. It uses a controlled experimental design with 27 completed participants, which is modest but adequately described. Outcome measures (remaining AI text, sentence‑embedding similarity, edit counts, and survey responses) are appropriate for assessing rewriting behavior. The authors acknowledge demographic limits and design constraints, indicating awareness of limitations. Given the small sample size and specific participant pool, the quality is moderate rather than high.",
+    "key": "S6",
+    "record_id": "doi:10.1145/3635636.3656187"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "no",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "no",
+    "overall": "low",
+    "justification": "The study clearly states its aim to evaluate generative AI in culturally‑situated creative practice and uses a novel dialogue‑based qualitative design that fits this aim. However, the sample is very small (three artists and three commentators) and there is no evidence of systematic outcome measurement or validation of the qualitative data. The paper does not discuss study limitations, leaving concerns about generalizability and rigor unaddressed. Consequently, the overall quality is assessed as low.",
+    "key": "S7",
+    "record_id": "arxiv:2412.14077"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "no",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "unclear",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim to explore collective evaluation of AI‑generated business plans and uses a community‑based participatory design appropriate for the research question. However, the sample is very small (14 participants) and may not provide sufficient data for robust conclusions. Outcome measures (rubrics, interviews, log data) are described, but the paper does not explicitly discuss study limitations, leaving that aspect unclear. Consequently, the overall quality is moderate.",
+    "key": "S8",
+    "record_id": "arxiv:2608.16886"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "unclear",
+    "overall": "moderate",
+    "justification": "The study clearly states its aim, uses a mixed‑methods design appropriate to the research question, reports a reasonable sample of 206 respondents, and employs established analytical techniques for creativity and performance outcomes. However, the provided excerpts do not mention any discussion of study limitations, preventing a full assessment of methodological rigor.",
+    "key": "S9",
+    "record_id": "doi:10.1108/ijchm-10-2024-1595"
+  },
+  {
+    "clear_aims": "unclear",
+    "appropriate_design": "unclear",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "unclear",
+    "overall": "low",
+    "justification": "The provided passage contains only the study title, offering no information about aims, design, sample, measures, or limitations, preventing any positive appraisal.",
+    "key": "S10",
+    "record_id": "doi:10.1007/s10639-025-13409-8"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "unclear",
+    "overall": "low",
+    "justification": "The passage states a clear aim and uses interviews, which fits a qualitative design, but provides no details on sample size, data adequacy, measurement validity, or discussion of limitations, preventing a confident quality rating.",
+    "key": "S11",
+    "record_id": "doi:10.1080/00218499.2025.2464305"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "yes",
+    "limitations_addressed": "no",
+    "overall": "moderate",
+    "justification": "The study clearly states its aims and uses a mixed‑methods design appropriate to the questions, with validated measures (CSI, semantic and aesthetic analyses). However, the passage provides no information on sample size or representativeness, and it does not discuss study limitations, reducing confidence in the overall quality.",
+    "key": "S12",
+    "record_id": "doi:10.1016/j.caeai.2025.100501"
+  },
+  {
+    "clear_aims": "yes",
+    "appropriate_design": "yes",
+    "adequate_sample_or_data": "yes",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "no",
+    "overall": "moderate",
+    "justification": "The study has clear objectives and uses a suitable survey‑based design with a reasonably large sample (549). However, the passage does not provide information on the validation of the outcome measures or any discussion of study limitations, which lowers confidence in the overall quality.",
+    "key": "S13",
+    "record_id": "doi:10.1142/s1084946726500135"
+  },
+  {
+    "clear_aims": "unclear",
+    "appropriate_design": "unclear",
+    "adequate_sample_or_data": "unclear",
+    "valid_outcome_measures": "unclear",
+    "limitations_addressed": "unclear",
+    "overall": "low",
+    "justification": "The provided passage only contains the study title, offering no information about aims, design, sample, measures, or limitations, making it impossible to assess quality.",
+    "key": "S14",
+    "record_id": "doi:10.1007/s10758-026-10025-4"
+  }
+]

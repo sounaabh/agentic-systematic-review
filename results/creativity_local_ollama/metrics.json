@@ -1,0 +1,31 @@
+{
+  "metrics": {
+    "screening_kappa": 0.2,
+    "screening_raw_agreement": 0.5,
+    "screening_conflicts": 15,
+    "screener_a_model": "ollama:qwen2.5:7b",
+    "screener_b_model": "ollama:gemma3:4b",
+    "traceability_rate": 1.0,
+    "retrieval_mode": "hybrid retrieval (BM25 + dense embeddings with nomic-embed-text, reciprocal rank fusion)",
+    "runtime_minutes": 35.6
+  },
+  "prisma": {
+    "identified": {
+      "openalex": 40,
+      "arxiv": 33
+    },
+    "identified_total": 73,
+    "duplicates_removed": 1,
+    "after_dedup": 72,
+    "not_screened_cap": 52,
+    "screened": 20,
+    "excluded_screening": 7,
+    "included_screening": 13,
+    "reports_sought": 5,
+    "not_extracted_cap": 8,
+    "full_text_retrieved": 3,
+    "abstract_only": 2,
+    "excluded_fulltext": 1,
+    "included_final": 4
+  }
+}

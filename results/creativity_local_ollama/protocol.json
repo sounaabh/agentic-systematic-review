@@ -1,0 +1,36 @@
+{
+  "research_question": "What is the impact of generative AI tools on human creativity and entrepreneurial competencies?",
+  "population": "Individuals engaged in entrepreneurial activities or creative processes",
+  "intervention": "Use of generative AI tools",
+  "comparator": "None / not required",
+  "outcomes": [
+    "Creativity levels",
+    "Innovation outcomes",
+    "Entrepreneurial performance",
+    "Problem-solving abilities",
+    "Adaptability to new technologies"
+  ],
+  "context": "Startups, small businesses, and creative industries",
+  "study_designs": [
+    "Observational studies",
+    "Case studies",
+    "Surveys",
+    "Qualitative interviews"
+  ],
+  "inclusion_criteria": [
+    "Studies involving individuals engaged in entrepreneurial activities or creative processes",
+    "Studies mentioning the use of generative AI tools",
+    "Studies measuring creativity or entrepreneurial competencies",
+    "Studies published in peer-reviewed journals or reputable conference proceedings"
+  ],
+  "exclusion_criteria": [
+    "Editorials, opinion pieces, or papers without empirical data",
+    "Studies not focusing on the use of generative AI tools",
+    "Studies not measuring creativity or entrepreneurial competencies",
+    "Studies published in non-peer-reviewed journals or non-reputable conference proceedings"
+  ],
+  "year_from": 2020,
+  "languages": [
+    "English"
+  ]
+}

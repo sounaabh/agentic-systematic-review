@@ -1,0 +1,1760 @@
+[
+  {
+    "record_id": "doi:10.5334/jime.995",
+    "title": "The Staging of AI: Exploring Perspectives About Generative AI, Creativity and Education",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The article presents a qualitative, perspective-driven inquiry without reporting original empirical data on the impact of generative AI on human creativity or entrepreneurial competencies.",
+      "confidence": 0.9
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The abstract describes a qualitative inquiry that appears to be a reflective commentary rather than an empirical study reporting original data on the impact of generative AI on human creativity.",
+      "confidence": 0.9
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2401.01623",
+    "title": "Can AI Be as Creative as Humans?",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "The paper presents a theoretical analysis of AI creativity without empirical data involving human participants using generative AI tools.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes a theoretical framework and statistical assessment of AI creativity, with no empirical data on human participants using generative AI tools for creative tasks.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1007/s11528-024-01036-y",
+    "title": "Generative AI, Creativity, Culture, and the Future of Learning: a Conversation with Mairéad Pratschke",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The record appears to be a conversational piece with no original empirical data on human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The title indicates a conversational piece rather than empirical research, and no abstract or data are provided, suggesting it is an editorial or commentary.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2505.11463",
+    "title": "How AI Generates Creativity from Inauthenticity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The paper is a conceptual discussion of AI-generated creativity without reporting original empirical data on human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract presents a theoretical discussion and conceptual argument about AI-generated creativity without reporting any empirical data or original research findings.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1038/s41562-023-01751-1",
+    "title": "Creativity in the age of generative AI",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "No abstract provided, making it impossible to determine if the study meets inclusion criteria.",
+      "confidence": 0.9
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The record provides only a title with no abstract or evidence of empirical primary research; it appears to be a general discussion rather than a study reporting data on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The record contains only a title and no abstract or any indication of empirical primary research reporting data on human participants using generative AI tools. Without evidence of quantitative or qualitative outcomes related to creativity or entrepreneurial competencies, the study does not meet the inclusion criteria and appears to be a discussion or commentary rather than original research."
+  },
+  {
+    "record_id": "arxiv:2512.07117",
+    "title": "Human Agency and Creativity in AI-Assisted Learning Environments",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a theoretical chapter discussing perspectives and frameworks without presenting original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a theoretical chapter with no empirical data, thus it does not meet the requirement for empirical primary research (I1).",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "openalex:W7219372573",
+    "title": "Rethinking Machine Creation: A Socio-Technical Framework for Evaluating Generative AI Creativity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a theoretical framework and philosophical discussion without reporting original empirical data on human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract presents a theoretical framework and philosophical discussion without reporting any empirical primary data on human use of generative AI tools.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/b978-0-443-34073-4.00009-5",
+    "title": "Human-AI Co-Creativity: Exploring Synergies Across Levels of Creative Collaboration",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I5"
+      ],
+      "rationale": "The abstract describes a chapter discussing human‑AI co‑creativity but does not clearly report original empirical data or indicate a peer‑reviewed outlet, making it unclear if it meets primary research criteria.",
+      "confidence": 0.6
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The record is a chapter that appears to be a narrative review or conceptual discussion rather than an empirical primary study presenting original quantitative or qualitative data on generative AI impact.",
+      "confidence": 0.9
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The record appears to be a book chapter that discusses concepts and provides narrative analysis of human-AI co-creativity, but it does not present original empirical primary research with quantitative or qualitative data on the impact of generative AI tools on human creativity or entrepreneurial competencies. Therefore it fails inclusion criterion I1 and should be excluded."
+  },
+  {
+    "record_id": "doi:10.1126/sciadv.adn5290",
+    "title": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract reports an online experiment where writers used LLM-generated ideas (generative AI) and measured creativity outcomes, meeting all inclusion criteria.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes an online experiment with human writers using an LLM to generate story ideas, measuring creativity outcomes, and is published in a peer‑reviewed outlet in English.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2607.07521",
+    "title": "Creativity from Friction: Human-AI Interaction for Exploratory Structural Design",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract describes an empirical study with expert participants using vision‑language generative AI for structural design, measuring perceived support for creativity and design exploration.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract describes a pilot design interface using vision‑language models and a study with structural design experts, indicating empirical primary research on human creativity with a generative AI tool.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.22329/il.v44i1.8258",
+    "title": "Generative AI and Argument Creativity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a theoretical argument and does not report original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract presents an argumentative discussion without any mention of empirical data, participants, or measured outcomes, indicating it is not an empirical primary study.",
+      "confidence": 0.99
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1145/3698061.3726924",
+    "title": "Beyond Productivity: Rethinking the Impact of Creativity Support Tools",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a review of outcome measures from 173 CST evaluations, not original empirical research.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a review of outcome measures from 173 CST evaluations, lacking original empirical data on the impact of generative AI tools on human creativity.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1080/10400419.2024.2354622",
+    "title": "The Paradox of Artificial Creativity: Challenges and Opportunities of Generative AI Artistry",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual analysis of generative AI in art without reporting original empirical data on human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual analysis of generative AI in art without reporting any empirical primary data on human outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2503.15498",
+    "title": "Revival: Collaborative Artistic Creation through Human-AI Interactions in Musical Creativity",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract describes an empirical study of human participants co‑creating music with AI agents (generative audio/visual tools) and assesses creative outcomes in musical improvisation.",
+      "confidence": 0.8
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The abstract describes a performance and artistic demonstration without reporting any empirical data on human outcomes; it is an editorial/description rather than primary research measuring creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The abstract describes a live performance and demonstration of human‑AI co‑creation but does not indicate that the paper reports empirical primary research with quantitative or qualitative data on human creativity outcomes. Without evidence of measured human outcomes, it fails inclusion criterion I1 and thus should be excluded."
+  },
+  {
+    "record_id": "arxiv:2510.16223",
+    "title": "Case Study of GAI for Generating Novel Images for Real-World Embroidery",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes an auto‑ethnographic case study where a human team uses generative AI to create embroidery designs, reporting on creativity and inclusion outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract describes a case study where a human team uses a generative AI image system to create embroidery patterns, reporting on creativity and inclusion outcomes.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1007/s00146-024-01921-3",
+    "title": "Not “what”, but “where is creativity?”: towards a relational-materialist approach to generative AI",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual discussion of generative AI and creativity without reporting original empirical data.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract presents a conceptual discussion of creativity and generative AI without reporting any empirical primary data on human participants or outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1145/3803784.3807570",
+    "title": "How Creatives Approach GenAI Image Generation: Tensions Between Structured Guidance, Self-Experimentation, and Creative Autonomy",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an empirical interview and survey study with artists using generative AI image tools, examining impacts on creative processes and autonomy.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The study reports primary qualitative and survey data on human participants using generative AI image tools to explore creativity, meeting all inclusion criteria.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.3390/jintelligence13060060",
+    "title": "Generative AI in Game Design: Enhancing Creativity or Constraining Innovation?",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports a mixed‑method empirical study (survey of 42 designers and interviews) examining how generative AI tools affect the creative process in game design, meeting all inclusion criteria.",
+      "confidence": 0.97
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract reports a mixed‑method empirical study with 42 designers and 9 interviews, measuring creativity outcomes in game design, and explicitly involves generative AI tools.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2110.14810",
+    "title": "Telling Creative Stories Using Generative Visual Aids",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The study reports empirical data on writers using generative visual AI (BigGAN, VQGAN, DALL‑E, CLIPDraw) to support storytelling and measures creativity outcomes, meeting all inclusion criteria.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an empirical study with human writers using generative visual AI (BigGAN, VQGAN, DALL‑E, CLIPDraw) to enhance storytelling creativity, meeting all inclusion criteria and none of the exclusion criteria.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.64706/45831s98",
+    "title": "GENERATIVE AI: TRANSFORMING CREATIVITY AND PRODUCTIVITY",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The article is a narrative overview of generative AI applications and does not present original empirical data on human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract indicates the paper is a review of existing studies and industry reports, with no mention of original empirical data on human participants using generative AI.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2412.06060",
+    "title": "Steering Large Language Models to Evaluate and Amplify Creativity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The paper focuses on using LLM internal states to measure and enhance text creativity, without reporting human participants or outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes using an LLM to evaluate and amplify creativity, focusing on internal state analysis and correlation with human judgment, but it does not report any empirical data on human participants using the AI tool for creative tasks.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1108/ijchm-10-2024-1595",
+    "title": "Generative AI in international hotel marketing: impacts on employee creativity and performance",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports a mixed-method empirical study of 206 hotel marketers using generative AI tools, measuring employee creativity and performance, thus meeting all inclusion criteria.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract reports a mixed‑method empirical study with 206 hotel marketers (human participants) using generative AI to enhance creativity and performance, providing quantitative survey data and qualitative interviews on human outcomes.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1145/3635636.3656187",
+    "title": "Ai.llude: Encouraging Rewriting AI-Generated Text to Support Creative Expression",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports empirical data from 27 writing sessions where humans used a text‑generation AI and measures effects on creative rewriting, meeting all inclusion criteria.",
+      "confidence": 0.97
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an empirical study with 27 human writers using a text‑generation AI, measuring increased rewriting—a proxy for creative engagement—thus meeting all inclusion criteria.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1007/s10639-025-13409-8",
+    "title": "Do AI-generative tools kill or nurture creativity in EFL teaching and learning?",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "No abstract provided, making it impossible to determine if the study meets inclusion criteria regarding empirical data, participants, outcomes, and AI tool type.",
+      "confidence": 0.9
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The title indicates a study on generative AI tools and creativity in EFL teaching, but no abstract or full text is provided to confirm empirical data, participant details, or outcomes.",
+      "confidence": 0.6
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The title indicates a study on generative AI tools and creativity, which aligns with the inclusion criteria. Although the abstract is missing, the topic suggests it may involve human participants using generative AI for creative tasks. Therefore, the record should be retained for full‑text screening to verify empirical data, participant details, outcomes, and tool type."
+  },
+  {
+    "record_id": "arxiv:2412.01433",
+    "title": "My Voice, Your Voice, Our Voice: Attitudes Towards Collective Governance of a Choral AI Dataset",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "I3"
+      ],
+      "rationale": "The study surveys attitudes toward data governance of a generative AI dataset and does not measure human creativity or entrepreneurial competencies, focusing instead on governance attitudes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "I3"
+      ],
+      "rationale": "The abstract reports a survey of chorister attitudes toward generative AI models, but it does not measure creativity or entrepreneurial competencies, which are required outcomes.",
+      "confidence": 0.9
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.22471/ai.2024.9.0.23",
+    "title": "Creativity and AI: Products of Generative AI and Ethical Issues",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a literature review and model development without original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The abstract indicates a literature review and model development without any empirical data on human participants or outcomes, violating the requirement for empirical primary research on human creativity or entrepreneurial competencies.",
+      "confidence": 0.99
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2209.01390",
+    "title": "How to Prompt? Opportunities and Challenges of Zero- and Few-Shot Learning for Human-AI Interaction in Creative Applications of Generative Models",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a discussion of opportunities, challenges, and design goals without reporting original empirical data on human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual discussion and design proposals without reporting any empirical data on human outcomes, thus it is an opinion piece rather than primary research.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.47760/cognizance.2024.v04i10.001",
+    "title": "Gen Z and Generative AI: Shaping the Future of Learning and Creativity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a literature review and documentary research without original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract indicates the study is a literature review and documentary analysis, lacking original empirical data on human participants using generative AI for creative tasks.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2207.02996",
+    "title": "Team Learning as a Lens for Designing Human-AI Co-Creative Systems",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a position paper proposing a framework and research agenda, without reporting original empirical data.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a position paper proposing a framework and research agenda, with no mention of empirical primary research or data on human outcomes.",
+      "confidence": 0.99
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.69554/vskl5622",
+    "title": "Creativity: Firing on all generative AI cylinders",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes the potential of generative AI without presenting original empirical data on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes general potential uses of generative AI but provides no evidence of an empirical study, human participants, or measurement of creativity or entrepreneurial outcomes.",
+      "confidence": 0.9
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2412.14077",
+    "title": "Dialogue with the Machine and Dialogue with the Art World: Evaluating Generative AI for Culturally-Situated Creativity",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract describes a case study with artists using state-of-the-art generative AI tools to explore culturally situated creative practice, providing qualitative data on human creativity.",
+      "confidence": 0.93
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract describes a case study with artists using state‑of‑the‑art generative AI tools and collecting qualitative data through dialogues, addressing human creativity outcomes.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1080/00218499.2025.2464305",
+    "title": "Harmony or Discord? The Intersection of Generative AI and Human Creativity in Advertising",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract reports qualitative interviews with advertising executives about how generative AI affects human creativity, meeting the empirical, participant, outcome, and intervention criteria.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract reports qualitative interviews with human advertising executives using generative AI for creative tasks, providing empirical data on the impact of Gen AI on creativity.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2211.08856",
+    "title": "Challenges in creative generative models for music: a divergence maximization perspective",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "The paper discusses generative models for music and proposes a framework, but reports no empirical study with human participants measuring creativity outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract discusses generative ML models and their limitations in music but does not report any empirical data on human participants or measure human creativity or entrepreneurial outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.5120/ijca2025924392",
+    "title": "Generative AI: Transforming the Landscape of Creativity and Automation",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The manuscript is a descriptive overview of generative AI without original empirical data on human creativity or entrepreneurial outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a comprehensive overview of generative AI without reporting any original empirical data on human creativity or entrepreneurial outcomes, indicating it is a review/overview rather than primary research.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2512.11893",
+    "title": "Beyond Automation: Rethinking Work, Creativity, and Governance in the Age of Generative AI",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The paper is a conceptual discussion of governance and creativity impacts of generative AI without reporting original empirical data on human participants.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "I1"
+      ],
+      "rationale": "The abstract describes a conceptual framework and policy analysis without reporting empirical primary data on the impact of generative AI tools on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.3126/spectrum.v4i1.92920",
+    "title": "Rethinking Creativity and Plagiarism in the Age of Generative AI",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual discussion and framework without reporting original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual discussion and framework without presenting empirical primary data on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2209.12879",
+    "title": "Environmental and Social Sustainability of Creative-Ai",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes a study of sustainability and ethical aspects of Creative‑AI use, without reporting quantitative or qualitative data on the impact of the tool on human creativity or entrepreneurial competencies.",
+      "confidence": 0.9
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The abstract describes an ongoing research outline without reporting empirical data on the impact of generative AI on human creativity or entrepreneurial competencies, focusing instead on sustainability and ethical aspects.",
+      "confidence": 0.9
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.64235/6paxag04",
+    "title": "Generative AI: Revolutionizing Creativity and Content Production",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The paper is a conceptual discussion of generative AI's impact on creativity without reporting original empirical data.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a broad review of generative AI’s impact on creativity and content production without reporting any original empirical data, thus it is an editorial/perspective piece.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2510.23772",
+    "title": "Evaluating In Silico Creativity: An Expert Review of AI Chess Compositions",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The study evaluates AI-generated chess puzzles by expert judges and does not measure human creativity or entrepreneurial competencies resulting from using the generative AI tool.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The abstract describes an empirical study where a generative AI system produced chess puzzles and human experts evaluated their creativity, satisfying all inclusion criteria.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The study assesses the creativity of AI‑generated chess puzzles through expert evaluations, but it does not measure any impact on the human participants' own creativity or entrepreneurial competencies. The participants are acting as judges rather than using the generative AI tool to perform creative or entrepreneurial tasks themselves, so the study does not meet inclusion criteria I2 and I3."
+  },
+  {
+    "record_id": "doi:10.35940/ijies.a1097.12010125",
+    "title": "Generative AI: Crafting Tomorrow’s Creativity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual discussion of AI and creativity without reporting original empirical data or human outcome measurements.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The abstract describes a general discussion of AI’s impact on creativity and societal issues without reporting any empirical data, participants, or measured outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2606.18591",
+    "title": "Bridging Creative Intent and Visual Quality: Creator-Driven Recurrent Video Generation with Agentic Feedback Loops",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract describes an empirical study with high school and college participants using a generative AI video system (CHIEF) to create videos, assessing creative outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The abstract describes an empirical study involving human participants (students) using a generative AI video tool, but it does not explicitly report quantitative or qualitative outcomes related to creativity or entrepreneurial competencies. Therefore, it is unclear whether the study meets the outcome criterion (I3).",
+      "confidence": 0.6
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study reports an empirical human‑in‑the‑loop experiment where high school and college students use a generative AI video system (CHIEF) to create videos, directly involving a generative AI tool for a creative task. This satisfies I1 (primary empirical research), I2 (human participants), I4 (intervention is a generative AI system), and I5/I6 (peer‑reviewed 2026 outlet, English). The abstract indicates the purpose is to assess the effectiveness of the framework in supporting creative outcomes, implying that creativity (the specified outcome) is measured, thus meeting I3. No exclusion criteria apply. Therefore the record plausibly meets all inclusion criteria and should be retained for full‑text screening."
+  },
+  {
+    "record_id": "doi:10.1145/3708523",
+    "title": "The Impact of Generative AI on Creativity in Software Development: A Research Agenda",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual research agenda and scenario analysis without reporting original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual research agenda and scenario analysis without reporting empirical primary data on human outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2309.02136",
+    "title": "Exploring the Intersection of Complex Aesthetics and Generative AI for Promoting Cultural Creativity in Rural China after the Post-Pandemic Era",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract mentions generative AI and surveys of cultural creativity, but it is unclear whether original empirical data on human participants using the AI tool are reported.",
+      "confidence": 0.4
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The abstract describes a literature review, case studies, and surveys but does not report original quantitative or qualitative data on the impact of generative AI tools on human creativity or entrepreneurial competencies. It appears to be a conceptual or review‑type paper rather than empirical primary research.",
+      "confidence": 0.85
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The paper appears to be a conceptual discussion and literature review with case studies and surveys, but it does not present original empirical data on human participants using a generative AI tool to measure creativity or entrepreneurial competencies. Therefore it does not meet inclusion criteria I1–I4."
+  },
+  {
+    "record_id": "doi:10.1016/j.caeai.2025.100501",
+    "title": "An exploration of the role of generative AI in fostering creativity in architectural learning environments",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports a mixed-methods empirical study of students using generative AI for creative design tasks, measuring creativity outcomes via prompts, images, and a Creativity Support Index.",
+      "confidence": 0.97
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes an empirical study with human participants (students) using a generative AI tool to generate images and prompts, measuring creativity outcomes via CSI and other metrics.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2112.06978",
+    "title": "Exploring Latent Dimensions of Crowd-sourced Creativity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The study focuses on manipulating GAN latent spaces to alter image creativity and does not report human participants' creativity or entrepreneurial outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes manipulation of GAN-generated images to increase creativity but does not report any empirical data on human participants using the tool or measuring human creativity outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1145/3713075",
+    "title": "Unleashing Creativity in the Metaverse: Generative AI and Multimodal Content",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a survey and technical overview of generative AI in the metaverse without presenting original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a survey/technical overview without reporting empirical data on human creativity or entrepreneurial outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2606.20595",
+    "title": "Hybrid Intelligence in Cartoon Captioning: Evaluating AI as a Creative Writing Partner",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an empirical study where human cartoonists use a generative LLM (GPT‑4o) to create captions, measuring creative outcomes such as humor and idea generation.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes an evaluation of GPT‑4o’s caption generation on cartoons, focusing on the AI’s performance and humor quality, with no mention of human participants or measurement of human creativity outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The abstract focuses on evaluating the generative AI system’s caption quality rather than measuring the impact on human participants’ creativity or entrepreneurial competencies. There is no clear evidence that human subjects used the tool and that their creative outcomes were assessed, which fails inclusion criteria I2 and I3."
+  },
+  {
+    "record_id": "doi:10.52783/pmj.v34.i2.1105",
+    "title": "A Mathematical Model to Enhance Creativity in Generative AI Systems",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E5"
+      ],
+      "rationale": "The paper proposes a mathematical model to improve AI system creativity and evaluates the AI outputs, without involving human participants using the tool.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "The abstract describes a mathematical model that improves the creativity of generative AI systems and reports AI output metrics, but it does not involve human participants or measure human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2605.10291",
+    "title": "Generative AI Fuels Solo Entrepreneurship, but Teams Still Lead at the Top",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract reports aggregate product launch data after ChatGPT release without measuring individual human creativity or entrepreneurial competencies, focusing on AI impact on entry rates rather than direct human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "I4"
+      ],
+      "rationale": "The abstract reports an observational analysis of product launches following the release of ChatGPT-3.5, but it does not describe an intervention where participants actively used a generative AI tool for creative or entrepreneurial tasks.",
+      "confidence": 0.8
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1142/s1084946726500135",
+    "title": "IS AI TRUST A BARRIER OR A BOOSTER? A POSTERIORI SEGMENTATION OF GENERATIVE AI ENTREPRENEURSHIP INTENTION AMONG INDONESIAN YOUTH",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports a survey of 549 human participants who used ChatGPT (a generative AI) to examine its impact on digital entrepreneurship intention, meeting all inclusion criteria.",
+      "confidence": 0.97
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an empirical survey of 549 Indonesian youth who used ChatGPT, measuring the impact of generative AI trust on entrepreneurial intention, thus meeting all inclusion criteria and none of the exclusion criteria.",
+      "confidence": 0.9
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2505.05523",
+    "title": "GenAI in Entrepreneurship: a systematic review of generative artificial intelligence in entrepreneurship research: current issues and future directions",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The paper is a systematic literature review and does not present original empirical data on human participants using generative AI.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The article is a systematic literature review, not an empirical primary study reporting original data on human outcomes.",
+      "confidence": 0.99
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.4018/jgim.364094",
+    "title": "Meta-Entrepreneurship: An Analysis Theory on Integrating Generative AI, Agentic AI, and Metaverse for Entrepreneurship",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual framework and literature review without reporting original empirical data on human outcomes.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E2"
+      ],
+      "rationale": "The abstract describes a conceptual framework based on a literature review, observations, and focus group study, but does not report empirical primary data measuring the impact of generative AI on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2604.02567",
+    "title": "Generative AI Use in Entrepreneurship: An Integrative Review and an Empowerment-Entrapment Framework",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The paper is an integrative review of generative AI in entrepreneurship and does not present original empirical data.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The article is an integrative review without original empirical data on human outcomes, violating the requirement for empirical primary research (I1).",
+      "confidence": 0.99
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1007/s44217-024-00261-0",
+    "title": "Entrepreneurship teaching exercises: integrating generative AI",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "I1"
+      ],
+      "rationale": "The paper describes teaching exercises and provides templates but does not report original empirical data on the impact of generative AI on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes the authors’ experience and provides templates for teaching exercises, but it does not report any empirical primary data on the impact of generative AI tools on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1145/3613904.3642191",
+    "title": "Deconstructing the Veneer of Simplicity: Co-Designing Introductory Generative AI Workshops with Local Entrepreneurs",
+    "reviewer_a": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4"
+      ],
+      "rationale": "The abstract describes qualitative interviews with 15 entrepreneurs who used generative AI tools in co-designed workshops, assessing entrepreneurial competencies and creative application.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an empirical study involving 15 local entrepreneurs who participated in workshops and interviews, measuring entrepreneurial competencies and the impact of generative AI tools.",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1016/j.techsoc.2026.103278",
+    "title": "Legitimating entrepreneurship through generative AI: The reproduction of visual stereotypes",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The study analyzes AI-generated images and visual stereotypes without measuring human participants' creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract describes a visual discourse analysis of AI-generated images, focusing on representations rather than measuring any human creativity or entrepreneurial competency outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2603.11384",
+    "title": "Ghost Framing Theory: Exploring the role of generative AI in new venture rhetorical legitimation",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a theoretical framework (Ghost Framing Theory) without reporting original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract presents a theoretical framework (Ghost Framing Theory) without reporting any empirical primary data on human outcomes.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.47392/irjaem.2026.0395",
+    "title": "Generative AI in Entrepreneurship: Applications, Opportunities, Challenges and Future Directions",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a review of generative AI in entrepreneurship and does not present original empirical data.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract indicates a review of the literature without reporting original empirical data on human outcomes, violating the exclusion criterion for editorials, opinion pieces, or reviews without original data.",
+      "confidence": 0.99
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2608.16886",
+    "title": "Evaluating Beyond the Screen: Collective Assessment of AI-Generated Business Plans with Resource-Constrained Entrepreneurs",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The study examines how entrepreneurs evaluate AI-generated business plans but does not report outcomes on creativity or entrepreneurial competencies, focusing instead on evaluation processes.",
+      "confidence": 0.9
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract describes an empirical study with 14 human entrepreneurs using the generative AI tool BizChat to create business plans and evaluate them in a group setting, measuring outcomes related to entrepreneurial competencies (evaluation practices).",
+      "confidence": 0.95
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The study is an empirical primary research project involving human entrepreneurs who use a generative AI tool (BizChat) to produce business plans. It investigates how participants evaluate AI-generated outputs, which pertains to entrepreneurial competencies such as critical assessment, decision‑making, and collaborative evaluation of business artifacts. Although the abstract does not explicitly mention creativity, it does address a key entrepreneurial competency. The study meets inclusion criteria I1‑I5 and is available in English, so it should be retained for full‑text screening."
+  },
+  {
+    "record_id": "doi:10.64818/pijmess.3107.4626.0046",
+    "title": "Generative AI and the Future of Entrepreneurship: Opportunities, Disruptions & Ethical Dilemmas",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a conceptual paper based on secondary data with no original empirical data on human outcomes.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract indicates a conceptual paper based on secondary data synthesis, with no original empirical data on human participants using generative AI.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2609.01263",
+    "title": "AI and the Economy: An Economic Examination of Production, Distribution, Firms, Labor, and Welfare",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes an essay and theoretical discussion of AI's economic impacts without presenting original empirical data.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes an essay that provides a theoretical and policy discussion of AI’s economic impact without reporting empirical data on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.70175/hclreview.2020.29.2.6",
+    "title": "GenAI as \"Co-founder\": How Generative AI is Democratizing Entrepreneurship",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The article appears to be a commentary that draws on existing empirical evidence rather than presenting original primary research data.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract indicates the article is a secondary synthesis of existing empirical evidence rather than reporting new primary data on human participants using generative AI tools.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2512.06506",
+    "title": "AI as \"Co-founder\": GenAI for Entrepreneurship",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The study examines macro-level firm formation effects of ChatGPT release and does not measure human creativity or entrepreneurial competencies of individual users.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "include",
+      "criteria_triggered": [
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "I6"
+      ],
+      "rationale": "The abstract reports an empirical study using quantitative data to assess how generative AI (ChatGPT) influences firm creation, a clear entrepreneurial outcome, with human participants (entrepreneurs) using the AI tool.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "The study analyzes aggregate firm formation data at the grid level following the release of ChatGPT and does not collect or report individual-level data on human participants using the generative AI tool. Consequently, it does not measure personal creativity or entrepreneurial competencies, which are required outcomes for inclusion. Therefore, it does not meet criteria I2 and I3."
+  },
+  {
+    "record_id": "doi:10.1561/0300000121",
+    "title": "Generative AI in Entrepreneurship Research: Principles and Practical Guidance for Intelligence Augmentation",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a monograph and practical guide on using LLMs for research tasks, without reporting original empirical data on human creativity or entrepreneurial competencies.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The abstract describes a monograph that provides guidance and framework for using generative AI in entrepreneurship research, but it does not report any empirical primary data on human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.34626/2025_xcoax_001",
+    "title": "Insidious Imaginaries: A Critical Overview of AI Speculations",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The paper is a critical overview with no original empirical data on human use of generative AI tools.",
+      "confidence": 0.99
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1",
+        "E4"
+      ],
+      "rationale": "The abstract describes a critical overview of AI speculation without presenting empirical data on generative AI tools or human outcomes, fitting an opinion piece rather than primary research.",
+      "confidence": 1.0
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.5281/zenodo.19492391",
+    "title": "ENTREPRENEURSHIP IN THE AGE OF GENERATIVE AI: ETHICAL AND STRATEGIC IMPLICATIONS",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "rationale": "The title suggests relevance to entrepreneurship and generative AI, but no abstract is provided to confirm empirical data, participant details, outcomes, or study type.",
+      "confidence": 0.4
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E1"
+      ],
+      "rationale": "The title indicates a discussion on ethical and strategic implications, and no abstract or empirical data is provided, suggesting it is likely an editorial or commentary rather than primary research.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": true,
+    "adjudication_rationale": "Both reviewers note the absence of an abstract and any indication of empirical primary research. The title suggests a discussion of ethical and strategic implications rather than a study reporting quantitative or qualitative data on human participants using generative AI tools. Without evidence of original data, participant details, or measured outcomes, the record does not meet inclusion criteria I1‑I5 and is best classified as a commentary/editorial, thus excluded."
+  },
+  {
+    "record_id": "arxiv:2410.18357",
+    "title": "The Impact of Generative Artificial Intelligence on Ideation and the performance of Innovation Teams (Preprint)",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "I5"
+      ],
+      "rationale": "The record is a preprint and does not appear to be published in a peer‑reviewed journal or conference proceeding.",
+      "confidence": 0.9
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "I5"
+      ],
+      "rationale": "The study is a preprint and does not appear to have been published in a peer‑reviewed journal, conference proceeding, or other reputable scholarly outlet, violating the inclusion criterion that requires peer‑reviewed publication.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "doi:10.1007/s10758-026-10025-4",
+    "title": "AI-Driven Entrepreneurship Education: Fostering Entrepreneurial Career Intention Through Generative AI",
+    "reviewer_a": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The record lacks an abstract, making it impossible to determine whether it meets the inclusion criteria regarding empirical data, human participants, and outcomes.",
+      "confidence": 0.9
+    },
+    "reviewer_b": {
+      "decision": "uncertain",
+      "criteria_triggered": [],
+      "rationale": "The title indicates a study on generative AI in entrepreneurship education, but the absence of an abstract prevents confirmation of empirical data, participant details, and outcome measures.",
+      "confidence": 0.4
+    },
+    "final": "include",
+    "adjudicated": true,
+    "adjudication_rationale": "The title indicates a study involving generative AI tools in entrepreneurship education, which suggests human participants using the AI for entrepreneurial tasks and measuring relevant outcomes. Although the abstract is missing, the study plausibly meets inclusion criteria I1‑I5 and should be retained for full‑text screening to verify empirical data and outcome measures."
+  },
+  {
+    "record_id": "arxiv:2409.03765",
+    "title": "AI, Entrepreneurs, and Privacy: Deep Learning Outperforms Humans in Detecting Entrepreneurs from Image Data",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "The paper evaluates a predictive deep learning model that classifies entrepreneurs from facial images and does not involve humans using a generative AI tool for creative or entrepreneurial tasks.",
+      "confidence": 0.98
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2",
+        "E4"
+      ],
+      "rationale": "The study evaluates a deep learning model’s ability to classify entrepreneurs from facial images, focusing on AI performance rather than measuring any human creativity or entrepreneurial competency outcomes, and the AI used is a discriminative classifier, not a generative system.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  },
+  {
+    "record_id": "arxiv:2512.07828",
+    "title": "The Adoption and Usage of AI Agents: Early Evidence from Perplexity",
+    "reviewer_a": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract reports a field study of AI agent adoption and usage patterns without measuring human outcomes such as creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "reviewer_b": {
+      "decision": "exclude",
+      "criteria_triggered": [
+        "E2"
+      ],
+      "rationale": "The abstract reports only adoption and usage patterns of an AI agent, with no measurement of human creativity or entrepreneurial competencies.",
+      "confidence": 0.95
+    },
+    "final": "exclude",
+    "adjudicated": false,
+    "adjudication_rationale": null
+  }
+]
