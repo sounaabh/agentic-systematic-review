@@ -28,7 +28,7 @@ def get_llm(model: str | None = None, json_mode: bool = False):
         return ChatOllama(**kwargs)
     if provider == "groq":
         from langchain_groq import ChatGroq
-        return ChatGroq(model=model, temperature=temp)
+        return ChatGroq(model=model, temperature=temp, max_retries=8)
     if provider == "nvidia":
         from langchain_nvidia_ai_endpoints import ChatNVIDIA
         return ChatNVIDIA(model=model, temperature=temp)
