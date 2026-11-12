@@ -1,0 +1,43 @@
+{
+  "run": "20261112-174320",
+  "screening": {
+    "reference": "human consensus (disagreements counted as include)",
+    "records_checked": 0,
+    "ai_final_vs_humans": {
+      "n": 0,
+      "accuracy": null,
+      "recall_sensitivity": null,
+      "specificity": null,
+      "precision": null,
+      "kappa": null,
+      "missed_includes": 0,
+      "false_includes": 0
+    },
+    "ai_reviewer_A_vs_humans": {
+      "n": 0,
+      "accuracy": null,
+      "recall_sensitivity": null,
+      "specificity": null,
+      "precision": null,
+      "kappa": null,
+      "missed_includes": 0,
+      "false_includes": 0
+    },
+    "ai_reviewer_B_vs_humans": {
+      "n": 0,
+      "accuracy": null,
+      "recall_sensitivity": null,
+      "specificity": null,
+      "precision": null,
+      "kappa": null,
+      "missed_includes": 0,
+      "false_includes": 0
+    }
+  },
+  "completeness": {
+    "evidence_table_fields_filled": 0.967,
+    "studies_with_full_text": "3/5",
+    "traceability_rate": 1.0,
+    "inter_agent_kappa": 0.814
+  }
+}
