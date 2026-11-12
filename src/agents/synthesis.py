@@ -15,7 +15,8 @@ from src.state import Critique, ReviewState
 SYNTH_PROMPT = """You write the narrative synthesis section of a systematic review (PRISMA 2020,
 SWiM guideline). Use ONLY the study table provided.
 Rules:
-- Cite every factual statement with study keys in brackets, e.g. [S1] or [S2, S5].
+- Cite every factual statement with study keys in plain brackets, e.g. [S1] or [S2, S5] (no bold).
+- Only mention outcomes that appear in the table for that study; never infer unreported measures.
 - Group studies into 2-4 themes, then summarise the direction of effects (use the counts given).
 - Weigh evidence by quality: say when findings come from low-quality studies.
 - Do not generalise beyond the included studies. Mention gaps and inconsistencies.
@@ -58,6 +59,9 @@ def synthesis_agent(state: ReviewState) -> ReviewState:
                  "\n\nREVISE IT TO FIX THESE ISSUES:\n- " + "\n- ".join(feedback[-1]["issues"]))
 
     text = ask_text(get_llm(), SYNTH_PROMPT, user) if table else "_No studies met the inclusion criteria._"
+    # Normalise citations: models often write [**S1**] or **[S1]**; keep plain [S1]
+    text = re.sub(r"\[([^\]]*S\d+[^\]]*)\]", lambda m: "[" + m.group(1).replace("*", "").strip() + "]", text)
+    text = re.sub(r"\*\*(\[[^\]]*S\d+[^\]]*\])\*\*", r"\1", text)
     # Keep the synthesis inside its report section: drop a top title, demote other big headings
     text = re.sub(r"^#{1,2} .*synthesis.*\n+", "", text, flags=re.IGNORECASE)
     text = re.sub(r"^#{1,2} ", "### ", text, flags=re.MULTILINE)
@@ -73,7 +77,13 @@ def critic_agent(state: ReviewState) -> ReviewState:
     # Deterministic check: citations must point to real included studies
     cited = set(re.findall(r"S\d+", " ".join(re.findall(r"\[([^\]]+)\]", text))))
     bad = sorted(cited - _valid_keys(state))
-    uncited_paras = [p for p in text.split("\n\n") if len(p.split()) > 40 and not re.search(r"\[S\d+", p)]
+    # A paragraph needs a citation only if it states findings: skip headings and
+    # forward-looking text (gaps / future research / summary of limitations)
+    cite = re.compile(r"\[[^\]]*S\d+")
+    future = re.compile(r"future research|should (employ|investigate|explore)|remain(s)? unstudied|gap", re.I)
+    uncited_paras = [p for p in text.split("\n\n")
+                     if len(p.split()) > 40 and not p.lstrip().startswith("#")
+                     and not cite.search(p) and not future.search(p)]
 
     try:
         c = ask_structured(get_llm(json_mode=True), Critique, CRITIC_PROMPT,

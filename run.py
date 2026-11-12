@@ -71,7 +71,8 @@ def main():
     while True:
         for update in graph.stream(state_in, cfg, stream_mode="updates"):
             for node in update:
-                print(f"[done] {node}")
+                if not node.startswith("__"):
+                    print(f"[done] {node}")
         nxt = graph.get_state(cfg).next
         if not nxt:
             break

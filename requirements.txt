@@ -1,6 +1,7 @@
 langgraph>=0.2
 langchain-core>=0.3
 langchain-ollama>=0.2
+langchain-groq>=0.3
 pydantic>=2.0
 pyyaml>=6.0
 requests>=2.31
@@ -8,5 +9,4 @@ python-dotenv>=1.0
 pymupdf>=1.24
 matplotlib>=3.8
 # Optional backends:
-# langchain-groq            (provider: groq)
 # langchain-nvidia-ai-endpoints  (provider: nvidia)
