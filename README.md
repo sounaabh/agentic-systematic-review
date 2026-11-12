@@ -179,7 +179,7 @@ agreement than the cloud models.
 
 ## 8. Team
 
-| Member | Contributions |
+| First Name | Last Name |
 |---|---|
 | Soundous | Bhar |
 | Naaela | Hamdane |
