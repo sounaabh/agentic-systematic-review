@@ -32,7 +32,7 @@ def get_llm(model: str | None = None, json_mode: bool = False):
         # gpt-oss models "think" before answering and thinking tokens count against the
         # free-tier daily limit; low effort is enough for screening/extraction.
         if "gpt-oss" in model and cfg.get("reasoning_effort"):
-            kwargs["model_kwargs"] = {"reasoning_effort": cfg["reasoning_effort"]}
+            kwargs["reasoning_effort"] = cfg["reasoning_effort"]
         return ChatGroq(**kwargs)
     if provider == "nvidia":
         from langchain_nvidia_ai_endpoints import ChatNVIDIA
