@@ -181,7 +181,6 @@ agreement than the cloud models.
 
 | Member | Contributions |
 |---|---|
-| Soundous | _to fill in_ |
-| Naaela | _to fill in_ |
+| Soundous | Bhar |
+| Naaela | Hamdane |
 
-We used Claude (Anthropic) as an AI coding assistant during development.
