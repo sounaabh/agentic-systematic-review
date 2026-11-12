@@ -1,113 +1,187 @@
 # Agentic Systematic Review
 
-A multi-agent AI pipeline that automates a **PRISMA 2020-aligned systematic literature review**,
-from a research question to a draft review with a PRISMA flow diagram, built with **LangGraph**,
-local LLMs (**Ollama**) and **hybrid RAG**.
+A multi-agent AI pipeline that runs a **PRISMA 2020-aligned systematic literature review** on any
+topic: from a research question to a draft review with protocol, search strategy, dual screening,
+evidence table, quality appraisal, narrative synthesis, PRISMA flow diagram and references.
+Built with **LangGraph / LangChain**, **RAG**, and either a **cloud LLM (Groq)** or a **local LLM (Ollama)**.
 
-## What it does
+---
+
+## 1. Architecture
 
 ```
-Topic
+Topic (or a protocol file)
   │
   ▼
-Protocol Agent ──► [human checkpoint: approve / edit protocol]
+Protocol Agent ─────────────► [HUMAN CHECKPOINT 1: approve / edit protocol.json]
   │   PICOC question, inclusion & exclusion criteria
   ▼
-Search Strategy Agent        concepts, synonyms, keyword queries
+Search Strategy Agent        concepts, synonyms, short keyword queries
   ▼
-Retrieval Agent              OpenAlex + Semantic Scholar + arXiv, deduplication
+Retrieval Agent              OpenAlex + arXiv (+ Semantic Scholar, PubMed), round-robin merge,
+  │                          deduplication (DOI, PMID, fuzzy title)
   ▼
-Screening: Reviewer A ─┐
-           Reviewer B ─┴─► Adjudicator ──► [human checkpoint: approve / remove]
-  │   two independent LLM reviewers, Cohen's kappa
+Screening Agent A ─┐         two independent LLM reviewers (different models + prompts)
+Screening Agent B ─┴─► Adjudicator ─► [HUMAN CHECKPOINT 2: remove off-topic records]
   ▼
-Extraction + Quality Agents  open-access PDFs → chunks → hybrid RAG (BM25 + embeddings)
-  │   structured data with passage-level evidence ids, MMAT-inspired appraisal
+Extraction + Quality Agents  open-access PDF → chunks → hybrid retrieval (BM25 + dense
+  │                          embeddings, reciprocal rank fusion) → structured row with
+  │                          passage ids as evidence; full-text eligibility check;
+  │                          MMAT-inspired appraisal
   ▼
-Synthesis Agent ⇄ Critic Agent   narrative synthesis (SWiM), self-reflection loop
+Synthesis Agent ⇄ Critic Agent    narrative synthesis (SWiM); critic = LLM review +
+  │                               deterministic citation check; up to 2 revisions
   ▼
-Report Agent                 review.md, PRISMA diagram, tables (CSV), references.bib
+Report Agent                 review.md, prisma.png, extraction_table.csv, references.bib
 ```
 
-| Requirement | How it is met |
-|---|---|
-| Multi-agent workflow | 8 LangGraph nodes sharing a typed `ReviewState` (`src/graph.py`) |
-| Dual screening | Two different models/prompts screen independently; adjudicator resolves conflicts |
-| RAG & traceability | Hybrid BM25 + dense retrieval with RRF; every extracted row cites chunk ids (`evidence_chunks.json`) |
-| Human-in-the-loop | LangGraph `interrupt_after` checkpoints after protocol and screening |
-| Reproducibility | temperature 0, fixed seed, cached API responses, config snapshot, JSONL audit log |
-| Evaluation | Cohen's kappa, traceability rate, runtime, recall/precision vs. a published review (`eval/`) |
+The **coordinator** is the LangGraph state machine itself (`src/graph.py`): it routes a typed
+`ReviewState` through the agents, pauses at the human checkpoints (`interrupt_after`) and loops
+between synthesis and critic (conditional edge).
 
-## Setup (Windows)
+| Project requirement | Implementation |
+|---|---|
+| Multi-agent architecture | 9 agents as LangGraph nodes (`src/agents/`) |
+| Protocol generation / template | Protocol Agent, or `--protocol configs/protocol_template.yaml` |
+| Search strategy | Search Strategy Agent (concepts → synonyms → queries) |
+| Multi-source retrieval + dedup | `src/tools/` (OpenAlex, arXiv, Semantic Scholar, PubMed), `dedup.py` |
+| Dual screening simulation | Reviewer A + Reviewer B + Adjudicator, Cohen's kappa |
+| Full-text screening | Extraction Agent confirms eligibility on the full text |
+| RAG (dense + sparse) | `src/rag.py`: BM25 + Ollama embeddings, reciprocal rank fusion |
+| Extraction + evidence tables | Pydantic schema, every row cites passage ids |
+| Risk of bias / quality | Simplified MMAT-inspired checklist |
+| Synthesis + critic | SWiM narrative synthesis with self-reflection loop |
+| PRISMA diagram, BibTeX, Markdown | `src/report/` |
+| Transparency / audit trail | `audit.jsonl` (every decision, rationale, model, timestamp) |
+| Human-in-the-loop | 2 checkpoints; human edits are logged |
+| Reproducibility | temperature 0, cached API calls, config snapshot per run |
+
+## 2. Installation (Windows)
+
+Requirements: Git, Python 3.12, and either a free Groq account or Ollama with a GPU (≥ 8 GB).
 
 ```powershell
 git clone https://github.com/sounaabh/agentic-systematic-review.git
 cd agentic-systematic-review
 py -3.12 -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\activate          # if blocked: Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 pip install -r requirements.txt
 ```
 
-Install [Ollama](https://ollama.com), then pull the models (8 GB GPU is enough):
+## 3. Configuration
 
+**Shared review settings** are in `configs/config.yaml` (sources, number of records, years, caps).
+
+**Personal LLM settings** go in a `.env` file at the project root (never committed). Choose one:
+
+*Cloud (Groq, free tier, recommended):* create a key at console.groq.com, then
+```
+LLM_PROVIDER=groq
+LLM_MODEL=openai/gpt-oss-120b
+SCREENER_B_MODEL=openai/gpt-oss-20b
+EMBEDDING_MODEL=
+GROQ_API_KEY=gsk_...
+```
+
+*Local (Ollama):*
 ```powershell
 ollama pull qwen2.5:7b
-ollama pull llama3.1:8b
+ollama pull gemma3:4b
 ollama pull nomic-embed-text
 ```
-
-Check everything works:
-
-```powershell
-python check_setup.py
+```
+SCREENER_B_MODEL=gemma3:4b
 ```
 
-## Run a review
+Check everything with `python check_setup.py`.
+
+## 4. Usage
 
 ```powershell
+# Full review, protocol generated by the agent, with the two human checkpoints
 python run.py --topic "effect of generative AI tools on human creativity and entrepreneurial competencies"
+
+# Use your own protocol (skips the Protocol Agent)
+python run.py --topic "genAI creativity" --protocol configs/protocol_template.yaml
+
+# Smaller run / no human checkpoints
+python run.py --topic "..." --max-screen 40 --max-studies 6 --auto
+
+# Re-run only synthesis + critic + report on a finished run (cheap)
+python resynthesize.py runs\<run_id>
+
+# Also extract the included studies skipped by the max_studies cap
+python resynthesize.py runs\<run_id> --extract-remaining
 ```
 
-Add `--auto` to skip the human checkpoints. Settings (models, number of results, caps) are in
-`configs/config.yaml`. To use a cloud model instead, set `provider: groq` and add your key to `.env`.
+At **checkpoint 1** you can edit `runs/<run_id>/protocol.json` before pressing Enter.
+At **checkpoint 2** type the numbers of records to exclude separated by commas (e.g. `3,12,15`).
 
-## Outputs (`runs/<run_id>/`)
+### Outputs (`runs/<run_id>/`)
 
 | File | Content |
 |---|---|
-| `review.md` | The full draft review (methods, results, synthesis, limitations, references) |
+| `review.md` | Draft review: methods, PRISMA results, evidence table, quality, synthesis, limitations, critic log, references |
 | `prisma.png` | PRISMA 2020 flow diagram |
-| `audit.jsonl` | Every agent decision with timestamp and model |
-| `protocol.json`, `search_strategy.json` | Protocol and search queries |
-| `screening.json` | Both reviewers' decisions, rationales and adjudications |
+| `audit.jsonl` | Every agent and human decision with rationale, model and timestamp |
+| `protocol.json`, `search_strategy.json` | Protocol and queries |
+| `records.json`, `screening.json` | Retrieved records; both reviewers' decisions, rationales, adjudications |
+| `included_ids.json` | Included records after the human checkpoint |
 | `extractions.json`, `extraction_table.csv` | Extracted data with evidence ids |
-| `evidence_chunks.json` | The exact passages used for each study |
-| `quality.json` | Quality appraisal |
-| `references.bib` | BibTeX of included studies |
-| `metrics.json` | kappa, conflicts, traceability, runtime, PRISMA counts |
+| `evidence_chunks.json` | The exact passages used for each study (traceability) |
+| `quality.json`, `references.bib`, `metrics.json` | Appraisal, BibTeX, kappa / runtime / PRISMA counts |
 
-## Evaluation against a published review
+To publish a run in the repository: `python export_results.py runs\<run_id> <name>` → `results/<name>/`.
 
-Create `eval/gold_<name>.csv` with a `doi` (or `title`) column listing the studies included by a
-published review on the same question, then:
+## 5. Evaluation
+
+| Dimension | How it is measured |
+|---|---|
+| Inter-agent consistency | Cohen's kappa between Reviewer A and Reviewer B (`metrics.json`) |
+| Screening accuracy | 30 records screened blind by two humans; AI vs human consensus: accuracy, recall, precision, kappa (`eval/human_check.py`) |
+| Extraction accuracy | Extracted values of 5 studies checked by a human against the evidence passages |
+| Completeness | Share of evidence-table fields filled, studies with full text, traceability rate |
+| Time savings | Measured human minutes per abstract × records × 2 reviewers vs pipeline runtime |
+| Search recall (optional) | Studies of a published review found by our search (`eval/evaluate.py`) |
 
 ```powershell
-python eval/evaluate.py runs/<run_id> eval/gold_<name>.csv
+python eval/human_check.py export runs\<run_id>   # creates the Excel checking sheets in eval/
+python eval/human_check.py score  runs\<run_id>   # computes the metrics
 ```
 
-## Case studies
+Results of our runs are in `results/` and summarised in the technical report.
 
-1. **Generative AI, creativity and entrepreneurial competencies** (main demo)
-2. **Deep reinforcement learning / adaptive AI for dynamic production planning** (generalisation test)
+## 6. Development log (steps we followed)
 
-## Limitations
+1. **Setup**: GitHub repository, Git, Python 3.12 virtual environment, PowerShell execution policy.
+2. **Skeleton**: typed `ReviewState`, LLM factory with robust JSON parsing (`ask_structured`),
+   JSONL audit log, cached HTTP client for reproducible searches.
+3. **Tools**: OpenAlex, Semantic Scholar, PubMed and arXiv clients; deduplication.
+4. **Agents + LangGraph workflow** with two human checkpoints and a critic loop; PRISMA diagram and report.
+5. **Offline test** of the whole graph with a fake LLM.
+6. **Per-user LLM settings** via `.env` (one member runs Groq, the other Ollama) and Groq retries.
+7. **First real runs** revealed issues that we fixed: queries too long (arXiv requires all words),
+   screening cap favouring one database (→ round-robin merge), Methods section claiming dense
+   retrieval when only BM25 was used (→ reports the real mode), protocol too strict (comparator
+   made optional, year range from config).
+8. **Groq free-tier limits** (8K tokens/min, 200K/day): low reasoning effort for gpt-oss, run sizes
+   that fit one day's quota.
+9. **Critic bug**: citations written in bold (`[**S1**]`) were not recognised, so the critic never
+   approved; fixed with citation normalisation, plus `resynthesize.py` to redo only the last steps.
+10. **Evaluation tooling**: human-vs-AI checking sheets, completeness and time metrics, results export.
+
+## 7. Limitations
 
 LLM decisions can be wrong and must be verified by humans; only open-access full texts are used;
-the quality checklist is simplified; no meta-analysis is performed.
+searches are capped to fit the free LLM quota; the quality checklist is simplified (not full RoB 2 /
+ROBINS-I); no meta-analysis is performed; small local models (7B/4B) gave much lower screening
+agreement than the cloud models.
 
-## Team
+## 8. Team
 
 | Member | Contributions |
 |---|---|
 | Soundous | _to fill in_ |
 | Naaela | _to fill in_ |
+
+We used Claude (Anthropic) as an AI coding assistant during development.

@@ -1,17 +1,23 @@
-"""Redo only the synthesis -> critic -> report steps on a finished run.
-
-Useful after improving the synthesis/critic prompts: no new search, screening or
-extraction, so it is fast and uses few LLM tokens. The new report overwrites
-review.md in the same run folder (the audit log keeps the history of both attempts).
+"""Redo the last steps of a finished run without repeating search and screening.
 
     python resynthesize.py runs/20261112-154058
+        -> synthesis -> critic -> report again (e.g. after improving the prompts)
+
+    python resynthesize.py runs/20261112-154058 --extract-remaining
+        -> first extracts the included studies that were skipped because of the
+           max_studies cap, then synthesis -> critic -> report
+
+Uses few LLM tokens compared with a full run. The report in the same run folder is
+overwritten; the audit log keeps the history of every attempt.
 """
+import argparse
 import json
-import sys
 from pathlib import Path
 
+from src.agents.extraction import extract_one, summarize_extraction
 from src.agents.synthesis import critic_agent, route_after_critic, synthesis_agent
 from src.audit import log, save_json
+from src.llm import get_llm
 from src.report.manuscript import report_agent
 
 
@@ -19,8 +25,26 @@ def load(run: Path, name: str):
     return json.loads((run / name).read_text(encoding="utf-8"))
 
 
-def main(run_path: str):
-    run = Path(run_path)
+def included_after_human(run: Path) -> list[str]:
+    """Included ids after the human checkpoint (rebuilt from the audit log for older runs)."""
+    if (run / "included_ids.json").exists():
+        return load(run, "included_ids.json")
+    ids = [s["record_id"] for s in load(run, "screening.json") if s["final"] == "include"]
+    dropped = set()
+    for line in (run / "audit.jsonl").read_text(encoding="utf-8").splitlines():
+        e = json.loads(line)
+        if e["event"] == "screening_override":
+            dropped |= set(e["data"].get("excluded_by_human", []))
+    return [i for i in ids if i not in dropped]
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("run")
+    ap.add_argument("--extract-remaining", action="store_true")
+    args = ap.parse_args()
+
+    run = Path(args.run)
     saved = load(run, "metrics.json")
     state = {
         "run_id": run.name,
@@ -32,7 +56,24 @@ def main(run_path: str):
         "metrics": saved["metrics"],
         "prisma": saved["prisma"],
     }
-    log(state["run_id"], "orchestrator", "resynthesis_started")
+    log(state["run_id"], "orchestrator", "resynthesis_started", {"extract_remaining": args.extract_remaining})
+
+    if args.extract_remaining:
+        included = included_after_human(run)
+        done = {s["record"]["id"] for s in state["studies"]}
+        records = {r["id"]: r for r in load(run, "records.json")}
+        todo = [records[i] for i in included if i not in done and i in records]
+        print(f"Extracting {len(todo)} remaining included studies...")
+        llm, q = get_llm(json_mode=True), state["protocol"]["research_question"]
+        for rec in todo:
+            st, ex, qa = extract_one(rec, f"S{len(state['studies']) + 1}", llm, q, state["run_id"])
+            state["studies"].append(st); state["extractions"].append(ex); state["quality"].append(qa)
+        state["prisma"], state["metrics"] = summarize_extraction(
+            state["prisma"], state["metrics"], state["studies"], state["extractions"], len(included))
+        save_json(state["run_id"], "extractions.json", state["extractions"])
+        save_json(state["run_id"], "quality.json", state["quality"])
+        save_json(state["run_id"], "evidence_chunks.json", state["studies"])
+
     while True:
         state.update(synthesis_agent(state))
         state.update(critic_agent(state))
@@ -44,4 +85,4 @@ def main(run_path: str):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main()

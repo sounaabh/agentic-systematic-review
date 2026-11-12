@@ -16,8 +16,19 @@ requires one: single-group, pre-post and observational studies are usually eligi
 Do not put a publication year in the criteria (the year range is set separately)."""
 
 
+def _load_protocol_file(path: str) -> Protocol:
+    """User-written protocol (YAML or JSON), e.g. configs/protocol_template.yaml."""
+    import yaml
+    with open(path, encoding="utf-8") as f:
+        return Protocol(**yaml.safe_load(f))   # YAML is a superset of JSON
+
+
 def protocol_agent(state: ReviewState) -> ReviewState:
-    protocol = ask_structured(get_llm(json_mode=True), Protocol, SYSTEM, f"Topic: {state['topic']}")
+    if state.get("protocol_file"):
+        protocol = _load_protocol_file(state["protocol_file"])
+        log(state["run_id"], "protocol", "protocol_loaded_from_file", {"file": state["protocol_file"]})
+    else:
+        protocol = ask_structured(get_llm(json_mode=True), Protocol, SYSTEM, f"Topic: {state['topic']}")
     # The year range is a project setting, not an LLM choice (reproducibility)
     protocol.year_from = CONFIG["search"].get("year_from") or protocol.year_from
 

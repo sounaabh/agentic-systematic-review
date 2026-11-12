@@ -94,6 +94,7 @@ class Critique(BaseModel):
 class ReviewState(TypedDict, total=False):
     run_id: str
     topic: str
+    protocol_file: str               # optional user-written protocol
     protocol: dict
     search_strategy: dict
     records: list[dict]              # after deduplication (and cap)

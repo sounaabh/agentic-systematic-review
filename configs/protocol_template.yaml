@@ -1,0 +1,37 @@
+# PRISMA-aligned review protocol template (PICOC).
+# Copy this file, edit it for your question, then run:
+#   python run.py --topic "short topic" --protocol configs/my_protocol.yaml
+# The Protocol Agent is then skipped and your protocol is used as written.
+# Without --protocol, the Protocol Agent generates one from the topic.
+
+research_question: "What is the effect of generative AI tools on human creativity and entrepreneurial competencies?"
+
+# PICOC
+population: "Students, professionals or entrepreneurs performing creative or entrepreneurial tasks"
+intervention: "Use of generative AI tools (e.g. ChatGPT, DALL-E, Midjourney) as support or co-creation aid"
+comparator: "none / not required (no-AI condition, traditional tools, or pre-post designs all eligible)"
+outcomes:
+  - "Creative performance (originality, fluency, flexibility, elaboration)"
+  - "Entrepreneurial competencies (opportunity recognition, risk taking, self-efficacy)"
+  - "Quality or novelty of produced artefacts"
+context: "Education, workplace or startup settings"
+
+study_designs:
+  - "Randomised or quasi-experimental study"
+  - "Observational survey or cohort study"
+  - "Qualitative or mixed-methods study with empirical data"
+
+# Criteria must be checkable from a title and abstract
+inclusion_criteria:
+  - "Empirical primary study with original data"
+  - "Human participants use a generative AI tool"
+  - "Reports at least one creativity or entrepreneurial outcome"
+  - "Written in English"
+exclusion_criteria:
+  - "Editorials, opinion pieces or reviews without original data"
+  - "Evaluates only the technical performance of the AI, no human outcome"
+  - "AI tool is not generative (e.g. only predictive analytics)"
+  - "Non-English publication"
+
+year_from: 2020
+languages: ["English"]

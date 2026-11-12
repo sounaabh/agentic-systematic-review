@@ -2,6 +2,8 @@
 
     python run.py --topic "effect of generative AI on human creativity"
     python run.py --topic "..." --auto        # no human checkpoints
+    python run.py --topic "..." --max-screen 40 --max-studies 6   # smaller run
+    python run.py --topic "..." --protocol configs/protocol_template.yaml
 """
 import argparse
 import json
@@ -56,7 +58,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--topic", required=True)
     ap.add_argument("--auto", action="store_true", help="skip human checkpoints")
+    ap.add_argument("--protocol", help="use a protocol file (see configs/protocol_template.yaml)")
+    ap.add_argument("--max-screen", type=int, help="override search.max_records_to_screen")
+    ap.add_argument("--max-studies", type=int, help="override fulltext.max_studies")
     args = ap.parse_args()
+    if args.max_screen:
+        CONFIG["search"]["max_records_to_screen"] = args.max_screen
+    if args.max_studies:
+        CONFIG["fulltext"]["max_studies"] = args.max_studies
 
     hitl = CONFIG["workflow"]["human_in_the_loop"] and not args.auto
     run_id = time.strftime("%Y%m%d-%H%M%S")
@@ -67,6 +76,8 @@ def main():
 
     t0 = time.time()
     state_in = {"run_id": run_id, "topic": args.topic, "metrics": {}, "prisma": {}}
+    if args.protocol:
+        state_in["protocol_file"] = args.protocol
     banner(f"Run {run_id}\nTopic: {args.topic}")
     while True:
         for update in graph.stream(state_in, cfg, stream_mode="updates"):
