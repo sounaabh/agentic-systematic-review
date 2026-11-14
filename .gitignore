@@ -6,3 +6,4 @@ runs/
 cache/
 .chroma/
 *.pdf
+!technical_report.pdf

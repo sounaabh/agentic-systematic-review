@@ -167,10 +167,13 @@ def score(run: Path):
         rows = [r for r in wb["Screening"].iter_rows(min_row=2, values_only=True) if r[1]]
         h1 = [(r[1], str(r[4]).strip().lower()) for r in rows if r[4]]
         h2 = {r[1]: str(r[5]).strip().lower() for r in rows if r[5]}
-        # Reference standard: human consensus; disagreements resolved as include (conservative)
+        # Reference standard: one reviewer's labels, or the consensus of two (disagreements -> include)
         ref = {rid: ("include" if "include" in (d, h2.get(rid, d)) else "exclude") for rid, d in h1}
         ids = list(ref)
-        out = {"reference": "human consensus (disagreements counted as include)", "records_checked": len(ids)}
+        n_reviewers = 2 if h2 else 1
+        out = {"reference": ("consensus of 2 human reviewers (disagreements counted as include)" if n_reviewers == 2
+                             else "one set of human labels (one reviewer, or a joint consensus decided together)"),
+               "human_reviewers": n_reviewers, "records_checked": len(ids)}
         out["ai_final_vs_humans"] = _binary([ref[i] for i in ids], [screening[i]["final"] for i in ids])
         out["ai_reviewer_A_vs_humans"] = _binary([ref[i] for i in ids], [b(screening[i]["reviewer_a"]["decision"]) for i in ids])
         out["ai_reviewer_B_vs_humans"] = _binary([ref[i] for i in ids], [b(screening[i]["reviewer_b"]["decision"]) for i in ids])
