@@ -1,7 +1,8 @@
 {
   "run": "20261112-174320",
   "screening": {
-    "reference": "human consensus (disagreements counted as include)",
+    "reference": "one set of human labels (one reviewer, or a joint consensus decided together)",
+    "human_reviewers": 1,
     "records_checked": 30,
     "ai_final_vs_humans": {
       "n": 30,
