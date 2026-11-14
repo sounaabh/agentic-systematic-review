@@ -139,7 +139,7 @@ To publish a run in the repository: `python export_results.py runs\<run_id> <nam
 |---|---|
 | Inter-agent consistency | Cohen's kappa between Reviewer A and Reviewer B (`metrics.json`) |
 | Screening accuracy | 30 records per case screened blind by humans (case 1: both of us independently; case 2: both of us jointly, one consensus label per record); AI vs human labels: accuracy, recall, precision, kappa (`eval/human_check.py`) |
-| Extraction accuracy | Checking sheet generated (extracted values of 5 studies next to their evidence passages); not completed for this submission |
+| Extraction accuracy | 30 extracted values from 5 case 1 studies checked by both of us against their evidence passages: 63.3% fully correct, 36.7% partly correct, 0% wrong |
 | Completeness | Share of evidence-table fields filled, studies with full text, traceability rate |
 | Time savings | Measured human minutes per abstract × records × 2 reviewers vs pipeline runtime |
 | Search recall (optional) | Studies of a published review found by our search (`eval/evaluate.py`) |

@@ -1,7 +1,8 @@
 {
   "run": "20261112-155525",
   "screening": {
-    "reference": "human consensus (disagreements counted as include)",
+    "reference": "consensus of 2 human reviewers (disagreements counted as include)",
+    "human_reviewers": 2,
     "records_checked": 30,
     "ai_final_vs_humans": {
       "n": 30,
@@ -40,6 +41,13 @@
       "records_screened_by_ai": 70,
       "ai_full_pipeline_minutes": 26.2
     }
+  },
+  "extraction_accuracy": {
+    "values_checked": 30,
+    "correct": 0.633,
+    "partly": 0.367,
+    "wrong": 0.0,
+    "minutes_spent_checking": 23.0
   },
   "completeness": {
     "evidence_table_fields_filled": 0.955,
