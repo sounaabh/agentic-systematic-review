@@ -1,5 +1,7 @@
 # Agentic Systematic Review
 
+**Demo video:** [Watch the demo on Google Drive](https://drive.google.com/drive/folders/1rmY8atMDCk36gARxq0a-Oo8T1eqVhL4m?usp=sharing)
+
 A multi-agent AI pipeline that runs a **PRISMA 2020-aligned systematic literature review** on any
 topic: from a research question to a draft review with protocol, search strategy, dual screening,
 evidence table, quality appraisal, narrative synthesis, PRISMA flow diagram and references.
